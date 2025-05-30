@@ -72,10 +72,10 @@ nav:
       - Модуль аналогового вывода SA-P5-AO: user_manual/AO.md
     - Интерфейсные модули:
        - Модуль интерфейсный RS-485/422 SA-P5-IF485/422: user_manual/IF485_422.md
-       - Модуль интерфейсный IFARINC SA-P5-IFARINC: user_manual/IFARINC.md
-       - Модуль интерфейсный IFCAN SA-P5-IFCAN: user_manual/IFCAN.md
        - Модуль интерфейсный IF232 SA-P5-IF232: user_manual/IF232.md
+       - Модуль интерфейсный IFCAN SA-P5-IFCAN: user_manual/IFCAN.md
        - Модуль интерфейсный IFHART SA-P5-IFHART: user_manual/IFHART.md
+       - Модуль интерфейсный IFARINC SA-P5-IFARINC: user_manual/IFARINC.md      
     - Специальные модули:
       - Модуль ввода питания SA-P5-SPPM: user_manual/SPPM.md
       - Модуль оконечный SA-P5-SPТM: user_manual/SPTM.md
