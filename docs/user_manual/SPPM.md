@@ -109,6 +109,6 @@ style="width: 100%; height: 500px;">
 
 
 ## Файлы для скачивания   
-<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
-<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a>    
+<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
+<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 

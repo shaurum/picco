@@ -190,8 +190,8 @@ Settings (Настройки):
 ## Файлы для скачивания
 <a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>  
 <a href="/downloads/AIV.c" download>Cstruct конфигурационный файл для IgH EtherCAT Master</a>     
-<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
-<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a>    
+<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
+<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 
 
 
