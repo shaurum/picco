@@ -55,8 +55,9 @@ extra_javascript:
 nav:
   - Руководство пользователя: 
     - Главная: index.md 
-    - Основные модули:
-      - Модуль основной SA-P5-GM: user_manual/GM.md
+    - Основные модули:      
+      - Модуль основной SA-P5-GMB: user_manual/GMB.md
+      - Модуль основной SA-P5-GMR: user_manual/GMR.md
     - Дискретные модули:
       - Модуль дискретного ввода SA-P5-DI: user_manual/DI.md
       - Модуль дискретного вывода SA-P5-DO: user_manual/DO.md
@@ -76,9 +77,12 @@ nav:
        - Модуль интерфейсный IF232 SA-P5-IF232: user_manual/IF232.md
        - Модуль интерфейсный IFHART SA-P5-IFHART: user_manual/IFHART.md
     - Специальные модули:
-      - Модуль счета импульсов SA-P5-SPPC: user_manual/SPPC.md
       - Модуль ввода питания SA-P5-SPPM: user_manual/SPPM.md
       - Модуль оконечный SA-P5-SPТM: user_manual/SPTM.md
+      - Модуль счета импульсов SA-P5-SPPC: user_manual/SPPC.md
+      - Модуль подключения инкрементальных энкодеров SA-P5-SPIE: user_manual/SPIE.md
+      - Модуль измерения частоты SA-P5-SPFM: user_manual/SPFM.md
+ 
       - Модуль управления драйвером шагового двигателя SA-P5-SPSMD: user_manual/SPSMD.md
       - Модуль расширения коммутации SA-P5-SPSE: user_manual/SPSE.md
     - Основные сведения: user_manual/basic_nformation.md
