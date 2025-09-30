@@ -93,7 +93,6 @@ nav:
   - Статьи: blog/index.md
   - Форум: https://t.me/+jT-lYOb1kB04MmQ6
 
-
 markdown_extensions:
   - attr_list
   - md_in_html
