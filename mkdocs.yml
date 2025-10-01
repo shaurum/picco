@@ -66,36 +66,44 @@ nav:
         - Востановление заводских настроек: factory_reset.md
         - Доступ к операционной системе контроллера: os_access.md
         - Работа прибора с CODESYS V3.5: codesys_integration.md
-    - Модули:
+    - Продукты:
       - Основные модули:
-        - Модуль основной SA-P5-GMB: modules/GMB.md
-        - Модуль основной SA-P5-GMR: modules/GMR.md
+        - Модуль основной SA-P5-GMB: GMB.md
+        - Модуль основной SA-P5-GMR: GMR.md
       - Дискретные модули:
-        - Модуль дискретного ввода SA-P5-DI: modules/DI.md
-        - Модуль дискретного вывода SA-P5-DO: modules/DO.md
-        - Модуль дискретного вывода ШИМ SA-P5-DPWM: modules/DPWM.md
+        - Модуль дискретного ввода SA-P5-DI: DI.md
+        - Модуль дискретного вывода SA-P5-DO: DO.md
+        - Модуль дискретного вывода ШИМ SA-P5-DPWM: DPWM.md
       - Аналоговые модули:
-        - Модуль аналогового ввода тока SA-P5-AIC: modules/AIC.md
-        - Модуль аналогового ввода напряжения SA-P5-AIV: modules/AIV.md
-        - Модуль аналогового ввода термопары SA-P5-AITC: modules/AITC.md
-        - Модуль аналогового ввода термосопротивления SA-P5-AITR: modules/AITR.md
-        - Модуль аналогового ввода синусно-косинусного трансформатора SA-P5-AISCT: modules/AISCT.md
-        - Модуль аналогового ввода виброскорости SA-P5-AIVS: modules/AIVS.md
-        - Модуль аналогового вывода SA-P5-AO: modules/AO.md
+        - Модуль аналогового ввода тока SA-P5-AIC: AIC.md
+        - Модуль аналогового ввода напряжения SA-P5-AIV: AIV.md
+        - Модуль аналогового ввода термопары SA-P5-AITC: AITC.md
+        - Модуль аналогового ввода термосопротивления SA-P5-AITR: AITR.md
+        - Модуль аналогового вывода SA-P5-AO: AO.md
+        - Модуль аналогового ввода синусно-косинусного трансформатора SA-P5-AISCT: AISCT.md
+        - Модуль весоизмерительный SA-P5-AILC: AILC.md
+        - Модуль аналогового ввода виброскорости SA-P5-AIVS: AIVS.md
       - Интерфейсные модули:
-        - Модуль интерфейсный RS-485/422 SA-P5-IF485/422: modules/IF485_422.md
-        - Модуль интерфейсный IF232 SA-P5-IF232: modules/IF232.md
-        - Модуль интерфейсный IFCAN SA-P5-IFCAN: modules/IFCAN.md
-        - Модуль интерфейсный IFHART SA-P5-IFHART: modules/IFHART.md
-        - Модуль интерфейсный IFARINC SA-P5-IFARINC: modules/IFARINC.md
+        - Модуль интерфейсный RS-485/422 SA-P5-IF485/422: IF485_422.md
+        - Модуль интерфейсный IFHART SA-P5-IFHART: IFHART.md
+        - Модуль интерфейсный IF232 SA-P5-IF232: IF232.md
+        - Модуль интерфейсный IFCAN SA-P5-IFCAN: IFCAN.md
+        - Модуль интерфейсный IFARINC SA-P5-IFARINC: IFARINC.md
+        - Модуль интерфейсный RS-485 SA-P5-IF485: IF485.md
+        - Модуль интерфейсный RS-422 SA-P5-IF422: IF422.md
+        - Модуль интерфейсный PROFIBUS SA-P5-IFPB: IFPB.md
+      - Панель оператора:
+        - Панель оператора D13 SA-HMI-D13: D13.md
       - Специальные модули:
-        - Модуль ввода питания SA-P5-SPPM: modules/SPPM.md
-        - Модуль оконечный SA-P5-SPTM: modules/SPTM.md
-        - Модуль счета импульсов SA-P5-SPPC: modules/SPPC.md
-        - Модуль подключения инкрементальных энкодеров SA-P5-SPIE: modules/SPIE.md
-        - Модуль измерения частоты SA-P5-SPFM: modules/SPFM.md
-        - Модуль управления драйвером шагового двигателя SA-P5-SPSMD: modules/SPSMD.md
-        - Модуль расширения коммутации SA-P5-SPSE: modules/SPSE.md
+        - Модуль ввода питания SA-P5-SPPM: SPPM.md
+        - Модуль оконечный SA-P5-SPTM: SPTM.md
+        - Модуль счета импульсов SA-P5-SPPC: SPPC.md
+        - Модуль подключения инкрементальных энкодеров SA-P5-SPIE: SPIE.md
+        - Модуль измерения частоты SA-P5-SPFM: SPFM.md
+        - Модуль расширения коммутации SA-P5-SPSE: SPSE.md
+        - Модуль оконечный SFP SA-P5-SPSFP: SPSFP.md
+        - Модуль управления драйвером шагового двигателя SA-P5-SPSMD: SPSMD.md
+        
   - Статьи: blog/index.md
   - Форум: https://t.me/+jT-lYOb1kB04MmQ6
 
