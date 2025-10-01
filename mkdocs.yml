@@ -54,7 +54,7 @@ extra_javascript:
 nav:
   - Руководство пользователя:
     - Главная: index.md
-    - Общие сведения: general.md
+    - Общие сведения: basic_nformation.md
     - Подготовка к работе:
       - Монтаж и демонтаж: installation.md
       - Правила сборки: assembly_rules.md
