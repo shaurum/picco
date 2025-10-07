@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/SPSE.png){ width="150" align=left  }
+![Image title](img/modules/SPSE.png){ width="150" align=left  }
 Модуль расширения коммутации (арт. SA-P5-SPSE) является модулем расширения и предназначен для организации сложных топологий путем разветвления соединений в системе автоматизации.  
 
 </div>
@@ -34,15 +34,15 @@
 
 ## Схема подключения
 
-![Image title](../img/connection/SPSE.png){ width="250"  }
+![Image title](img/connection/SPSE.png){ width="250"  }
 
 
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 
 <model-viewer src="https://manual.saplc.ru//img/3d/SPTM.glb"

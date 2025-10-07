@@ -7,8 +7,9 @@
     На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/GMB.png){ width="200" align=left  }
+![Image title](img/modules/GMB.png){ width="200" align=left  }
 Модуль основной GM (арт. SA-P5-GM) является центральным компонентом системы управления.
+
 
 </div>
 
@@ -47,7 +48,7 @@
 
 ## Схема устройства
 <div class="grid cards" markdown>
-![Image title](../img/connection/GMB.svg){ width="370"; align=left  }
+![Image title](img/connection/GMB.svg){ width="370"; align=left  }
 
 </div>
 
@@ -72,9 +73,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_GMB.svg){ width="100"}
+    ![Image title](img/dimensions/overall_dimensions_GMB.svg){ width="100"}
 === "Установочные размеры"
-    ![Image title](../img/dimensions/installation_dimensions_GMB.svg){ width="100"}
+    ![Image title](img/dimensions/installation_dimensions_GMB.svg){ width="100"}
 
 ## Сброс до заводских настроек
 1. Зажать кнопку сброса в верхней части корпуса

@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/DI.png){ width="150" align=left  }
+![Image title](img/modules/DI.png){ width="150" align=left  }
 Модуль дискретного ввода DI (арт. SA-P5-DI) является 16-ти канальным модулем расширения и предназначен для приема и обработки дискретных команд от внешних устройств.
 В модуле предусмотрено две схемы подключения: «сухим» (dry) и «мокрым» (wet) контактом.
 При подключении «мокрым» контактом модуль принимает дискретные команды постоянным напряжением 24 В от внешнего источника питания, при этом допускается подача напряжения как положительной, так и отрицательной полярности.
@@ -41,9 +41,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/DI.svg){ width="370"; align=left  }
+![Image title](img/connection/DI.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 Контакты «GND_DRY» и «GND_WET» предназначены для подключения входов по принципу «сухого» или «мокрого» контакта соответственно.
@@ -68,9 +68,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"  }
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"  }
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

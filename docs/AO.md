@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/AO.png){ width="150" align=left  }
+![Image title](img/modules/AO.png){ width="150" align=left  }
 Модуль аналогового вывода (AO) (арт. SA-P5-AO) является 8-ми канальным модулем расширения и предназначен для выдачи аналоговых сигналов на внешние устройства.  
 Каждый канал модуля может выдавать постоянное напряжение или постоянный ток.
 </div>
@@ -45,9 +45,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/AO.svg){ width="370"; align=left  }
+![Image title](img/connection/AO.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 
@@ -84,9 +84,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

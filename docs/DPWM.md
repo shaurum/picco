@@ -6,7 +6,8 @@
     На текущий момент модуль на стадии разработки. Начало тестирования запланировано на август 2025 года
 
 <div class="grid cards" markdown>
-![Image title](../img/modules/DPWM.png){ width="150" align=left  }
+
+![Image title](img/modules/DPWM.png){ width="150" align=left  }
 Модуль дискретных выходов ШИМ (арт. SA-P5-DPWM) является 16-ти канальным модулем расширения и предназначен для вывода сигнала с широтно-импульсной модуляцией.
 Модуль должен быть оснащен клеммами подключения внешнего источника питания.
 </div>
@@ -37,8 +38,8 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/DPWM.svg){ width="370"; align=left  }
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/DPWM.svg){ width="370"; align=left  }
+![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 | Обозначение | Название канала | Описание                 |
@@ -61,9 +62,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/SSMD.png){ width="150" align=left  }
+![Image title](img/modules/SSMD.png){ width="150" align=left  }
 Модуль управления шаговым двигателем (арт. SA-P5-SPSMD) является 4-х канальным модулем расширения и предназначен подключения драйверов шаговых двигателей.
 Логические уровни по напряжению равны напряжению внешнего источника питания.
 
@@ -40,9 +40,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/SSMD.svg){ width="370"; align=left  }
+![Image title](img/connection/SSMD.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 | Обозначение | Название канала  | Описание                              |
@@ -80,9 +80,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

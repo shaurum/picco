@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/DO.png){ width="150" align=left  }
+![Image title](img/modules/DO.png){ width="150" align=left  }
 Модуль дискретных выходов DO (арт. SA-P5-DO) — это 16-канальный модуль расширения, предназначенный для формирования дискретных сигналов. Вывод осуществляется методом «сухого» контакта по 16 каналам.
 Модуль оснащен отдельной клеммой, обеспечивающей защиту от воздействия ЭДС самоиндукции при подключении к нему индуктивной нагрузки (электромагнитные реле и т.п.).
 
@@ -40,9 +40,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/DO.svg){ width="370"; align=left  }
+![Image title](img/connection/DO.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";align=left   }
+![Image title](img/connection/connector_18pin.png){ width="170";align=left   }
 </div>
 
 | Обозначение | Название канала | Описание                       |
@@ -65,9 +65,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

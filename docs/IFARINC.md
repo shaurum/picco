@@ -7,7 +7,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/IFARINC.png){ width="150" align=left  }
+![Image title](img/modules/IFARINC.png){ width="150" align=left  }
  Модуль интерфейсный ARINC (арт. SA-P5-IFFARINC) является модулем расширения, осуществлет подключение и работу ПЛК с интерфейсом ARINC-429.
 </div>
 
@@ -38,9 +38,9 @@
 
 ## Схема подключения
 <div class="grid cards" markdown>
-![Image title](../img/connection/IFARINC.svg){ width="370"; align=left  }
+![Image title](img/connection/IFARINC.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 
@@ -59,9 +59,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"

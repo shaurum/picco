@@ -7,14 +7,14 @@
 ### Монтаж модулей на DIN-рейку
 Монтаж первого модуля группы осуществляется следующим образом: приставить модуль к DIN-рейке пазом, расположенном на тыльной стороне модуля, после чего зафиксировать, установив верхнюю и нижнюю защелки в положение «закрыто».
 
-![Image title](../img/inistallation/inistallation_1_1.png){ width="280" }
-![Image title](../img/inistallation/inistallation_1_2.png){ width="200" }
+![Image title](img/inistallation/inistallation_1_1.png){ width="280" }
+![Image title](img/inistallation/inistallation_1_2.png){ width="200" }
 
 Монтаж каждого последующего модуля осуществляется путем присоединения его к уже установленному модулю методом шип-паз. Устанавливаемый модуль задвигается вдоль шип-паза до упора к DIN-рейке и фиксируется верхней и нижней защелками в положение «закрыто».
 
-![Image title](../img/inistallation/inistallation_2_1.png){ width="300" }
-![Image title](../img/inistallation/inistallation_2_2.png){ width="200" }
-![Image title](../img/inistallation/inistallation_2_3.png){ width="200" }
+![Image title](img/inistallation/inistallation_2_1.png){ width="300" }
+![Image title](img/inistallation/inistallation_2_2.png){ width="200" }
+![Image title](img/inistallation/inistallation_2_3.png){ width="200" }
 
 ### Монтаж подводящих кабелей
 
@@ -42,23 +42,23 @@
 6. Затянуть винты клеммной колодки с усилием 0,2 Нм.
 7. Для удобства следует зафиксировать провода вместе относительно модуля путем закрепления хомута через ушко корпуса модуля.
 
-![Image title](../img/inistallation/inistallation_4_1.1.png){ width="150" }
-![Image title](../img/inistallation/inistallation_4_1.2.png){ width="300" }
-![Image title](../img/inistallation/inistallation_4_2.png){ width="100" }
-![Image title](../img/inistallation/inistallation_4_3.png){ width="190" }
-![Image title](../img/inistallation/inistallation_4_4.png){ width="190" }
+![Image title](img/inistallation/inistallation_4_1.1.png){ width="150" }
+![Image title](img/inistallation/inistallation_4_1.2.png){ width="300" }
+![Image title](img/inistallation/inistallation_4_2.png){ width="100" }
+![Image title](img/inistallation/inistallation_4_3.png){ width="190" }
+![Image title](img/inistallation/inistallation_4_4.png){ width="190" }
 
 ## Демонтаж подводящих кабелей 
 1. Убедиться, что демонтируемые кабели обесточены.
 2. Открутить винты на клеммной колодке.
 3. Отсоединить клеммную колодку от модуля потянув на себя.
 4. Надавить отверткой на защелку оранжевого цвета, расположенной на клеммной колодке напротив демонтируемого кабеля, и одновременно потянуть демонтируемый кабель на себя.  
-![Image title](../img/inistallation/inistallation_5_1.png){ width="200" }
-![Image title](../img/inistallation/inistallation_5_2.png){ width="200" }
+![Image title](img/inistallation/inistallation_5_1.png){ width="200" }
+![Image title](img/inistallation/inistallation_5_2.png){ width="200" }
 
 ### Демонтаж модулей
 Перед демонтажем модуля необходимо убедится, что все подводящие к нему кабели отсоединены, затем с помощью плоской отвертки аккуратно перевести защелки, расположенные снизу и сверху, в положение «открыто». После чего потянуть модуль на себя вдоль шип-пазов до полного отсоединения.
  
-![Image title](../img/inistallation/inistallation_3_1.png){ width="250" }
-![Image title](../img/inistallation/inistallation_3_2.png){ width="200" }
-![Image title](../img/inistallation/inistallation_3_3.png){ width="250" }
+![Image title](img/inistallation/inistallation_3_1.png){ width="250" }
+![Image title](img/inistallation/inistallation_3_2.png){ width="200" }
+![Image title](img/inistallation/inistallation_3_3.png){ width="250" }
