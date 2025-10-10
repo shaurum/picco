@@ -1,88 +1,187 @@
-# Модуль основной SA-P5-GMB
+# Модуль основной SA-P5-GMB ♥ 
 
 ## Общие сведения
 
 ??? example "Тестирование"
 
     На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
-<div class="grid cards" markdown>
+<div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;" markdown>
 
-![Модуль основной GMB](img/modules/GMB.png){ width="200" align="left" }
+![Модуль основной GMB](img/modules/GMB.png){ width="270" }
 
-    **Наименование:** Модуль основной GMB
+<div style="flex: 1;" markdown>
 
-    **Исполнения:**  
-    - SA-P5-GMB (без защитного покрытия)  
-    - SA-P5-GMB-V (с влагозащитным лаком)
+**Наименование:** Модуль основной GMB
 
-    **Назначение:**  
-    Модуль основной GMB является центральным компонентом системы управления
- Функции:
+**Исполнения:**  
+- SA-P5-GMB (без покрытия)  
+- SA-P5-GMB-V (с лаковым покрытием)
 
-- выполнение пользовательской прикладной программы управления;
-- обмен информацией со сторонним устройствами по встроенным интерфейсам;
+**Назначение:**  
+Модуль основной GMB (далее-модуль) является центральным компонентом системы управления.
+
+**Функции:**  
+- выполнение пользовательской прикладной программы управления;    
+- обмен информацией со сторонним устройствами по встроенным интерфейсам;  
+- звуковое оповещение, при загрузке данных и при сбросе настроек;  
 - опрос модулей расширения.
 
-
-
 </div>
+</div>
+![Image title](img/connection/GMB.svg){ align=right width=340 style="margin: 0 0 15px 15px;" }
 
-### Модуль основной выполняет следующие ключевые функции:
-* выполнение пользовательской прикладной программы управления;
-* обмен информацией со сторонним устройствами по встроенным интерфейсам;
-* опрос модулей расширения.
+**Описание:**  
+На передней панели модуля расположен переключатель режима работы RUN/STOP, предназначенный для запуска и остановки выполнения цикла основной программы. 
 
+Для сброса до заводских настроек на верхней грани модуля предусмотрена скрытая кнопка «Сброс». Необходимо нажать на кнопку тонким заостренным предметом и удерживать до появления трех звуковых сигналов, подтверждающих выполнение сброса.
+
+Также для обеспечения автономной работы часов реального времени при отключении основного питания на верхней грани корпуса модуля предусмотрен разъём под батарейку типа CR1620.
+
+<div style="clear: both;"></div>
 
 ## Технические характеристики 
+
 | Характеристика | Значение |
-| - | - |
-| Максимальная потребляемая мощность, Вт |	7,5
-| Номинальное напряжение питания, | В	24
-| Поддерживаемые интерфейсы |	Ethernet 1000 Мбит/с – 1 (на лицевой части) Ethernet 100 Мбит/с – 2 |
-| Ядро |	4 x Cortex-A72  |
-| Оперативная память, Гб |	4, DDR4 |
-| Объем памяти, Гб |	8 |
+| :--- | :--- |
+| Ядро | 4 x Cortex-A72 |
+| Оперативная память, Гб | 4, DDR4 |
+| Объем памяти, Гб | 8 |
+| Поддерживаемые интерфейсы | Ethernet 1000 Мбит/с – 1 (на лицевой части)<br>Ethernet 100 Мбит/с – 2 |
 | Операционная система | Linux с RT патчем |
+| Диапазон входного напряжения, В | от 19 до 29 |
+| Номинальное напряжение питания, В | 24 |
+| Наличие индикации питания, канала информационного обмена | да |
+| Наличие индикации интерфейсов | да |
+| Максимальная потребляемая мощность, Вт | 7,5 |
 | Время выполнения цикла | Менее 1 мс |
 | Гальваническая изоляция | Между входной и выходной логикой |
-| Сечение проводника, мм2 | От 0,5 до 1,5 |
-| Масса, г |	200 |
-|Габариты ВхШхГ, мм |	126х55х90 |
+| Масса, кг | 0,34 |
+| Размеры (Ш х В х Г), мм | 57,1х130,9x98,0 |
 
 ## Эксплуатационные характеристики
-| Характеристика                   | Значение           |
-| -------------------------------- | -                  |
-| Температура эксплуатации, °С     | От минус 40 до 60  |
-| Температура хранения, °С         | От минус 40 до 60  |
-| Влажность при хранении, %	       | От 5 до 95         |
-| Влажность при эксплуатации, %    | От 5 до 95         |
-| Тип монтажа                      | На DIN-рейку 35 мм |
-| Расположение при монтаже         | Вертикальное       |
-
-
-## Схема устройства
-<div class="grid cards" markdown>
-![Image title](img/connection/GMB.svg){ width="370"; align=left  }
-
+<div style="width: 100%; overflow-x: auto;">
+<table border="1" style="border-collapse: collapse; width: 100%;">
+<thead>
+<tr>
+<th rowspan="2" style="text-align: center; vertical-align: middle; padding: 4px;">Параметр</th>
+<th colspan="2" style="border: 1px; text-align: center; vertical-align: middle; padding: 4px;">Значение фактора</th>
+</tr>
+<tr>
+<th style="text-align: center; padding: 4px;">Без лака</th>
+<th style="text-align: center; padding: 4px;">С лаком</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px; padding: 8px;"><strong>Температура среды, °С</strong></td>
+<td colspan="2" style="border: ; text-align: center; vertical-align: middle; padding: 8px;">от минус 40 до 60</td>
+</tr>
+<tr>
+<td style=" padding: 8px;"><strong>Относительная влажность воздуха, %</strong></td>
+<td style=" text-align: center; vertical-align: middle; padding: 8px;">от 5 до 70</td>
+<td style="text-align: center; vertical-align: middle; padding: 8px;">от 5 до 95</td>
+</tr>
+<tr>
+<td style=" padding: 8px;"><strong>Атмосферное давление, кПа</strong></td>
+<td colspan="2" " text-align: center; vertical-align: middle; padding: 8px;">от 84,0 до 106,7</td>
+</tr>
+<tr>
+<td style=" padding: 8px;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
+<td colspan="2" style=" text-align: center; vertical-align: middle; padding: 8px;">0,35 мм с частотой 55 Гц</td>
+</tr>
+</tbody>
+</table>
 </div>
-
-
-
 
 ## Индикация
 
 | Обозначение | Индикация | Показатель |
-|------------------|----------------------|---------------------------------------|
-| P | :green_circle:| Наличие напряжения питания |
-| P | :white_circle:| Отсутствие напряжения питания |
-| L | :green_circle:| Наличие соединения Ethernet |
-| L | :yellow_circle: :green_circle: :yellow_circle: | Обмен данными по Ethernet |
-| L | :white_circle:| Отсутствие соединения Ethernet|
-| 1 - 3| :green_circle:| Пользовательский светодтод 1 - 3 включен |
-| 1 - 3| :white_circle:| Пользовательский светодтод 1 - 3 выключен |
-| BL | :red_circle:| Батарея часов разряжена |
-| BL| :white_circle:| Батарея часов исправна |
+|---|---|---|
+| P | <span class="status-dot green"></span> | Наличие напряжения питания |
+| P | <span class="status-dot off"></span> | Отсутствие напряжения питания |
+| L | <span class="status-dot green"></span> | Наличие соединения по Ethernet |
+| L | <span class="status-dot ethernet-pulse"></span> | Обмен данными по Ethernet |
+| L | <span class="status-dot off"></span> | Отсутствие соединения по Ethernet |
+| L | <span class="status-dot orange"></span> | Модуль в рабочем состоянии |
+| L | <span class="status-dot orange-pulse"></span> | Выполнение загрузки |
+|1 - 3| <span class="status-dot green"></span> | Пользовательский светодтод 1 - 3 включен|
+|1 - 3| <span class="status-dot off"></span> | Пользовательский светодтод 1 - 3 выключен|
+| BL | <span class="status-dot red"></span> | Низкое напряжение питания |
+| BL | <span class="status-dot off"></span> | Рабочее напряжение питания |
 
+<style>
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.status-dot.green {
+    background-color: #0ec20eff;
+}
+
+.status-dot.red {
+    background-color: #d82e2eff;
+}
+
+.status-dot.orange {
+    background-color: #ffa500;
+}
+
+.status-dot.off {
+    background-color: #cccccc;
+}
+
+.status-dot.ethernet-pulse {
+    background-color: #00ff00;
+    animation: soft-pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.status-dot.orange-pulse {
+    background-color: #ffa500;
+    animation: soft-pulse-orange 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+@keyframes soft-pulse {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+}
+
+@keyframes soft-pulse-orange {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(255, 165, 0, 0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(255, 165, 0, 0.3);
+    }
+}
+</style>
 
 ## Размеры
 
@@ -91,11 +190,6 @@
 === "Установочные размеры"
     ![Image title](img/dimensions/installation_dimensions_GMB.svg){ width="100"}
 
-## Сброс до заводских настроек
-1. Зажать кнопку сброса в верхней части корпуса
-2. Подать питание на модуль
-3. Дождаться 3 звуковых сигналов от модуля
-4. Отпустить кнопку
 
 ## Файлы для скачивания
 <a href="/downloads/proplc.package" download>Пакет таргет файлов для CODESYS v3</a>  
