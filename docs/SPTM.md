@@ -7,7 +7,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPTM.png){ width="150" align=left  }
+![Image title](img/modules/SPTM.png){ width="250" align=left  }
 Модуль оконечный (SPTM) (арт. SA-P5-SPTM) является модулем расширения и предназначен для перехода с внутренней шины на внешнюю шину Ethernet через порт RJ-45.
 Модуль используется для подключения последующих групп модулей и ставится как в конце, так и в начале каждой группы.
 </div>

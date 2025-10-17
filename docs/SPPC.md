@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPPC.png){ width="150" align=left  }
+![Image title](img/modules/SPPC.png){ width="250" align=left  }
 Модуль счета импульсов (SPPC) (арт. SA-P5-SPPC) является 4-х канальным модулем расширения и предназначен для счета импульсов частотой до 200 кГц.
 </div>
 
