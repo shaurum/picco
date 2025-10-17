@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AIC.png){ width="250" align=left  }
+![Image title](img/modules/AIV.png){ width="250" align=left  }
 Модуль аналогового ввода напряжения (AIV) (арт. SA-P5-AIV) является 8-ми канальным модулем расширения и предназначен для получения аналоговых сигналов по напряжению от внешних источников напряжения
 </div>
 
