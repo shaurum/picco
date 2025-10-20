@@ -63,7 +63,6 @@ nav:
       - Подготовка к настройке: setup_preparation.md
       - Управление доступом к контроллеру: access_control.md
       - Востановление заводских настроек: factory_reset.md
-      - Доступ к операционной системе контроллера: os_access.md
       - Работа прибора с CODESYS V3.5: codesys_integration.md
   - Продукты:
     - Основные модули:
