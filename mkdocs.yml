@@ -60,8 +60,8 @@ nav:
     - Составление сборок: assembly.md
     - Организация питания: power_organization.md
     - Настройка: 
-      - Подготовка к настройке: setup_preparation.md
-      - Управление доступом к контроллеру: access_control.md
+      - Начальная настройка контроллера: setup_preparation.md
+      - Навигация по web-интерфейсу: web_interface_navigation.md
       - Востановление заводских настроек: factory_reset.md
       - Работа прибора с CODESYS V3.5: codesys_integration.md
   - Продукты:

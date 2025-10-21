@@ -134,7 +134,7 @@
 }
 
 .status-dot.ethernet-pulse {
-    background-color: #00ff00;
+    background-color: #0ec20eff;
     animation: soft-pulse 1.5s ease-in-out infinite;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
