@@ -53,5 +53,109 @@
 
     ![Image title](setup_preparation/get_7.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-4. Установка завершана. Для запуска программы откройте файл CODESYS 3.5 SP21 (64 Bit)  Контроллер  СА.
+4. Установка завершена. Для запуска программы откройте файл CODESYS 3.5 SP21 (64 Bit) → Контроллер → СА.
 
+!!! note "Примечание"
+    Файл программы рекомендуется открывать от имени администратора
+
+<ol start="5">
+<li>После запуска CODESYS нажмите на кнопку "Новый проект...". После чего появится окно, в котором выберите "Стандартный проект" и место его расположения. Нажмите кнопку "ок".</li>
+</ol>
+
+![Image title](setup_preparation/C_2.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+
+<style>
+.fullscreen-image {
+    cursor: zoom-in;
+}
+
+.fullscreen-image.fullscreen-active {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    object-fit: contain !important;
+    cursor: zoom-out !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+</style>
+
+<script>
+document.querySelectorAll('.fullscreen-image').forEach(img => {
+    img.addEventListener('click', function() {
+        if (this.classList.contains('fullscreen-active')) {
+            this.classList.remove('fullscreen-active');
+            document.body.style.overflow = '';
+        } else {
+            this.classList.add('fullscreen-active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const fullscreenImages = document.querySelectorAll('.fullscreen-active');
+        fullscreenImages.forEach(img => {
+            img.classList.remove('fullscreen-active');
+            document.body.style.overflow = '';
+        });
+    }
+});
+</script>
+
+<ol start="6">
+<li>В следующем окне Вы увидите список объектов, которые будут сосзданы для нового проекта. Нажмите кнопку "ок".</li>
+</ol>
+
+![Image title](setup_preparation/C_3.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+
+<style>
+.fullscreen-image {
+    cursor: zoom-in;
+}
+
+.fullscreen-image.fullscreen-active {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    object-fit: contain !important;
+    cursor: zoom-out !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+</style>
+
+<script>
+document.querySelectorAll('.fullscreen-image').forEach(img => {
+    img.addEventListener('click', function() {
+        if (this.classList.contains('fullscreen-active')) {
+            this.classList.remove('fullscreen-active');
+            document.body.style.overflow = '';
+        } else {
+            this.classList.add('fullscreen-active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const fullscreenImages = document.querySelectorAll('.fullscreen-active');
+        fullscreenImages.forEach(img => {
+            img.classList.remove('fullscreen-active');
+            document.body.style.overflow = '';
+        });
+    }
+});
+</script>
