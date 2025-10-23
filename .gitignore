@@ -133,3 +133,7 @@ dmypy.json
 
 # Windows system files
 Thumbs.db
+
+# CODESYS - не комитить в репозиторий
+CODESYS 64 3.5.21.30/
+CODESYS 64 3.5.21.30.zip
