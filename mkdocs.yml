@@ -62,7 +62,6 @@ nav:
     - Настройка: 
       - Начальная настройка контроллера: setup_preparation.md
       - Навигация по web-интерфейсу: web_interface_navigation.md
-      - Востановление заводских настроек: factory_reset.md
       - Работа прибора с CODESYS V3.5: codesys_integration.md
   - Продукты:
     - Основные модули:
