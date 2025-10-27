@@ -297,7 +297,7 @@
 <div style="text-align: center;">
     <img src="setup_preparation/C_10.png" 
          alt="Image title" 
-         width="700" 
+         width="500" 
          style="cursor: zoom-in; display: block; margin: 0 auto;" 
          onclick="this.classList.toggle('fullscreen')"
          class="fullscreen-image">
@@ -400,30 +400,6 @@
 }
 </style>
 
-<div style="text-align: center;">
-    <img src="setup_preparation/C_14.png" 
-         alt="Image title" 
-         width="700" 
-         style="cursor: zoom-in; display: block; margin: 0 auto;" 
-         onclick="this.classList.toggle('fullscreen')"
-         class="fullscreen-image">
-</div>
-
-<style>
-.fullscreen-image.fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    background: rgba(0, 0, 0, 0.95);
-    object-fit: contain;
-    cursor: zoom-out;
-    padding: 20px;
-    box-sizing: border-box;
-}
-</style>
 
 Для того чтобы проверить корректность настройки, в дереве устройств 2 раза кликните на **PLC_PRG**. В открывшейся вкладке, для примера, пропишите краткий код.
 
