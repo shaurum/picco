@@ -12,6 +12,8 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy 
+  extra_css:
+    - stylesheetss/extra.css
   
   logo: img/logo_old.svg
   favicon: img/favicon.svg

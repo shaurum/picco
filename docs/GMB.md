@@ -30,7 +30,7 @@
     <div style="flex: 1; text-align: justify;">
         <p style="text-align: justify; margin: 0 0 8px 0;"><strong>Описание:</strong></p>
         <p style="text-align: justify; margin: 0 0 8px 0;">На передней панели модуля расположен переключатель режима работы RUN/STOP, предназначенный для запуска и остановки выполнения цикла основной программы.</p>
-        <p style="text-align: justify; margin: 0 0 8px 0;">Для сброса до заводских настроек на верхней грани модуля предусмотрена скрытая кнопка «Сброс». Необходимо нажать на кнопку тонким заостренным предметом и удерживать до появления трех звуковых сигналов, подтверждающих выполнение сброса.</p>
+        <p style="text-align: justify; margin: 0 0 0 0;">Для сброса до заводских настроек на верхней грани модуля предусмотрена скрытая кнопка «Сброс». Необходимо нажать на кнопку тонким заостренным предметом и удерживать до появления трех звуковых сигналов, подтверждающих выполнение сброса.</p>
     </div>
     
     <img src="img/connection/GMB.svg" alt="Image title" width="340" style="flex-shrink: 0; margin: 0;">
@@ -40,74 +40,266 @@
 
 <div style="clear: both;"></div>
 
-## Технические характеристики 
+<style>
+h2[id="технические-характеристики"] {
+    text-align: center;
+    position: relative;
+    margin: 0,5rem 0;
+    padding: 0 6rem !important;
+    white-space: nowrap; /* Запрещает перенос текста */
+}
 
-| Характеристика | Значение |
-| :--- | :--- |
-| Ядро | 4 x Cortex-A72 |
-| Оперативная память, Гб | 4, DDR4 |
-| Объем памяти, Гб | 8 |
-| Поддерживаемые интерфейсы | Ethernet 1000 Мбит/с – 1 (на лицевой части)<br>Ethernet 100 Мбит/с – 2 |
-| Операционная система | Linux с RT патчем |
-| Диапазон входного напряжения, В | от 19 до 29 |
-| Номинальное напряжение питания, В | 24 |
-| Наличие индикации питания, канала информационного обмена | да |
-| Наличие индикации интерфейсов | да |
-| Максимальная потребляемая мощность, Вт | 7,5 |
-| Время выполнения цикла | Менее 1 мс |
-| Масса, кг | 0,34 |
-| Размеры (Ш х В х Г), мм | 57,1х130,9x98,0 |
+h2[id="технические-характеристики"]::before,
+h2[id="технические-характеристики"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 185px;
+    height: 1px;
+    background-color: #ccc !important;
+}
 
-## Эксплуатационные характеристики
-<div style="width: 100%; overflow-x: auto;">
-<table border="1" style="border-collapse: collapse; width: 100%;">
-<thead>
-<tr>
-<th rowspan="2" style="text-align: center; vertical-align: middle; padding: 4px;">Параметр</th>
-<th colspan="2" style="border: 1px; text-align: center; vertical-align: middle; padding: 4px;">Значение фактора</th>
-</tr>
-<tr>
-<th style="text-align: center; padding: 4px;">Без лака</th>
-<th style="text-align: center; padding: 4px;">С лаком</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border: 1px; padding: 8px;"><strong>Температура среды, °С</strong></td>
-<td colspan="2" style="border: ; text-align: center; vertical-align: middle; padding: 8px;">от минус 40 до 60</td>
-</tr>
-<tr>
-<td style=" padding: 8px;"><strong>Относительная влажность воздуха, %</strong></td>
-<td style=" text-align: center; vertical-align: middle; padding: 8px;">от 5 до 70</td>
-<td style="text-align: center; vertical-align: middle; padding: 8px;">от 5 до 95</td>
-</tr>
-<tr>
-<td style=" padding: 8px;"><strong>Атмосферное давление, кПа</strong></td>
-<td colspan="2" " text-align: center; vertical-align: middle; padding: 8px;">от 84,0 до 106,7</td>
-</tr>
-<tr>
-<td style=" padding: 8px;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
-<td colspan="2" style=" text-align: center; vertical-align: middle; padding: 8px;">0,35 мм с частотой 55 Гц</td>
-</tr>
-</tbody>
-</table>
+h2[id="технические-характеристики"]::before {
+    left: 0;
+}
+
+h2[id="технические-характеристики"]::after {
+    right: 0;
+}
+</style>
+
+## Технические характеристики {#технические-характеристики} 
+
+<div style="text-align: center; margin: 1.5em 0;">
+  <div style="display: inline-block; max-width: 100%; ">
+    <table style="border-collapse: collapse; width: 100%; min-width: 400px;">
+      <thead>
+        <tr>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Характеристика</th>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Значение</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Ядро</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">4 x Cortex-A72</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Оперативная память, Гб</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">4, DDR4</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Объем памяти, Гб</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">8</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc; vertical-align: middle;">Поддерживаемые интерфейсы</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Ethernet 1000 Мбит/с – 1<br>Ethernet 100 Мбит/с – 2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Операционная система</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Linux с RT патчем</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Диапазон входного напряжения, В</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">от 19 до 29</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Номинальное напряжение питания, В</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">24</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие индикации питания, канала информационного обмена</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">да</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие индикации интерфейсов</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">да</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Максимальная потребляемая мощность, Вт</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">7,5</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Время выполнения цикла</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Менее 1 мс</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Масса, кг</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">0,34</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">Размеры (Ш х В х Г), мм</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">57,1х130,9x98,0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-## Индикация
+<style>
+h2[id="эксплуатационные-характеристики"] {
+    text-align: center;
+    position: relative;
+    margin: 1rem 0;
+    padding: 0 5rem !important;
+    white-space: nowrap; /* Запрещает перенос текста */
+}
 
-| Обозначение | Индикация | Показатель |
-|---|---|---|
-| P | <span class="status-dot green"></span> | Наличие напряжения питания |
-| P | <span class="status-dot off"></span> | Отсутствие напряжения питания |
-| L | <span class="status-dot green"></span> | Наличие соединения по Ethernet |
-| L | <span class="status-dot ethernet-pulse"></span> | Обмен данными по Ethernet |
-| L | <span class="status-dot off"></span> | Отсутствие соединения по Ethernet |
-| L | <span class="status-dot orange"></span> | Модуль в рабочем состоянии |
-| L | <span class="status-dot orange-pulse"></span> | Выполнение загрузки |
-|1 - 3| <span class="status-dot green"></span> | Пользовательский светодтод 1 - 3 включен|
-|1 - 3| <span class="status-dot off"></span> | Пользовательский светодтод 1 - 3 выключен|
-| BL | <span class="status-dot red"></span> | Низкое напряжение питания |
-| BL | <span class="status-dot off"></span> | Рабочее напряжение питания |
+h2[id="эксплуатационные-характеристики"]::before,
+h2[id="эксплуатационные-характеристики"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 140px;
+    height: 1px;
+    background-color: #ccc !important;
+}
+
+h2[id="эксплуатационные-характеристики"]::before {
+    left: 0;
+}
+
+h2[id="эксплуатационные-характеристики"]::after {
+    right: 0;
+}
+</style>
+
+## Эксплуатационные характеристики {#эксплуатационные-характеристики}
+
+<div class="table-wrapper" style="text-align: center;">
+  <table style="border-collapse: collapse; display: inline-block; margin: 0 auto; text-align: left;">
+    <thead>
+      <tr>
+        <th rowspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">Параметр</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">Значение фактора</th>
+      </tr>
+      <tr>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Без лака</th>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">С лаком</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Температура среды, °С</strong></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от минус 40 до 60</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Относительная влажность воздуха, %</strong></td>
+        <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 70</td>
+        <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 95</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Атмосферное давление, кПа</strong></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 84,0 до 106,7</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">0,35 мм с частотой 55 Гц</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+h2[id="индикация"] {
+    text-align: center;
+    position: relative;
+    margin: 1rem 0;
+    padding: 0 12rem !important;
+}
+
+h2[id="индикация"]::before,
+h2[id="индикация"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 290px;
+    height: 1px;
+    background-color: #ccc !important;
+}
+
+h2[id="индикация"]::before {
+    left: 0;
+}
+
+h2[id="индикация"]::after {
+    right: 0;
+}
+</style>
+
+## Индикация {#индикация}
+
+<div style="text-align: center; margin: 1.5em 0;">
+  <div style="display: inline-block; max-width: 800px; width: 100%;">
+    <table style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Обозначение</th>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Индикация</th>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">P</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие напряжения питания</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">P</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Отсутствие напряжения питания</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие соединения по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot ethernet-pulse"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Обмен данными по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Отсутствие соединения по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot orange"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Модуль в рабочем состоянии</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot orange-pulse"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Выполнение загрузки</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">1 - 3</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Пользовательский светодиод 1 - 3 включен</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">1 - 3</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Пользовательский светодиод 1 - 3 выключен</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">BL</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot red"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Низкое напряжение питания</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">BL</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Рабочее напряжение питания</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <style>
 .status-dot {
@@ -118,21 +310,10 @@
     margin-right: 2px;
 }
 
-.status-dot.green {
-    background-color: #0ec20eff;
-}
-
-.status-dot.red {
-    background-color: #d82e2eff;
-}
-
-.status-dot.orange {
-    background-color: #ffa500;
-}
-
-.status-dot.off {
-    background-color: #cccccc;
-}
+.status-dot.green { background-color: #0ec20eff; }
+.status-dot.red { background-color: #d82e2eff; }
+.status-dot.orange { background-color: #ffa500; }
+.status-dot.off { background-color: #cccccc; }
 
 .status-dot.ethernet-pulse {
     background-color: #0ec20eff;
@@ -147,39 +328,13 @@
 }
 
 @keyframes soft-pulse {
-    0% {
-        opacity: 0.4;
-        transform: scale(0.9);
-        box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
-    }
-    100% {
-        opacity: 0.4;
-        transform: scale(0.9);
-        box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
-    }
+    0%, 100% { opacity: 0.4; transform: scale(0.9); box-shadow: 0 0 5px rgba(0, 255, 0, 0.3); }
+    50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); }
 }
 
 @keyframes soft-pulse-orange {
-    0% {
-        opacity: 0.4;
-        transform: scale(0.9);
-        box-shadow: 0 0 5px rgba(255, 165, 0, 0.3);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-        box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
-    }
-    100% {
-        opacity: 0.4;
-        transform: scale(0.9);
-        box-shadow: 0 0 5px rgba(255, 165, 0, 0.3);
-    }
+    0%, 100% { opacity: 0.4; transform: scale(0.9); box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); }
+    50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); }
 }
 </style>
 

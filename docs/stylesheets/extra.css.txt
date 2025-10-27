@@ -1,0 +1,17 @@
+h2[id="индикация"]::before,
+h2[id="индикация"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 700px;           /* Длина линий */
+    height: 1px;
+    background-color: #ccc; /* Цвет линий */
+}
+
+h2[id="индикация"]::before {
+    left: 0;
+}
+
+h2[id="индикация"]::after {
+    right: 0;
+}

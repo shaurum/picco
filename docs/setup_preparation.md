@@ -20,7 +20,7 @@
     !!! note "Примечание"
         IP-адрес задается следующим образом: `192.168.1.Х`, где `Х` — любое число от 2 до 254, кроме 42.
 
-    ![Image title](setup_preparation/IP.png){ .fullscreen-image width="280" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+    ![Image title](setup_preparation/IP.webp){ .fullscreen-image width="280" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
     <style>
     .fullscreen-image {

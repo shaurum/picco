@@ -8,3 +8,22 @@
 
   
   }
+
+/* Горизонтальные линии по бокам заголовка */
+h2[id="индикация"]::before,
+h2[id="индикация"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #007acc;
+}
+
+h2[id="индикация"]::before {
+    left: 0;
+}
+
+h2[id="индикация"]::after {
+    right: 0;
+}
