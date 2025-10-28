@@ -15,3 +15,24 @@ h2[id="индикация"]::before {
 h2[id="индикация"]::after {
     right: 0;
 }
+
+/* Сбрасываем ограничения MkDocs */
+.md-main__inner, 
+.md-content {
+    max-width: none !important;
+}
+
+/* Принудительно растягиваем все таблицы */
+table {
+    width: 100% !important;
+    min-width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.md-typeset__table,
+.md-typeset table {
+    width: 100% !important;
+    display: table !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

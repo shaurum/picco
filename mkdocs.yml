@@ -13,7 +13,7 @@ theme:
     - search.highlight
     - content.code.copy 
   extra_css:
-    - stylesheetss/extra.css
+  - stylesheets/extra.css
   
   logo: img/logo_old.svg
   favicon: img/favicon.svg
@@ -23,13 +23,6 @@ theme:
  
   language: ru
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: Red
-      accent: grey
 
     # Light Mode
     - scheme: default
