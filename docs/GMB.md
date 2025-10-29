@@ -40,36 +40,7 @@
 
 <div style="clear: both;"></div>
 
-<style>
-h2[id="технические-характеристики"] {
-    text-align: center;
-    position: relative;
-    margin: 0,5rem 0;
-    padding: 0 6rem !important;
-    white-space: nowrap; /* Запрещает перенос текста */
-}
-
-h2[id="технические-характеристики"]::before,
-h2[id="технические-характеристики"]::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 185px;
-    height: 1px;
-    background-color: #ccc !important;
-}
-
-h2[id="технические-характеристики"]::before {
-    left: 0;
-}
-
-h2[id="технические-характеристики"]::after {
-    right: 0;
-}
-</style>
-
-## Технические характеристики {#технические-характеристики} 
-
+## Технические характеристики  
 
 <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
   <colgroup>
@@ -138,36 +109,7 @@ h2[id="технические-характеристики"]::after {
   </tbody>
 </table>
 
-
-<style>
-h2[id="эксплуатационные-характеристики"] {
-    text-align: center;
-    position: relative;
-    margin: 1rem 0;
-    padding: 0 5rem !important;
-    white-space: nowrap; /* Запрещает перенос текста */
-}
-
-h2[id="эксплуатационные-характеристики"]::before,
-h2[id="эксплуатационные-характеристики"]::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 140px;
-    height: 1px;
-    background-color: #ccc !important;
-}
-
-h2[id="эксплуатационные-характеристики"]::before {
-    left: 0;
-}
-
-h2[id="эксплуатационные-характеристики"]::after {
-    right: 0;
-}
-</style>
-
-## Эксплуатационные характеристики {#эксплуатационные-характеристики}
+## Эксплуатационные характеристики 
 
 <div style="width: 100%; display: grid; grid-template-columns: 1fr;">
   <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">
@@ -208,34 +150,7 @@ h2[id="эксплуатационные-характеристики"]::after {
   </table>
 </div>
 
-<style>
-h2[id="индикация"] {
-    text-align: center;
-    position: relative;
-    margin: 1rem 0;
-    padding: 0 12rem !important;
-}
-
-h2[id="индикация"]::before,
-h2[id="индикация"]::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 290px;
-    height: 1px;
-    background-color: #ccc !important;
-}
-
-h2[id="индикация"]::before {
-    left: 0;
-}
-
-h2[id="индикация"]::after {
-    right: 0;
-}
-</style>
-
-## Индикация {#индикация}
+## Индикация 
 
 <div style="width: 100%; display: grid; grid-template-columns: 1fr;">
   <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">

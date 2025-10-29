@@ -7,15 +7,15 @@
 1. [Скачать архив](setup_preparation/CODESYS%2064%203.5.21.30.zip) для установки CODESYS.
 2. Распакуйте архив в отдельную папку и запустите установщика с названием CODESYS Sandbox Prerequisites 3.5.21.30.
 
-    В появившемся окне нажмите кнопку **Next**, чтобы начать установку.
+    В появившемся окне нажмите **Next**, чтобы начать установку.
 
     ![Image title](setup_preparation/install1.jpg){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    В следующем окне ознакомьтесь с текстом лицензионного соглашения, выберите пункт **I accept the terms in the license agreement** и нажмите кнопку **Next**.
+    В следующем окне ознакомьтесь с текстом лицензионного соглашения, выберите пункт **I accept the terms in the license agreement** и нажмите **Next**.
 
     ![Image title](setup_preparation/install2.jpg){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    В следующем окне нажмите кнопку **Install** для запуска процесса установки.
+    В следующем окне нажмите **Install** для запуска процесса установки.
 
     ![Image title](setup_preparation/install3.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
@@ -23,23 +23,23 @@
 
     ![Image title](setup_preparation/install4.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    Нажмите кнопку **Finish** для закрытия этого окна.
+    Нажмите **Finish** для закрытия этого окна.
 
 3. Для удаленного подключения к контроллеру установите [CODESYS Gateway](setup_preparation/CODESYS Gateway 3.5.21.30.exe).
 
-    После запуска появиться стартовое окно установщика. Нажмите кнопку **Next**.
+    После запуска появиться стартовое окно установщика. Нажмите **Next**.
 
     ![Image title](setup_preparation/get_1.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    В следующем окне ознакомьтесь с текстом лицензионного соглашения, выберите пункт I **accept the terms in the license agreement** и нажмите кнопку **Next**:
+    В следующем окне ознакомьтесь с текстом лицензионного соглашения, выберите пункт I **accept the terms in the license agreement** и нажмите **Next**.
 
     ![Image title](setup_preparation/get_2.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    Далее ознакомтесь с информацией о выпуске, после чего выберите пункт **I have read the information** и нажмите кнопку **Next**
+    Далее ознакомтесь с информацией о выпуске, после чего выберите пункт **I have read the information** и нажмите **Next**.
 
     ![Image title](setup_preparation/get_3.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    В следующем окне выберите директорию, в которую будет установлен CODESYS, и нажмите кнопку **Next**
+    В следующем окне выберите директорию, в которую будет установлен CODESYS, и нажмите **Next**.
 
     ![Image title](setup_preparation/get_4.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
@@ -47,11 +47,11 @@
 
     ![Image title](setup_preparation/get_5.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    В следующем окне нажмите кнопку **Install** для запуска процесса установки.
+    В следующем окне нажмите **Install** для запуска процесса установки.
 
     ![Image title](setup_preparation/get_6.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
-    После завершения установки в появившемся окне нажмите кнопку **Finish**, чтобы завершить процесс.
+    После завершения установки в появившемся окне нажмите **Finish**, чтобы завершить процесс.
 
     ![Image title](setup_preparation/get_7.png){ width="400" style="display: block; margin-left: auto; margin-right: auto;" }
 
@@ -66,7 +66,7 @@
 
 После этого откроется окно создания проектов. Выберите **Стандартный проект**.
 
-В нижней части окна выберите имя файла проекта и директорию, в которой он будет сохранен, после чего нажмите **Ок**.
+В нижней части окна выберите имя файла проекта и директорию, в которой он будет сохранен, после чего нажмите **ОK**.
 
 
 <div style="text-align: center;">
@@ -94,7 +94,7 @@
 }
 </style>
 
-В следующем окне вы увидите список объектов, которые будут сосзданы для нового проекта. Нажмите **Ок**.
+В следующем окне вы увидите список объектов, которые будут сосзданы для нового проекта. Нажмите **ОK**.
 
 <div style="text-align: center;">
     <img src="setup_preparation/C_2.png" 
@@ -121,7 +121,7 @@
 }
 </style>
 
-Интерфейс CODESYS выглядит следующим образом
+Интерфейс CODESYS выглядит следующим образом:
 
 <div style="text-align: center;">
     <img src="setup_preparation/C_3.png" 

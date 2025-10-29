@@ -36,3 +36,21 @@ table {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+.section-header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 0;
+    position: relative;
+    color: #2c3e50;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #007acc, #00c9ff);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
