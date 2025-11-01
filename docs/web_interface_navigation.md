@@ -1,7 +1,7 @@
 # Web-интерфейс
 ## Настройка интерфейсов
 
-![Image title](setup_preparation/web_2.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+![Image title](setup_preparation/web_2.webp){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
 <style>
 .fullscreen-image {
@@ -29,7 +29,7 @@
 
 При переходе в веб-интерфейс на экране отображается раздел "Нстройка сети", где представлены текущие параметры всех сетевых интерфейсов. Каждый интерфейс сопоставлен с физическим портом на основном модуле и имеет кнопку "Настроить" для изменения параметров.  
 
-![Image title](setup_preparation/settings.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+![Image title](setup_preparation/settings.webp){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
 <style>
 .fullscreen-image {
@@ -58,7 +58,7 @@
 
 ## Системное время
 
-![Image title](setup_preparation/time.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+![Image title](setup_preparation/time.webp){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
 <style>
 .fullscreen-image {
@@ -113,7 +113,7 @@ document.addEventListener('keydown', function(e) {
 В поле "NTP-серверы" можно указать один или несколько адресов NTP-серверов.
 
 !!! note "Примечание"
-      Рекомендуется включить NTP-синхронизацию, чтобы обеспечить точность времени.
+      Рекомендуется настроить синхронизацию времени при помощи NTP.
      
 После завершения настройки времени сохраните изменения.
 

@@ -60,13 +60,13 @@
     - Нажмите на иконку профиля в правом верхнем углу.
     - В выпадающем меню выберите пункт «Профиль».
 
-![Image title](setup_preparation/web.png){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+![Image title](setup_preparation/web.webp){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
    <ul style="margin-left: 45px;">
 <li>В открывшемся окне введите текущий пароль, задайте и подтвердите новый пароль, затем нажмите кнопку «Сохранить изменения».</li>
 </ul>
 
-![Image title](setup_preparation/password.png){ .fullscreen-image width="300" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+![Image title](setup_preparation/password.webp){ .fullscreen-image width="300" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
 
 <style>
 .fullscreen-image {

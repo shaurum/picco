@@ -57,7 +57,7 @@ nav:
     - Настройка: 
       - Начальная настройка контроллера: setup_preparation.md
       - Навигация по web-интерфейсу: web_interface_navigation.md
-      - Работа прибора с CODESYS V3.5: codesys_integration.md
+      - Быстрый старт: codesys_integration.md
   - Продукты:
     - Основные модули:
       - Модуль основной SA-P5-GMB: GMB.md
