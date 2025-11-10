@@ -12,20 +12,68 @@
 
  При сборке контроллера без функции горячей замены модулей потребляемая мощность всех модулей после Модуля ввода питания до следующего Модуля ввода питания не должна превышать 48 Вт.
 
- | Наименование модуля | Максимальная потребляемая мощность, Вт |
-| :--- | :--- |
-| GMB | 7,5 |
-| DI | 5 |
-| DO | 3 |
-| AIC | 4 |
-| AIV | 2,5 |
-| AITC | 5,5 |
-| AITR | 2,5 |
-| AO | 7,5 |
-| SPPC | 3 |
-| SPPM | 0,5 |
-| SPTM | 0 |
-| IF485/422 | 2,5 |
+ <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
+  <colgroup>
+    <col style="width: 250px;">   <!-- Фиксированная ширина для наименования модуля -->
+    <col style="width: 150px;">   <!-- Фиксированная ширина для мощности -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наименование модуля</th>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Максимальная потребляемая мощность, Вт</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">GMB</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">7,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">DI</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">DO</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">3</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">AIC</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">AIV</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">2,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">AITC</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">5,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">AITR</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">2,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">AO</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">7,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">SPPC</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">3</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">SPPM</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0,5</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">SPTM</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">IF485/422</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">2,5</td>
+    </tr>
+  </tbody>
+</table>
 
 _Пример: после основного модуля необходимо поставить в группу 2 модуля DI, 5 модулей DO и 2 модуля AITC._ 
 
