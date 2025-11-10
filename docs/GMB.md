@@ -40,6 +40,301 @@
 
 <div style="clear: both;"></div>
 
+<div class="interactive-image">
+  <img src="img/connection/GMB.svg" alt="Панель управления устройством" class="main-image">
+  
+  <!-- Точка на батарейке -->
+  <div class="point" style="top: 25%; left: 53%;" data-video="video-battery">
+    <span class="dot"></span>
+    <div class="tooltip">Батарейка</div>
+  </div>
+  
+  <!-- Точка на кнопке СРОС -->
+  <div class="point" style="top: 14%; left: 33%;" data-video="video-emergency">
+    <span class="dot"></span>
+    <div class="tooltip">Кнопка Сброс</div>
+  </div>
+  
+  <!-- Точка на переключателе РАН/СТОП -->
+  <div class="point" style="top: 43%; left: 22%;" data-video="video-switch">
+    <span class="dot"></span>
+    <div class="tooltip">Переключатель RUN/STOP</div>
+  </div>
+</div>
+
+<!-- Попап для батарейки -->
+<div id="video-battery" class="video-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Батарейка</h3>
+    <video controls width="70%" loop muted playsinline>
+      <source src="img/animation/battery.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео тег.
+    </video>
+  </div>
+</div>
+
+<!-- Попап для кнопки CРОС -->
+<div id="video-emergency" class="video-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Кнопка Сброс</h3>
+    <video controls width="70%" loop muted playsinline>
+      <source src="img/animation/reset.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео тег.
+    </video>
+  </div>
+</div>
+
+<!-- Попап для переключателя РАН/СТОП -->
+<div id="video-switch" class="video-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Переключатель RUN/STOP</h3>
+    <video controls width="70%" loop muted playsinline>
+      <source src="img/animation/run_stop.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео тег.
+    </video>
+  </div>
+</div>
+
+<style>
+.interactive-image {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border: 1px;
+  border-radius: 4px;
+}
+
+.point {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #f39200;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0,0,0,0.7);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.point:hover .dot {
+  transform: scale(1.4);
+  background: #ffaa33;
+  animation: none;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.point:hover .tooltip {
+  opacity: 1;
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  margin: 2% auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #f39200;
+  padding-bottom: 10px;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  position: relative;
+}
+
+.video-container video {
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-content p {
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.close:hover {
+  color: #f39200;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(243, 146, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(243, 146, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(243, 146, 0, 0); }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .point {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .tooltip {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  
+  .modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    width: 95%;
+  }
+
+  .video-container {
+    min-height: 300px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const points = document.querySelectorAll('.point');
+  const closeButtons = document.querySelectorAll('.close');
+  
+  // Обработчик для точек
+  points.forEach(point => {
+    point.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const videoId = this.getAttribute('data-video');
+      const modal = document.getElementById(videoId);
+      if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        
+        // Автозапуск видео с бесконечным повторением
+        const video = modal.querySelector('video');
+        if (video) {
+          video.currentTime = 0;
+          video.play().catch(error => {
+            console.error('Ошибка воспроизведения:', error);
+          });
+        }
+      }
+    });
+  });
+  
+  // Закрытие модальных окон
+  closeButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const modal = this.closest('.video-modal');
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+  
+  // Закрытие по клику вне окна
+  window.addEventListener('click', function(e) {
+    if (e.target.classList.contains('video-modal')) {
+      const modals = document.querySelectorAll('.video-modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';
+      });
+      document.body.style.overflow = 'auto';
+    }
+  });
+  
+  // Закрытие по ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const modals = document.querySelectorAll('.video-modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';
+      });
+      document.body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
+
+
 ## Технические характеристики  
 
 <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
