@@ -66,11 +66,11 @@
 <div id="video-battery" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Батарейка</h3>
-    <video controls width="70%" loop muted playsinline>
+    <video controls loop muted playsinline>
       <source src="img/animation/battery.mp4" type="video/mp4">
       Ваш браузер не поддерживает видео тег.
     </video>
+    <div class="video-title">Батарейка</div>
   </div>
 </div>
 
@@ -78,11 +78,11 @@
 <div id="video-emergency" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Кнопка Сброс</h3>
-    <video controls width="70%" loop muted playsinline>
+    <video controls loop muted playsinline>
       <source src="img/animation/reset.mp4" type="video/mp4">
       Ваш браузер не поддерживает видео тег.
     </video>
+    <div class="video-title">Кнопка Сброс</div>
   </div>
 </div>
 
@@ -90,11 +90,11 @@
 <div id="video-switch" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h3>Переключатель RUN/STOP</h3>
-    <video controls width="70%" loop muted playsinline>
+    <video controls loop muted playsinline>
       <source src="img/animation/run_stop.mp4" type="video/mp4">
       Ваш браузер не поддерживает видео тег.
     </video>
+    <div class="video-title">Переключатель RUN/STOP</div>
   </div>
 </div>
 
@@ -171,67 +171,70 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.9);
-  backdrop-filter: blur(5px);
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(10px);
 }
 
 .modal-content {
-  position: relative;
-  margin: 2% auto;
-  padding: 25px;
-  width: 90%;
-  max-width: 900px;
-  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
-.modal-content h3 {
-  margin-top: 0;
-  color: #333;
-  border-bottom: 2px solid #f39200;
-  padding-bottom: 10px;
-}
-
-.video-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  position: relative;
-}
-
-.video-container video {
-  max-width: 70%;
-  max-height: 70%;
+.modal-content video {
+  display: block;
   width: auto;
   height: auto;
+  max-width: 80vw;
+  max-height: 80vh;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.modal-content p {
-  color: #666;
-  font-style: italic;
-  margin-top: 10px;
+.video-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 30px 20px 15px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .close {
   position: absolute;
   top: 15px;
-  right: 20px;
-  font-size: 32px;
+  right: 15px;
+  font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color: white;
   cursor: pointer;
   z-index: 10001;
   transition: color 0.3s;
   line-height: 1;
+  background: rgba(0,0,0,0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.3);
 }
 
 .close:hover {
   color: #f39200;
+  background: rgba(0,0,0,0.7);
+  border-color: rgba(255,255,255,0.5);
 }
 
 @keyframes pulse {
@@ -258,13 +261,37 @@
   }
   
   .modal-content {
-    margin: 5% auto;
-    padding: 20px;
-    width: 95%;
+    max-width: 95vw;
+    max-height: 95vh;
   }
+  
+  .modal-content video {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    padding: 25px 15px 10px 15px;
+  }
+  
+  .close {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
+}
 
-  .video-container {
-    min-height: 300px;
+@media (max-width: 480px) {
+  .video-title {
+    font-size: 14px;
+    padding: 20px 10px 8px 10px;
+  }
+  
+  .modal-content video {
+    max-height: 80vh;
   }
 }
 </style>
