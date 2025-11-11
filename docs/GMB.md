@@ -1,68 +1,82 @@
 # Модуль основной SA-P5-GMB 
 
 ## Общие сведения
+ 
+<!-- Модуль GMB - адаптивный блок -->
+<div class="gmb-block" style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
+    <!-- Изображение -->
+    <img src="img/modules/GMB.png" alt="Модуль основной GMB" 
+         width="150" 
+         style="flex-shrink: 0; max-width: 30%; height: auto; width: auto;"
+         loading="lazy">
 
-??? example "Тестирование"
-
-    На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
-<div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
-    <img src="img/modules/GMB.png" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
-
-    <div style="flex: 1; text-align: justify;">
-        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Наименование:</strong> Модуль основной GMB</p>
+    <!-- Текст -->
+    <div style="flex: 1; text-align: left; padding: 0 1rem; box-sizing: border-box;">
+        <p style="text-align: left; margin: 0 0 1rem 0; line-height: 1.4;">
+            <strong>Наименование:</strong><br>
+            Модуль основной GMB
+        </p>
         
-        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Исполнения:</strong><br>
-        - SA-P5-GMB (без покрытия)<br>
-        - SA-P5-GMB-V (с лаковым покрытием)</p>
+        <p style="text-align: left; margin: 0 0 1rem 0; line-height: 1.4;">
+            <strong>Исполнения:</strong><br>
+            • SA-P5-GMB (без покрытия)<br>
+            • SA-P5-GMB-V (с лаковым покрытием)
+        </p>
         
-        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Назначение:</strong><br>
-        Модуль основной GMB (далее-модуль) является центральным компонентом системы управления.</p>
+        <p style="text-align: left; margin: 0 0 1rem 0; line-height: 1.4;">
+            <strong>Назначение:</strong><br>
+            Модуль основной GMB (далее-модуль) является центральным компонентом системы управления.
+        </p>
         
-        <p style="text-align: justify; margin: 0 0 0 0;"><strong>Функции:</strong><br>
-        - выполнение пользовательской прикладной программы управления;<br>
-        - обмен информацией со сторонним устройствами по встроенным интерфейсам;<br>
-        - звуковое оповещение, при загрузке данных и при сбросе настроек;<br>
-        - опрос модулей расширения.</p>
+        <p style="text-align: left; margin: 0 0 0 0; line-height: 1.4;">
+            <strong>Функции:</strong><br>
+            • выполнение пользовательской прикладной программы управления;<br>
+            • обмен информацией со сторонними устройствами по встроенным интерфейсам;<br>
+            • звуковое оповещение при загрузке данных и при сбросе настроек;<br>
+            • опрос модулей расширения.
+        </p>
     </div>
 </div>
 
-<div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
+<!-- Описание + Интерактивная схема -->
+<div class="description-scheme" style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
+    <!-- Описание -->
     <div style="flex: 1; text-align: justify;">
         <p style="text-align: justify; margin: 0 0 8px 0;"><strong>Описание:</strong></p>
         <p style="text-align: justify; margin: 0 0 8px 0;">На передней панели модуля расположен переключатель режима работы RUN/STOP, предназначенный для запуска и остановки выполнения цикла основной программы.</p>
         <p style="text-align: justify; margin: 0 0 0 0;">Для сброса до заводских настроек на верхней грани модуля предусмотрена скрытая кнопка «Сброс». Необходимо нажать на кнопку тонким заостренным предметом и удерживать до появления трех звуковых сигналов, подтверждающих выполнение сброса.</p>
     </div>
     
-    <img src="img/connection/GMB.svg" alt="Image title" width="340" style="flex-shrink: 0; margin: 0;">
+    <!-- Интерактивная схема -->
+    <div class="interactive-image">
+        <img src="img/connection/GMB.svg" alt="Панель управления устройством" class="main-image">
+        
+        <!-- Точка на батарейке -->
+        <div class="point" style="top: 25%; left: 53%;" data-video="video-battery">
+            <span class="dot"></span>
+            <div class="tooltip">Батарейка</div>
+        </div>
+        
+        <!-- Точка на кнопке СРОС -->
+        <div class="point" style="top: 14%; left: 33%;" data-video="video-emergency">
+            <span class="dot"></span>
+            <div class="tooltip">Кнопка Сброс</div>
+        </div>
+        
+        <!-- Точка на переключателе РАН/СТОП -->
+        <div class="point" style="top: 43%; left: 22%;" data-video="video-switch">
+            <span class="dot"></span>
+            <div class="tooltip">Переключатель RUN/STOP</div>
+        </div>
+    </div>
 </div>
 
+<!-- Дополнительный текст — теперь он идёт ПОСЛЕ схемы, в потоке документа -->
 <p style="text-align: justify; margin: 0 0 0 0;">Также для обеспечения автономной работы часов реального времени при отключении основного питания на верхней грани корпуса модуля предусмотрен разъём под батарейку типа CR1620.</p>
 
 <div style="clear: both;"></div>
 
-<div class="interactive-image">
-  <img src="img/connection/GMB.svg" alt="Панель управления устройством" class="main-image">
-  
-  <!-- Точка на батарейке -->
-  <div class="point" style="top: 25%; left: 53%;" data-video="video-battery">
-    <span class="dot"></span>
-    <div class="tooltip">Батарейка</div>
-  </div>
-  
-  <!-- Точка на кнопке СРОС -->
-  <div class="point" style="top: 14%; left: 33%;" data-video="video-emergency">
-    <span class="dot"></span>
-    <div class="tooltip">Кнопка Сброс</div>
-  </div>
-  
-  <!-- Точка на переключателе РАН/СТОП -->
-  <div class="point" style="top: 43%; left: 22%;" data-video="video-switch">
-    <span class="dot"></span>
-    <div class="tooltip">Переключатель RUN/STOP</div>
-  </div>
-</div>
-
-<!-- Попап для батарейки -->
+<!-- Попапы для видео -->
 <div id="video-battery" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -74,7 +88,6 @@
   </div>
 </div>
 
-<!-- Попап для кнопки CРОС -->
 <div id="video-emergency" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -86,7 +99,6 @@
   </div>
 </div>
 
-<!-- Попап для переключателя РАН/СТОП -->
 <div id="video-switch" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -99,6 +111,7 @@
 </div>
 
 <style>
+/* --- СТИЛИ ДЛЯ ВСЕХ УСТРОЙСТВ --- */
 .interactive-image {
   position: relative;
   display: inline-block;
@@ -243,55 +256,94 @@
   100% { box-shadow: 0 0 0 0 rgba(243, 146, 0, 0); }
 }
 
-/* Адаптивность для мобильных */
+/* --- АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА (≤ 768px) --- */
 @media (max-width: 768px) {
+  /* Блок с изображением и текстом — в один столбец */
+  .gmb-block {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gmb-block img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .gmb-block div {
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+  }
+
+  /* Блок с описанием и схемой — в один столбец */
+  .description-scheme {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .description-scheme .interactive-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Увеличиваем точки для мобильных */
   .point {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dot {
     width: 20px;
     height: 20px;
   }
-  
-  .dot {
-    width: 14px;
-    height: 14px;
-  }
-  
+
   .tooltip {
     font-size: 12px;
     padding: 6px 10px;
   }
-  
+
+  /* Увеличиваем окно видео на мобильных */
   .modal-content {
     max-width: 95vw;
     max-height: 95vh;
   }
-  
+
   .modal-content video {
     max-width: 95vw;
     max-height: 85vh;
   }
-  
+
   .video-title {
     font-size: 16px;
     padding: 25px 15px 10px 15px;
   }
-  
+
   .close {
-    top: 10px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
-    font-size: 24px;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 32px;
   }
 }
 
+/* --- Для очень маленьких экранов (≤ 480px) --- */
 @media (max-width: 480px) {
   .video-title {
     font-size: 14px;
     padding: 20px 10px 8px 10px;
   }
-  
+
   .modal-content video {
     max-height: 80vh;
+  }
+
+  /* Дополнительный текст — делаем более заметным на мелких экранах */
+  p[style*="Также для обеспечения"] {
+    margin: 1.2rem 0 0 0 !important;
+    font-size: clamp(14px, 4vw, 16px) !important;
+    line-height: 1.5 !important;
   }
 }
 </style>
@@ -360,7 +412,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
 
 ## Технические характеристики  
 
@@ -434,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Эксплуатационные характеристики 
 
 <div style="width: 100%; display: grid; grid-template-columns: 1fr;">
-  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">
+  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; margin-bottom: 0;">
     <colgroup>
       <col style="width: 500px;">   <!-- Параметр -->
       <col style="width: 250px;">   <!-- Без лака -->
@@ -475,7 +526,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Индикация 
 
 <div style="width: 100%; display: grid; grid-template-columns: 1fr;">
-  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">
+  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
     <colgroup>
       <col style="width: 200px;">   <!-- Параметр -->
       <col style="width: 200px;">   <!-- Без лака -->
