@@ -639,9 +639,9 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_GMB.svg){ width="100"}
+    ![Image title](img/dimensions/dimensions_GMB.svg){ width="580"}
 === "Установочные размеры"
-    ![Image title](img/dimensions/installation_dimensions_GMB.svg){ width="100"}
+    ![Image title](img/dimensions/installation_dimensions_GMB.svg){ width="580"}
 
 
 ## Файлы для скачивания
