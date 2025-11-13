@@ -287,7 +287,7 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/dimensions_module.svg){ width="580"  }
+    ![Image title](img/dimensions/dimensions_module.svg){width="580"}
 === "Установочные размеры"
     ![alt text](img/dimensions/installation_dimensions_module.svg) 
 
@@ -305,7 +305,7 @@ style="width: 100%; height: 500px;">
 
 
 ## Программное обеспечение
-Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативного управления выходами модуля
+Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативного управления выходами модуля.
 
 ## PDO (Process Data Objects)
 PDO используются для передачи данных в реальном времени. Модуль предоставляет два набора входных данных, передаваемых через структуры TxPDO "Byte_Lo" и TxPDO "Byte_Hi". Каждый бит в двух 8-битных значениях соответствует состоянию одного из 16 каналов 
