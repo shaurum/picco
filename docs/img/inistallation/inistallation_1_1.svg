@@ -4946,46 +4946,8 @@
   </g>
   <g id="_Слой_6" data-name="Слой 6">
     <line class="cls-4" x1="1.29" y1="56.48" x2="24.63" y2="52.99"/>
-    <line class="cls-4" x1="59.95" y1="51.39" x2="75.99" y2="48.99"/>
     <line class="cls-4" x1="59.95" y1="47" x2="74.15" y2="44.88"/>
     <line class="cls-4" x1="59.95" y1="48.88" x2="75.87" y2="46.6"/>
-    <line class="cls-4" x1="74.15" y1="44.88" x2="74.15" y2="40.28"/>
-    <g id="ARC-249" data-name="ARC">
-      <path class="cls-4" d="m75.99,47.35c.05-.52-.17-1.02-.57-1.35"/>
-    </g>
-    <g id="LINE-1145" data-name="LINE">
-      <line class="cls-4" x1="75.99" y1="48.99" x2="75.99" y2="47.35"/>
-    </g>
-    <g id="LINE-1146" data-name="LINE">
-      <line class="cls-4" x1="75.42" y1="46" x2="74.43" y2="45.55"/>
-    </g>
-    <g id="ARC-250" data-name="ARC">
-      <path class="cls-4" d="m74.15,44.88c-.02.26.08.51.28.67"/>
-    </g>
-    <path class="cls-4" d="m1.01,55.81c-.02.26.08.51.28.67"/>
-    <g id="LINE-1147" data-name="LINE">
-      <line class="cls-4" x1="2.28" y1="56.93" x2="1.29" y2="56.48"/>
-    </g>
-    <g id="ARC-251" data-name="ARC">
-      <path class="cls-4" d="m2.85,58.28c.05-.52-.17-1.02-.57-1.35"/>
-    </g>
-    <g id="LINE-1148" data-name="LINE">
-      <line class="cls-4" x1="2.85" y1="59.92" x2="2.85" y2="58.28"/>
-    </g>
-    <g id="LINE-1149" data-name="LINE">
-      <line class="cls-4" x1="2.56" y1="59.79" x2="2.85" y2="59.92"/>
-    </g>
-    <g id="LINE-1150" data-name="LINE">
-      <line class="cls-4" x1="2.56" y1="58.15" x2="2.56" y2="59.79"/>
-    </g>
-    <g id="ARC-252" data-name="ARC">
-      <path class="cls-4" d="m2.56,58.15c.02-.26-.08-.51-.28-.67"/>
-    </g>
-    <g id="LINE-1151" data-name="LINE">
-      <line class="cls-4" x1="1.29" y1="57.03" x2="2.28" y2="57.47"/>
-    </g>
-    <path class="cls-4" d="m.72,55.68c-.05.52.17,1.02.57,1.35"/>
-    <line class="cls-4" x1="2.85" y1="59.92" x2="17.55" y2="57.72"/>
     <line class="cls-4" x1="2.76" y1="57.6" x2="24.63" y2="54.31"/>
   </g>
   <g id="_Слой_9" data-name="Слой 9">
