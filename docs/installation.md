@@ -132,13 +132,11 @@ document.getElementById('galleryModal').addEventListener('click', function(e) {
          width="250" 
          style="cursor: zoom-in;"
          onclick="openGallery2(0)">
-    
     <img src="img/inistallation/inistallation_2_2.svg" 
          alt="Installation 2-2" 
          width="240" 
          style="cursor: zoom-in;"
          onclick="openGallery2(1)">
-    
     <img src="img/inistallation/inistallation_2_3.svg" 
          alt="Installation 2-3" 
          width="240" 
@@ -150,27 +148,27 @@ document.getElementById('galleryModal').addEventListener('click', function(e) {
 <div id="galleryModal2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
     
     <!-- Кнопка закрытия -->
-    <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+ <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
-    </div>
+ </div>
     
     <!-- Кнопка назад -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
     
     <!-- Кнопка вперед -->
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
     
     <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+ <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
         <img id="galleryImage2" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
     </div>
     
     <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+ <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
         <span id="imageCounter2">1 / 3</span>
     </div>
 </div>
@@ -243,6 +241,9 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 });
 </script>
 
+!!! danger "Обратите внимание"
+    На первый и последний модуль в группе в обязательном порядке ставится заглушка.
+
 ## Монтаж подводящих кабелей
 !!! Info "Подготовка к монтажу"
     Перед началом работ по подключению необходимо убедиться, что кабели обесточены. 
@@ -251,7 +252,7 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 2. При подключении многожильного провода без НШВИ надавить на защелку, находящуюся на клеммной колодке напротив нужного разъема, и одновременно подключить провод к клеммной колодке путем ввода до упора.
 3. Подключить все необходимые подводящие кабели на каждый модуль.
     <!-- Первая строка из 3 изображений -->
-    <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
+ <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
         <img src="img/inistallation/inistallation_3_1.svg" 
             alt="Installation 3-1" 
             width="245" 
@@ -270,35 +271,35 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
     </div>
 
     <!-- Модальное окно галереи для первой группы -->
-    <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
+ <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
         
         <!-- Кнопка закрытия -->
-        <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+ <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
             <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
         </div>
         
         <!-- Кнопка назад -->
-        <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
             <button onclick="prevImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
         </div>
         
         <!-- Кнопка вперед -->
-        <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
             <button onclick="nextImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
         </div>
         
         <!-- Область изображения -->
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+ <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
             <img id="galleryImage3A" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
         </div>
         
         <!-- Счетчик изображений -->
-        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+ <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
             <span id="imageCounter3A">1 / 3</span>
         </div>
     </div>
 
-    <script>
+ <script>
     // Данные для галереи 3A
     const images3A = [
         'img/inistallation/inistallation_3_1.svg',
@@ -392,27 +393,27 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 <div id="galleryModal3B" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
     
     <!-- Кнопка закрытия -->
-    <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+ <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
     
     <!-- Кнопка назад -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
     
     <!-- Кнопка вперед -->
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
     
     <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+ <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
         <img id="galleryImage3B" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
     </div>
     
     <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+ <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
         <span id="imageCounter3B">1 / 3</span>
     </div>
 </div>
@@ -484,7 +485,9 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
     }
 });
 </script>
-Для монтажа кабелей должны выполняться следующие требования:
+<div style="margin-bottom: 80px;"></div>
+ <span style="font-size:25px;"> Для монтажа кабелей должны выполняться следующие требования: </span>
+
 
 - Для обеспечения надёжности электрических соединений рекомендуется использовать только медные провода. 
 - При использовании одножильного провода перед соединением необходимо зачистить на длину 12 мм, с таким расчетом, чтобы срез изоляции плотно прилегал к клеммной колодке, т.е. чтобы оголенные участки провода не выступали за ее пределы.
@@ -498,9 +501,9 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
 ## Демонтаж подводящих кабелей 
 !!! Info "Подготовка к демонтажу"
     Перед началом работ необходимо убедиться, что кабели обесточены. 
-2. Открутить винты на клеммной колодке.
-3. Отсоединить клеммную колодку от модуля потянув на себя.
-4. Надавить отверткой на защелку оранжевого цвета, расположенной на клеммной колодке напротив демонтируемого кабеля, и одновременно потянуть демонтируемый кабель на себя.
+1. Открутить винты на клеммной колодке.
+2. Отсоединить клеммную колодку от модуля потянув на себя.
+3. Надавить отверткой на защелку оранжевого цвета, расположенной на клеммной колодке напротив демонтируемого кабеля, и одновременно потянуть демонтируемый кабель на себя.
 
 <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
     <img src="img/inistallation/inistallation_4_1.svg" 
@@ -524,27 +527,27 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
 <div id="galleryModal4" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
     
     <!-- Кнопка закрытия -->
-    <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+ <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
     
     <!-- Кнопка назад -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
     
     <!-- Кнопка вперед -->
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+ <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
     
     <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+  <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
         <img id="galleryImage4" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
     </div>
     
     <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+ <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
         <span id="imageCounter4">1 / 2</span>
     </div>
 </div>
