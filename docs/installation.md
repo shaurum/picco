@@ -1,13 +1,16 @@
 # Монтаж и демонтаж
-## Монтаж модулей
-Перед монтажом для контроллера предварительно организуется рабочее место, обеспечивающее защиту от попадания влаги, грязи и посторонних предметов.
 
-Монтаж модулей осуществляется в вертикальном положении посредством присоединения к стандартной DIN-рейке шириной 35 мм.
+## Монтаж модулей на DIN-рейку
 
-### Монтаж модулей на DIN-рейку
+!!! Info "Подготовка к монтажу"
+    Перед монтажом для контроллера предварительно организуется рабочее место, обеспечивающее защиту от попадания влаги, грязи и посторонних предметов. 
+!!! Info ""
+    Монтаж модулей осуществляется в вертикальном положении посредством присоединения к стандартной DIN-рейке шириной 35 мм.
+
+
 Монтаж первого модуля группы осуществляется следующим образом: приставить модуль к DIN-рейке пазом, расположенном на тыльной стороне модуля, после чего зафиксировать, установив верхнюю и нижнюю защелки в положение «закрыто».
 
-<div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
     <img src="img/inistallation/inistallation_1_1.svg" 
          alt="Installation 1" 
          width="240" 
@@ -240,149 +243,132 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 });
 </script>
 
-### Монтаж подводящих кабелей
+## Монтаж подводящих кабелей
+!!! Info "Подготовка к монтажу"
+    Перед началом работ по подключению необходимо убедиться, что кабели обесточены. 
 
-Для монтажа кабелей должны выполняться следующие требования:
-
-- Для обеспечения надёжности электрических соединений рекомендуется использовать только медные провода. 
-- При использовании одножильного провода перед соединением необходимо зачистить на длину 12 мм, с таким расчетом, чтобы срез изоляции плотно прилегал к клеммной колодке, т.е. чтобы оголенные участки провода не выступали за ее пределы. 
-- Для гибкого (многожильного) провода следует использовать наконечники штыревые втулочные изолированные типа НШВИ длиной 12 мм соответствующего сечения кабеля. Допускается монтаж многожильного провода без использования НШВИ, предварительно скрутив жилы провода.
-
-!!! warning "Предупреждение"
-    Использование наконечников типа НШВИ длинной менее 12 мм может привести к ненадежной фиксации контактов.
-
-- Максимальное сечение проводов, подключаемых к клеммной колодке при монтаже – 1,5 мм2.
-
-!!! note "Примечание"
-    Рекомендуемое сечение проводов для подключения к клеммной колодке – 0,5 мм².
-
-Подключение подводящих кабелей к клеммной колодке проводится следующим образом:
-
-1. Перед началом работ по подключению необходимо убедиться в том, что кабели обесточены.
-2. При подключении одножильного провода или многожильного провода с НШВИ подключить провод к клеммной колодке путем надавливания до упора.
-3. При подключении многожильного провода без НШВИ надавить на защелку, находящуюся на клеммной колодке напротив нужного разъема, и одновременно подключить провод к клеммной колодке путем ввода до упора.
-4. Подключить все необходимые подводящие кабели на каждый модуль.
-<!-- Первая строка из 3 изображений -->
-<div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
-    <img src="img/inistallation/inistallation_3_1.svg" 
-         alt="Installation 3-1" 
-         width="245" 
-         style="cursor: zoom-in;"
-         onclick="openGallery3A(0)">
-    
-    <img src="img/inistallation/inistallation_3_2.svg" 
-         alt="Installation 3-2" 
-         width="245" 
-         style="cursor: zoom-in;"
-         onclick="openGallery3A(1)">
-    
-    <img src="img/inistallation/inistallation_3_3.svg" 
-         alt="Installation 3-3" 
-         width="245" 
-         style="cursor: zoom-in;"
-         onclick="openGallery3A(2)">
-</div>
-
-<!-- Модальное окно галереи для первой группы -->
-<div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
-    
-    <!-- Кнопка закрытия -->
-    <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
-        <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
+1. При подключении одножильного провода или многожильного провода с НШВИ подключить провод к клеммной колодке путем надавливания до упора.
+2. При подключении многожильного провода без НШВИ надавить на защелку, находящуюся на клеммной колодке напротив нужного разъема, и одновременно подключить провод к клеммной колодке путем ввода до упора.
+3. Подключить все необходимые подводящие кабели на каждый модуль.
+    <!-- Первая строка из 3 изображений -->
+    <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
+        <img src="img/inistallation/inistallation_3_1.svg" 
+            alt="Installation 3-1" 
+            width="245" 
+            style="cursor: zoom-in;"
+            onclick="openGallery3A(0)">
+        <img src="img/inistallation/inistallation_3_2.svg" 
+            alt="Installation 3-2" 
+            width="245" 
+            style="cursor: zoom-in;"
+            onclick="openGallery3A(1)">
+        <img src="img/inistallation/inistallation_3_3.svg" 
+            alt="Installation 3-3" 
+            width="245" 
+            style="cursor: zoom-in;"
+            onclick="openGallery3A(2)">
     </div>
-    
-    <!-- Кнопка назад -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
-        <button onclick="prevImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
+
+    <!-- Модальное окно галереи для первой группы -->
+    <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
+        
+        <!-- Кнопка закрытия -->
+        <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+            <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
+        </div>
+        
+        <!-- Кнопка назад -->
+        <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+            <button onclick="prevImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
+        </div>
+        
+        <!-- Кнопка вперед -->
+        <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+            <button onclick="nextImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
+        </div>
+        
+        <!-- Область изображения -->
+        <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+            <img id="galleryImage3A" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
+        </div>
+        
+        <!-- Счетчик изображений -->
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+            <span id="imageCounter3A">1 / 3</span>
+        </div>
     </div>
-    
-    <!-- Кнопка вперед -->
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
-        <button onclick="nextImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
-    </div>
-    
-    <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
-        <img id="galleryImage3A" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
-    </div>
-    
-    <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
-        <span id="imageCounter3A">1 / 3</span>
-    </div>
-</div>
 
-<script>
-// Данные для галереи 3A
-const images3A = [
-    'img/inistallation/inistallation_3_1.svg',
-    'img/inistallation/inistallation_3_2.svg', 
-    'img/inistallation/inistallation_3_3.svg'
-];
+    <script>
+    // Данные для галереи 3A
+    const images3A = [
+        'img/inistallation/inistallation_3_1.svg',
+        'img/inistallation/inistallation_3_2.svg', 
+        'img/inistallation/inistallation_3_3.svg'
+    ];
 
-let currentIndex3A = 0;
+    let currentIndex3A = 0;
 
-function openGallery3A(index) {
-    currentIndex3A = index;
-    const modal = document.getElementById('galleryModal3A');
-    const galleryImage = document.getElementById('galleryImage3A');
-    const imageCounter = document.getElementById('imageCounter3A');
-    
-    galleryImage.src = images3A[currentIndex3A];
-    imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
-    modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
+    function openGallery3A(index) {
+        currentIndex3A = index;
+        const modal = document.getElementById('galleryModal3A');
+        const galleryImage = document.getElementById('galleryImage3A');
+        const imageCounter = document.getElementById('imageCounter3A');
+        
+        galleryImage.src = images3A[currentIndex3A];
+        imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
-function closeGallery3A() {
-    const modal = document.getElementById('galleryModal3A');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
+    function closeGallery3A() {
+        const modal = document.getElementById('galleryModal3A');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
 
-function prevImage3A() {
-    currentIndex3A = (currentIndex3A - 1 + images3A.length) % images3A.length;
-    updateGallery3A();
-}
+    function prevImage3A() {
+        currentIndex3A = (currentIndex3A - 1 + images3A.length) % images3A.length;
+        updateGallery3A();
+    }
 
-function nextImage3A() {
-    currentIndex3A = (currentIndex3A + 1) % images3A.length;
-    updateGallery3A();
-}
+    function nextImage3A() {
+        currentIndex3A = (currentIndex3A + 1) % images3A.length;
+        updateGallery3A();
+    }
 
-function updateGallery3A() {
-    const galleryImage = document.getElementById('galleryImage3A');
-    const imageCounter = document.getElementById('imageCounter3A');
-    
-    galleryImage.src = images3A[currentIndex3A];
-    imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
-}
+    function updateGallery3A() {
+        const galleryImage = document.getElementById('galleryImage3A');
+        const imageCounter = document.getElementById('imageCounter3A');
+        
+        galleryImage.src = images3A[currentIndex3A];
+        imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
+    }
 
-// Управление клавиатурой для галереи 3A
-document.addEventListener('keydown', function(e) {
-    const modal = document.getElementById('galleryModal3A');
-    if (modal.style.display === 'block') {
-        if (e.key === 'Escape') {
-            closeGallery3A();
-        } else if (e.key === 'ArrowLeft') {
-            prevImage3A();
-        } else if (e.key === 'ArrowRight') {
-            nextImage3A();
+    // Управление клавиатурой для галереи 3A
+    document.addEventListener('keydown', function(e) {
+        const modal = document.getElementById('galleryModal3A');
+        if (modal.style.display === 'block') {
+            if (e.key === 'Escape') {
+                closeGallery3A();
+            } else if (e.key === 'ArrowLeft') {
+                prevImage3A();
+            } else if (e.key === 'ArrowRight') {
+                nextImage3A();
+            }
         }
-    }
-});
+    });
 
-// Закрытие по клику на фон для галереи 3A
-document.getElementById('galleryModal3A').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeGallery3A();
-    }
-});
-</script>
+    // Закрытие по клику на фон для галереи 3A
+    document.getElementById('galleryModal3A').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeGallery3A();
+        }
+    });
+    </script>
 
-5. Вставить клеммную колодку в специальный разъем на модуле.
-6. Затянуть винты клеммной колодки с усилием 0,2 Нм.
-7. Для удобства следует зафиксировать провода вместе относительно модуля путем закрепления хомута через ушко корпуса модуля.
+4. Вставить клеммную колодку в специальный разъем на модуле.
+5. Затянуть винты клеммной колодки с усилием 0,2 Нм.
+6. Для удобства следует зафиксировать провода вместе относительно модуля путем закрепления хомута через ушко корпуса модуля.
 <!-- Вторая строка из 3 изображений -->
 <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
     <img src="img/inistallation/inistallation_3_4.svg" 
@@ -390,14 +376,12 @@ document.getElementById('galleryModal3A').addEventListener('click', function(e) 
          width="240" 
          style="cursor: zoom-in;"
          onclick="openGallery3B(0)">
-    
-    <img src="img/inistallation/inistallation_3_5.svg" 
+        <img src="img/inistallation/inistallation_3_5.svg" 
          alt="Installation 3-5" 
          width="240" 
          style="cursor: zoom-in;"
          onclick="openGallery3B(1)">
-    
-    <img src="img/inistallation/inistallation_3_6.svg" 
+        <img src="img/inistallation/inistallation_3_6.svg" 
          alt="Installation 3-6" 
          width="240" 
          style="cursor: zoom-in;"
@@ -500,10 +484,20 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
     }
 });
 </script>
+Для монтажа кабелей должны выполняться следующие требования:
 
+- Для обеспечения надёжности электрических соединений рекомендуется использовать только медные провода. 
+- При использовании одножильного провода перед соединением необходимо зачистить на длину 12 мм, с таким расчетом, чтобы срез изоляции плотно прилегал к клеммной колодке, т.е. чтобы оголенные участки провода не выступали за ее пределы.
+!!! warning "Предупреждение"
+    Использование наконечников типа НШВИ длинной менее 12 мм может привести к ненадежной фиксации контактов.
+- Для гибкого (многожильного) провода следует использовать наконечники штыревые втулочные изолированные типа НШВИ длиной 12 мм соответствующего сечения кабеля. Допускается монтаж многожильного провода без использования НШВИ, предварительно скрутив жилы провода.
+- Максимальное сечение проводов, подключаемых к клеммной колодке при монтаже – 1,5 мм2.
+!!! success "Рекомендация"
+    Рекомендуемое сечение проводов для подключения к клеммной колодке – 0,5 мм².
 
 ## Демонтаж подводящих кабелей 
-1. Убедиться, что демонтируемые кабели обесточены.
+!!! Info "Подготовка к демонтажу"
+    Перед началом работ необходимо убедиться, что кабели обесточены. 
 2. Открутить винты на клеммной колодке.
 3. Отсоединить клеммную колодку от модуля потянув на себя.
 4. Надавить отверткой на защелку оранжевого цвета, расположенной на клеммной колодке напротив демонтируемого кабеля, и одновременно потянуть демонтируемый кабель на себя.
@@ -622,7 +616,7 @@ document.getElementById('galleryModal4').addEventListener('click', function(e) {
     }
 });
 </script>
-### Демонтаж модулей
+## Демонтаж модулей
 Перед демонтажем модуля необходимо убедится, что все подводящие к нему кабели отсоединены, затем с помощью плоской отвертки аккуратно перевести защелки, расположенные снизу и сверху, в положение «открыто». После чего потянуть модуль на себя вдоль шип-пазов до полного отсоединения.
  
 <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
