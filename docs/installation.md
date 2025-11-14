@@ -485,7 +485,6 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
 });
 </script>
 
-<div style="margin-bottom: 80px;"></div>
 
 Для монтажа кабелей должны выполняться следующие требования:
 
