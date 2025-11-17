@@ -13,17 +13,17 @@
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
     <img src="img/inistallation/inistallation_1_1.svg" 
          alt="Installation 1" 
-         width="240" 
+         width="235" 
          style="cursor: zoom-in;"
          onclick="openGallery(0)">
     <img src="img/inistallation/inistallation_1_2.svg" 
          alt="Installation 2" 
-         width="240" 
+         width="235" 
          style="cursor: zoom-in;"
          onclick="openGallery(1)">
     <img src="img/inistallation/inistallation_1_3.svg" 
          alt="Installation 3" 
-         width="240" 
+         width="235" 
          style="cursor: zoom-in;"
          onclick="openGallery(2)">
 </div>
