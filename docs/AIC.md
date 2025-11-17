@@ -2,40 +2,123 @@
 
 ## Общие сведения
 
-??? example "Тестирование"
-    На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
+<div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
+    <img src="img/modules/AIC.png" alt="Модуль аналогового ввода тока AIC" width="270" style="flex-shrink: 0;">
 
-<div class="grid cards" markdown>
-
-![Image title](img/modules/AIC.png){ width="250" align=left  }
-Модуль аналогового ввода тока AIC (арт. SA-P5-AIC) является 16-ти канальным модулем расширения и предназначен для приема сигналов по интерфейсу «токовая петля».
+    <div style="flex: 1; text-align: justify;">
+        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Наименование:</strong> Модуль аналогового ввода тока AIC</p>
+        
+        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Исполнения:</strong><br>
+        - SA-P5-AIC (без покрытия)<br>
+        - SA-P5-AIC-V (с лаковым покрытием)</p>
+        
+        <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Назначение:</strong><br>
+        Модуль аналогового ввода тока AIC (далее-модуль) предназначен для измерения силы постоянного тока по каждому каналу и выдачи измеренных параметров в цифровом формате по каналу связи</p>
+        
+    </div>
 </div>
 
 ## Технические характеристики 
-| Характеристика                          | Значение                          |
-|-----------------------------------------|-----------------------------------|
-| Количество каналов                      | 16                                |
-| Диапазон измерения тока, мА             | от 0,01 до 22,00                  |
-| Приведенная погрешность измерения, %    | 0,035                             |
-| Наличие индикации каждого канала        | да                                |
-| Наличие индикации питания, канала информационного обмена|да                 |
-| Напряжение питание, В                   | от 19 до 29                       |
-| Номинальное напряжение питания, В       | 24                                |
-| Потребляемая мощность, Вт               | 4                                 |
-| Гальваническая изоляция                 | Между входной и выходной логикой  |
-| Вес, кг, не более                       | 0,12                              |
-| Размеры (Ш х В х Г), мм                 | 21,8х130,9x98,0                   |
-
+<div style="margin-bottom: -1rem;">
+<table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
+  <colgroup>
+    <col style="width: 600px;">   <!-- Фиксированная ширина -->
+    <col style="width: 400px;">   <!-- Фиксированная ширина -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Характеристика</th>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Значение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Количество каналов</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">16</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Диапазон измерения тока, мА</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">от 0,01 до 22,00</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Приведенная погрешность измерения, %</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; vertical-align: middle;">0,035</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации каждого канала</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации питания, канала информационного обмена</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Напряжение питания, В</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">от 19 до 29</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Номинальное напряжение питания, В</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">24</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Потребляемая мощность, Вт, не более</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Гальваническая изоляция</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Между входной и выходной логикой</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Вес, кг, не более</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0,12</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Размеры (Ш х В х Г), мм</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">21,8х130,9x98,0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Эксплуатационные характеристики
-| Характеристика                   | Значение           |
-| -------------------------------- | -                  |
-| Температура эксплуатации, °С     | От минус 40 до 60  |
-| Температура хранения, °С         | От минус 40 до 60  |
-| Влажность при хранении, %	       | От 5 до 95         |
-| Влажность при эксплуатации, %    | От 5 до 95         |
-| Тип монтажа                      | На DIN-рейку 35 мм |
-| Расположение при монтаже         | Вертикальное       |
+<div style="width: 100%; display: grid; grid-template-columns: 1fr; margin-bottom: -1rem;">
+  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">
+    <colgroup>
+      <col style="width: 500px;">   <!-- Параметр -->
+      <col style="width: 250px;">   <!-- Без лака -->
+      <col style="width: 250px;">   <!-- С лаком -->
+    </colgroup>
+    <thead>
+      <tr>
+        <th rowspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">Параметр</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">Значение фактора</th>
+      </tr>
+      <tr>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Без лака</th>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">С лаком</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Температура среды, °С</strong></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от минус 40 до 60</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Относительная влажность воздуха, %</strong></td>
+        <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 70</td>
+        <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 95</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Атмосферное давление, кПа</strong></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 84,0 до 106,7</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
+        <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">0,35 мм с частотой 55 Гц</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Схема подключения
 
@@ -45,28 +128,142 @@
 ![Image title](img/connection/connector_18pin.png){ width="170";  }
 </div>
 
-| Обозначение | Название канала | Описание                       |
-|-------------|-----------------|--------------------------------|
-| 1 - 16      | AI1 - AI16      | Входной канал 1 - 16          |
-| 17, 18          | GND             | Общий контакт |
+<div style="margin-bottom: -1rem;">
+<table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
+  <colgroup>
+    <col style="width: 250px;">   
+    <col style="width: 250px;">
+    <col style="width: 600px;">   
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Обозначение</th>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Название канала</th>
+      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; text-align: center; vertical-align: middle;">1 - 16</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; text-align: center; vertical-align: middle;">AI1 - AI16</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; vertical-align: middle;">Входной канал 1 - 16</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; text-align: center; vertical-align: middle;">17, 18</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; text-align: center; vertical-align: middle;">GND</td>
+      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word; vertical-align: middle;">Общий контакт</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Индикация
-| Обозначение | Индикация | Показатель |
-|------------------|----------------------|---------------------------------------|
-| P | :green_circle:| Наличие напряжения питания |
-| P | :white_circle:| Отсутствие напряжения питания |
-| L | :green_circle:| Наличие соединения Ethernet |
-| L | :yellow_circle: :green_circle: :yellow_circle: | Обмен данными по Ethernet |
-| L | :white_circle:| Отсутствие соединения Ethernet|
-| 1-16 | :green_circle:| Ток канала больше заданного (по умолчанию 4 мА)  |
-| 1-16 | :white_circle:| Ток канала меньше заданного (по умолчанию 4 мА) |
+<div style="width: 100%; display: grid; grid-template-columns: 1fr; margin-bottom: -1rem;">
+  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed; grid-column: 1 / -1;">
+    <colgroup>
+      <col style="width: 250px;">   <!-- Параметр -->
+      <col style="width: 250px;">   <!-- Без лака -->
+      <col style="width: 600px;">   <!-- С лаком -->
+    </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Обозначение</th>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Индикация</th>
+          <th style="text-align: center; padding: 8px; border: 1px solid #ccc;">Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">P</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие напряжения питания</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">P</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Отсутствие напряжения питания</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Наличие соединения по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot ethernet-pulse"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Обмен данными по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Отсутствие соединения по Ethernet</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot orange"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Модуль в рабочем состоянии</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">L</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot orange-pulse"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Выполнение загрузки</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">1 - 16</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot green"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Ток канала больше заданного (по умолчанию 4 мА)</td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;">1 - 16</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ccc;"><span class="status-dot off"></span></td>
+          <td style="padding: 8px; border: 1px solid #ccc;">Ток канала меньше заданного (по умолчанию 4 мА)</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+<style>
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.status-dot.green { background-color: #0ec20eff; }
+.status-dot.orange { background-color: #ffa500; }
+.status-dot.off { background-color: #cccccc; }
+
+.status-dot.ethernet-pulse {
+    background-color: #0ec20eff;
+    animation: soft-pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.status-dot.orange-pulse {
+    background-color: #ffa500;
+    animation: soft-pulse-orange 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+@keyframes soft-pulse {
+    0%, 100% { opacity: 0.4; transform: scale(0.9); box-shadow: 0 0 5px rgba(0, 255, 0, 0.3); }
+    50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); }
+}
+
+@keyframes soft-pulse-orange {
+    0%, 100% { opacity: 0.4; transform: scale(0.9); box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); }
+    50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); }
+}
+</style>
 
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"  }
+    ![Image title](img/dimensions/dimensions_module.svg){width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions_module.svg){width="580"} 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
