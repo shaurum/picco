@@ -281,451 +281,200 @@ style="width: 100%; height: 500px;">
 ## Программное обеспечение
 Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативной передачи входных данных и SDO (Service Data Objects) для настройки параметров и получения статуса каналов.
 
-### PDO (Process Data Objects)
-PDO используются для передачи данных в реальном времени. Модуль предоставляет 16 входных каналов, значения которых передаются через структуру "Inputs". Каждый канал измеряет ток в заданном диапазоне, определяемом настройками в SDO.
+### Принцип работы
 
-Структура PDO:
-<div class="channels-container">
-    <div class="input-group">
-        <h4>📥 Inputs - Все каналы</h4>
-        <div class="channels-grid">
-            <div class="channel-item">
-                <span class="channel-name">Channel 1</span>
-                <span class="channel-desc">Входной канал 1</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 2</span>
-                <span class="channel-desc">Входной канал 2</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 3</span>
-                <span class="channel-desc">Входной канал 3</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 4</span>
-                <span class="channel-desc">Входной канал 4</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 5</span>
-                <span class="channel-desc">Входной канал 5</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 6</span>
-                <span class="channel-desc">Входной канал 6</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 7</span>
-                <span class="channel-desc">Входной канал 7</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 8</span>
-                <span class="channel-desc">Входной канал 8</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 9</span>
-                <span class="channel-desc">Входной канал 9</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 10</span>
-                <span class="channel-desc">Входной канал 10</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 11</span>
-                <span class="channel-desc">Входной канал 11</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 12</span>
-                <span class="channel-desc">Входной канал 12</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 13</span>
-                <span class="channel-desc">Входной канал 13</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 14</span>
-                <span class="channel-desc">Входной канал 14</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 15</span>
-                <span class="channel-desc">Входной канал 15</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 16</span>
-                <span class="channel-desc">Входной канал 16</span>
-            </div>
+Модуль предоставляет 16 входных каналов, значения которых передаются через структуру "Inputs". Каждый канал измеряет ток в заданном диапазоне, определяемом настройками в SDO, передавая измеренные значения в формате 32-битных чисел с плавающей точкой (float) для обеспечения высокой точности измерений.
+
+ Структура SDO включает два основных раздела: настройки (Settings) и статус (Status).
+
+<div class="channels-cards">
+    <!-- Settings Section -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-icon"></div>
+            <h3>Settings</h3>
         </div>
-    </div>
-</div>
-
-<style>
-.channels-container {
-    margin: 20px 0;
-}
-
-.input-group {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #e9ecef;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.input-group h4 {
-    margin-top: 0;
-    color: #495057;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 12px;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.channels-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-top: 15px;
-}
-
-.channel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 8px;
-    background: white;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
-    transition: all 0.2s;
-    text-align: center;
-    min-height: 60px;
-}
-
-.channel-item:hover {
-    background: #e7f3ff;
-    border-color: #007acc;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 122, 204, 0.15);
-}
-
-.channel-name {
-    font-weight: 600;
-    color: #212529;
-    font-size: 0.95em;
-    margin-bottom: 4px;
-}
-
-.channel-desc {
-    color: #6c757d;
-    font-size: 0.85em;
-}
-
-@media (max-width: 1200px) {
-    .channels-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .channels-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .input-group {
-        padding: 20px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .channels-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-
-* **Назначение:** Передача измеренных значений тока с каждого из 16 каналов.
-* ***Формат данных:*** 32-битное значение с плавающей точкой (float), обеспечивающее высокую точность измерений.
-### SDO (Service Data Objects)
-SDO используются для конфигурации модуля и диагностики состояния каналов. Структура SDO включает два основных раздела: настройки (Settings) и статус (Status).
-
-Структура SDO:
-
-<div class="sdo-structure">
-    <div class="sdo-section">
-        <div class="sdo-header">
-            <span class="sdo-icon">⚙️</span>
-            <span class="sdo-title">Settings</span>
-        </div>
-        <div class="sdo-content">
-            <div class="channel-config">
-                <div class="channel-header">
-                    <span class="channel-number">Channel 1</span>
-                </div>
-                <div class="channel-settings">
-                    <div class="setting-group">
-                        <div class="setting-label">Input type</div>
-                        <div class="setting-options">
-                            <div class="option-item">
-                                <span class="option-value">4-20 mA</span>
-                                <span class="option-desc">Ток от 4 до 20 мА</span>
-                            </div>
-                            <div class="option-item">
-                                <span class="option-value">0-20 mA</span>
-                                <span class="option-desc">Ток от 0 до 20 мА</span>
-                            </div>
-                            <div class="option-item">
-                                <span class="option-value">0-5 mA</span>
-                                <span class="option-desc">Ток от 0 до 5 мА</span>
-                            </div>
-                            <div class="option-item default">
-                                <span class="option-value">Disable</span>
-                                <span class="option-desc">Отключено — значение по умолчанию</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="setting-group">
-                        <div class="setting-label">Average samples</div>
-                        <div class="setting-desc">Среднее количество выборок</div>
-                    </div>
-                </div>
+        
+        <div class="channel-card">
+            <div class="card-header">
+                <span class="card-badge">CH 1</span>
+                <span class="card-title">Channel 1</span>
             </div>
             
-            <div class="channels-note">
-                <span class="note-icon">📋</span>
-                <span class="note-text">Channel 2 - Channel 16 (аналогично)</span>
+            <div class="card-content">
+                <div class="param-group">
+                    <label>Input Type</label>
+                    <div class="param-value">
+                        <select class="param-select">
+                            <option>4-20 mA</option>
+                            <option>0-20 mA</option>
+                            <option>0-5 mA</option>
+                            <option selected>Disable</option>
+                        </select>
+                        <span class="param-hint">Ток от 4 до 20 мА</span>
+                    </div>
+                </div>
+                
+                <div class="param-group">
+                    <label>Average Samples</label>
+                    <div class="param-value">
+                        <input type="number" value="16" class="param-input">
+                        <span class="param-hint">Среднее количество выборок</span>
+                    </div>
+                </div>
             </div>
+        </div>
+        
+        <div class="channels-footer">
+            <span>Channel 2-16: аналогичная конфигурация</span>
         </div>
     </div>
 
-    <div class="sdo-section">
-        <div class="sdo-header">
-            <span class="sdo-icon">📊</span>
-            <span class="sdo-title">Status</span>
+    <!-- Status Section -->
+    <div class="section-card">
+        <div class="section-header">
+            <div class="section-icon"></div>
+            <h3>Status</h3>
         </div>
-        <div class="sdo-content">
-            <div class="channel-status">
-                <div class="channel-header">
-                    <span class="channel-number">Channel 1</span>
+        
+        <div class="channel-card">
+            <div class="card-header">
+                <span class="card-badge">CH 1</span>
+                <span class="card-title">Channel 1</span>
+            </div>
+            
+            <div class="card-content">
+                <div class="status-overview">
+                    <div class="status-item">
+                        <span class="status-label">Текущий статус:</span>
+                        <span class="status-value">Нормальная работа</span>
+                    </div>
                 </div>
-                <div class="status-content">
-                    <div class="status-info">
-                        <span class="status-label">Status:</span>
-                        <span class="status-type">Битовое поле</span>
+                
+                <div class="bits-table">
+                    <div class="table-header">
+                        <span class="col-bit">Бит</span>
+                        <span class="col-desc">Описание</span>
                     </div>
                     
-                    <div class="bit-table-container">
-                        <div class="bit-table">
-                            <div class="bit-header">
-                                <div class="bit-col bit-col-number">Бит</div>
-                                <div class="bit-col bit-col-desc">Описание</div>
-                                <div class="bit-col bit-col-status">Статус</div>
-                            </div>
-                            
-                            <div class="bit-row bit-error">
-                                <div class="bit-col bit-col-number">0</div>
-                                <div class="bit-col bit-col-desc">Ток превышает допустимый диапазон</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge error">Ошибка</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-error">
-                                <div class="bit-col bit-col-number">1</div>
-                                <div class="bit-col bit-col-desc">Обрыв цепи</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge error">Ошибка</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">2</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">3</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">4</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">5</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">6</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bit-row bit-reserved">
-                                <div class="bit-col bit-col-number">7</div>
-                                <div class="bit-col bit-col-desc">Зарезервирован</div>
-                                <div class="bit-col bit-col-status">
-                                    <span class="status-badge reserved">Резерв</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="table-row">
+                        <span class="col-bit">0</span>
+                        <span class="col-desc">Ток превышает допустимый диапазон</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">1</span>
+                        <span class="col-desc">Обрыв цепи</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">2</span>
+                        <span class="col-desc">Зарезервирован</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">3</span>
+                        <span class="col-desc">Зарезервирован</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">4</span>
+                        <span class="col-desc">Зарезервирован</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">5</span>
+                        <span class="col-desc">Зарезервирован</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">6</span>
+                        <span class="col-desc">Зарезервирован</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="col-bit">7</span>
+                        <span class="col-desc">Зарезервирован</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="channels-note">
-                <span class="note-icon">📋</span>
-                <span class="note-text">Channel 2 - Channel 16 (аналогично)</span>
-            </div>
+        </div>
+        
+        <div class="channels-footer">
+            <span>Channel 2-16: аналогичный статус</span>
         </div>
     </div>
 </div>
 
 <style>
-.sdo-structure {
+.channels-cards {
+    max-width: 800px;
+    margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    margin: 24px 0;
 }
 
-.sdo-section {
-    background: #ffffff;
-    border-radius: 8px;
+.section-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+    overflow: hidden;
     border: 1px solid #e1e5e9;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.sdo-header {
-    background: #f8f9fa;
-    padding: 16px 20px;
+.section-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-weight: 600;
-    border-bottom: 1px solid #e1e5e9;
-}
-
-.sdo-icon {
-    font-size: 18px;
-}
-
-.sdo-title {
-    font-size: 16px;
-    color: #2c3e50;
-}
-
-.sdo-content {
-    padding: 20px;
-}
-
-.channel-config, .channel-status {
-    background: #fafbfc;
-    border: 1px solid #e1e5e9;
-    border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 16px;
-}
-
-.channel-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #e1e5e9;
-}
-
-.channel-number {
-    font-weight: 600;
-    color: #2c3e50;
-    font-size: 15px;
-}
-
-.channel-settings {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.setting-group {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
+    padding: 8px 12px;
+    background: #fda33cff;
+    color: white;
 }
 
-.setting-label {
+.section-header h3 {
+    margin: 0;
+    font-size: 18px;
     font-weight: 600;
-    color: #374151;
-    font-size: 14px;
 }
 
-.setting-desc {
-    color: #6b7280;
-    font-size: 13px;
+.channel-card {
+    padding: 20px;
 }
 
-.setting-options {
+.card-header {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-left: 0;
-}
-
-.option-item {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 12px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
+    gap: 10px;
+    margin-bottom: 26px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-badge {
+    background: #fda33cff;
+    color: white;
+    padding: 3px 6px;
     border-radius: 4px;
-    transition: all 0.15s ease;
+    font-size: 11px;
+    font-weight: 600;
 }
 
-.option-item:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
 }
 
-.option-item.default {
-    background: #fffbeb;
-    border-color: #fcd34d;
+/* Status Overview */
+.status-overview {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+    border-radius: 8px;
 }
 
-.option-value {
-    font-weight: 500;
-    color: #111827;
-    font-size: 14px;
-}
-
-.option-desc {
-    color: #6b7280;
-    font-size: 13px;
-}
-
-.status-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.status-info {
+.status-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -733,175 +482,146 @@ SDO используются для конфигурации модуля и д�
 
 .status-label {
     font-weight: 600;
-    color: #374151;
+    color: #2d3748;
     font-size: 14px;
 }
 
-.status-type {
-    color: #6b7280;
-    font-size: 13px;
-    font-style: italic;
+.status-value {
+    color: #22543d;
+    font-size: 14px;
 }
 
-.bit-table-container {
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
+/* Bits Table */
+.bits-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
 }
 
-.bit-table {
-    width: 100%;
-}
-
-.bit-header {
+.table-header {
     display: grid;
-    grid-template-columns: 80px 1fr 100px;
-    background: #f8f9fa;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.bit-col {
+    grid-template-columns: 60px 1fr;
     padding: 12px 16px;
-    font-size: 13px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
     font-weight: 600;
-    color: #374151;
+    color: #333;
+    font-size: 14px;
 }
 
-.bit-col-number {
-    text-align: center;
-}
-
-.bit-col-status {
-    text-align: center;
-}
-
-.bit-row {
+.table-row {
     display: grid;
-    grid-template-columns: 80px 1fr 100px;
-    border-bottom: 1px solid #f3f4f6;
-    transition: background-color 0.15s ease;
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #f7fafc;
+    font-size: 14px;
+    align-items: center;
 }
 
-.bit-row:last-child {
+.table-row:last-child {
     border-bottom: none;
 }
 
-.bit-row:hover {
-    background: #f9fafb;
+.table-row:hover {
+    background: #f8f9fa;
 }
 
-.bit-error {
-    background: #fef2f2;
-}
-
-.bit-reserved {
-    background: #ffffff;
-}
-
-.bit-row .bit-col {
-    padding: 10px 16px;
-    font-size: 13px;
-    color: #4b5563;
-    display: flex;
-    align-items: center;
-}
-
-.status-badge {
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 11px;
+.col-bit {
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: #333;
+    text-align: center;
 }
 
-.status-badge.error {
-    background: #fee2e2;
-    color: #dc2626;
-    border: 1px solid #fecaca;
+.col-desc {
+    color: #555;
 }
 
-.status-badge.reserved {
-    background: #f3f4f6;
-    color: #6b7280;
-    border: 1px solid #e5e7eb;
+/* Param Groups */
+.card-content {
+    space-y: 20px;
 }
 
-.channels-note {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 16px;
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 6px;
+.param-group {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 20px;
 }
 
-.note-icon {
-    font-size: 16px;
-}
-
-.note-text {
-    color: #1e40af;
+.param-group label {
+    font-weight: 600;
+    color: #333;
     font-size: 14px;
-    font-weight: 500;
+    padding-top: 8px;
+}
+
+.param-value {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.param-select, .param-input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+}
+
+.param-hint {
+    font-size: 12px;
+    color: #718096;
+    line-height: 1.4;
+}
+
+.channels-footer {
+    padding: 16px 24px;
+    background: #f7fafc;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.channels-footer span {
+    font-size: 13px;
+    color: #718096;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
-    .sdo-content {
-        padding: 16px;
+    .param-group {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
     
-    .channel-config, .channel-status {
-        padding: 16px;
-    }
-    
-    .bit-header,
-    .bit-row {
-        grid-template-columns: 60px 1fr 80px;
-    }
-    
-    .bit-col {
+    .table-header,
+    .table-row {
+        grid-template-columns: 50px 1fr;
         padding: 10px 12px;
     }
     
-    .option-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
+    .section-card {
+        margin: 0 16px 24px 16px;
     }
     
-    .option-desc {
-        text-align: left;
+    .channel-card {
+        padding: 20px;
     }
 }
 </style>
 
 **Settings (Настройки):**  
-**Input type:** Позволяет выбрать тип входного сигнала для каждого канала: 4-20 мА, 0-20 мА, 0-5 мА или отключить канал (Disable).  
+**Input type:** Позволяет выбрать тип входного сигнала для каждого канала.  
 
 ???+ info "Примечание"
-    При отключение канала скорость опроса других увеличивается.
+    При отключение канала (Disable) скорость опроса других увеличивается.
 
 **Average samples:** Настройка фильтрации методом "Скользящего среднего". Диапазон значений : от 1 (фильтрация выключена) до 255, по умолчанию — 16.  
 **Status (Состояние):**
-Отображает диагностическую информацию о состоянии каналов в виде битового поля:
+Отображает диагностическую информацию о состоянии каналов в виде битового поля.
 
-|Номер бита|Описание|
-|-|-|
-|0|ток превышает допустимый диапазон|
-|1|обрыв цепи|
-|2|Зарезервирован|
-|3|Зарезервирован|
-|4|Зарезервирован|
-|5|Зарезервирован|
-|6|Зарезервирован|
-|7|Зарезервирован|
-
-### Принцип работы
-**Конфигурация:** Через SDO задается тип входного сигнала (например, 4-20 мА) и ширина окна фильтрации для каждого канала.
-**Измерение:** Через PDO в реальном времени передаются измеренные значения тока с каждого из 16 каналов в пределах заданного диапазона.
-**Диагностика:** Через SDO можно запросить состояние каналов для выявления ошибок (перегрузка, обрыв и т.д.).
 ### Пример конфигурации
 Установить Channel 1 в режим "4-20 mA" и ширину фильтрации 32 выборки через SDO.
 Получить значение тока с Channel 1 через PDO (например, 12.5 мА).
