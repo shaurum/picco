@@ -2,10 +2,6 @@
 
 ## Общие сведения
 
-??? example "Тестирование"
-
-    На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
-
 <div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
     <img src="img/modules/DI.png" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
 
@@ -289,7 +285,7 @@
 === "Габаритные размеры" 
     ![Image title](img/dimensions/dimensions_module.svg){width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions_module.svg) 
+    ![alt text](img/dimensions/installation_dimensions_module.svg){width="580"} 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
@@ -305,43 +301,160 @@ style="width: 100%; height: 500px;">
 
 
 ## Программное обеспечение
-Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативного управления выходами модуля.
+Обмен данными осуществляется с использованием объектов [PDO (Process Data Objects)](basic_nformation.md#PDO) для оперативного управления выходами модуля.
 
-## PDO (Process Data Objects)
-PDO используются для передачи данных в реальном времени. Модуль предоставляет два набора входных данных, передаваемых через структуры TxPDO "Byte_Lo" и TxPDO "Byte_Hi". Каждый бит в двух 8-битных значениях соответствует состоянию одного из 16 каналов 
-Структура PDO:  
-```
-|─ Input
-     |─ Channel 1 (Канал 1, бит 0)
-     |─ Channel 2 (Канал 2, бит 1)
-     |─ Channel 3 (Канал 3, бит 2)
-     |─ Channel 4 (Канал 4, бит 3)
-     |─ Channel 5 (Канал 5, бит 4)
-     |─ Channel 6 (Канал 6, бит 5)
-     |─ Channel 7 (Канал 7, бит 6)
-     |─ Channel 8 (Канал 8, бит 7)
-     |─ Channel 9 (Канал 9, бит 0)
-     |─ Channel 10 (Канал 10, бит 1)
-     |─ Channel 11 (Канал 11, бит 2)
-     |─ Channel 12 (Канал 12, бит 3)
-     |─ Channel 13 (Канал 13, бит 4)
-     |─ Channel 14 (Канал 14, бит 5)
-     |─ Channel 15 (Канал 15, бит 6)
-     |─ Channel 16 (Канал 16, бит 7)
-```
-**Назначение:** Передача состояния 16 входных каналов модуля DI, где каждый бит в двух байтах отражает состояние соответствующего канала (0 — выключен, 1 — включен).  
-**Формат данных:** Два 8-битных целых числа (bytes), где первый байт (TxPDO 0x1a00 "Byte_Lo", PDO entry 0x6000:01) передает состояние каналов 1–8, а второй байт (TxPDO 0x1a08 "Byte_Hi", PDO entry 0x6080:01) — каналов 9–16.  
 ### Принцип работы
-**Управление:** Через два TxPDO в реальном времени передаются два 8-битных значения, которые отражают состояние всех 16 каналов модуля. Например, значение 0x01 в TxPDO 0x1a00 указывает, что Channel 1 активен, а значение 0x02 в TxPDO 0x1a08 — что Channel 10 активен
+Модуль передаёт информацию о состоянии 16 каналов с помощью двух специальных сообщений TxPDO: "Byte_Lo" (0x1A00, PDO entry 0x6000:01) — для каналов 1–8, и "Byte_Hi" (0x1A08, PDO entry 0x6080:01) — для каналов 9–16, где каждый бит отражает состояние соответствующего канала (0 — выключен, 1 — включен).
+Структура PDO:  
+<div class="channels-container">
+    <div class="byte-group">
+        <h4> Byte_Lo - Каналы 1-8</h4>
+        <div class="channels-grid">
+            <div class="channel-item">
+                <span class="channel-name">Channel 1</span>
+                <span class="channel-bit">Бит 0</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 2</span>
+                <span class="channel-bit">Бит 1</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 3</span>
+                <span class="channel-bit">Бит 2</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 4</span>
+                <span class="channel-bit">Бит 3</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 5</span>
+                <span class="channel-bit">Бит 4</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 6</span>
+                <span class="channel-bit">Бит 5</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 7</span>
+                <span class="channel-bit">Бит 6</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 8</span>
+                <span class="channel-bit">Бит 7</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="byte-group">
+        <h4> Byte_Hi - Каналы 9-16</h4>
+        <div class="channels-grid">
+            <div class="channel-item">
+                <span class="channel-name">Channel 9</span>
+                <span class="channel-bit">Бит 0</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 10</span>
+                <span class="channel-bit">Бит 1</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 11</span>
+                <span class="channel-bit">Бит 2</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 12</span>
+                <span class="channel-bit">Бит 3</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 13</span>
+                <span class="channel-bit">Бит 4</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 14</span>
+                <span class="channel-bit">Бит 5</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 15</span>
+                <span class="channel-bit">Бит 6</span>
+            </div>
+            <div class="channel-item">
+                <span class="channel-name">Channel 16</span>
+                <span class="channel-bit">Бит 7</span>
+            </div>
+        </div>
+    </div>
+</div>
 
-### Пример конфигурации
+<style>
+.channels-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.byte-group {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.byte-group h4 {
+    margin-top: 0;
+    color: #495057;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 8px;
+}
+
+.channels-grid {
+    display: grid;
+    gap: 8px;
+}
+
+.channel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.channel-item:hover {
+    background: #e7f3ff;
+    border-color: #007acc;
+}
+
+.channel-name {
+    font-weight: 500;
+    color: #212529;
+}
+
+.channel-bit {
+    color: #6c757d;
+    font-size: 0.9em;
+    background: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .channels-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+**Пример конфигурации** 
+
 Получить через TxPDO 0x1a00 значение 0x05 (00000101 в двоичной системе), что означает активность Channel 1 и Channel 3, и через TxPDO 0x1a08 значение 0x0A (00001010 в двоичной системе), что означает активность Channel 10 и Channel 12  
 
 Результат: Каналы 1, 3, 10 и 12 активны (включены), остальные — выключены
 
 
 ## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>  
-<a href="/downloads/DI.c" download>Cstruct конфигурационный файл для IgH EtherCAT Master</a>     
+<a href="/downloads/SA_P5.xml" download>XML конфигурационный файл для TwinCAT</a>      
 <a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
 <a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
