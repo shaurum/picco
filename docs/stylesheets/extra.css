@@ -27,3 +27,55 @@ h2[id="индикация"]::before {
 h2[id="индикация"]::after {
     right: 0;
 }
+
+/* Полное переопределение стилей таблицы */
+table {
+    border-collapse: collapse !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    font-size: 12px !important;
+    width: 95% !important;
+    margin: 15px auto !important;
+    max-width: 420px !important;
+    border: none !important;
+    display: table !important;
+}
+
+thead th {
+    background-color: #F7941e !important;
+    color: white !important;
+    padding: 6px 6px !important;
+    text-align: center !important;
+    border: none !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+}
+
+tbody td {
+    padding: 5px 6px !important;
+    text-align: center !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    font-size: 11px !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8 !important;
+}
+
+tbody tr:hover {
+    background-color: #fff3e0 !important;
+}
+
+/* Принудительно убираем все ограничения */
+.md-main__inner,
+.md-content,
+.md-content__inner,
+.md-grid {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
