@@ -28,54 +28,92 @@ h2[id="индикация"]::after {
     right: 0;
 }
 
-/* Полное переопределение стилей таблицы */
+/* Базовые стили для ВСЕХ таблиц */
 table {
     border-collapse: collapse !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     overflow: hidden !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-    font-size: 12px !important;
-    width: 95% !important;
-    margin: 15px auto !important;
-    max-width: 420px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    margin: 15px 0 !important;
     border: none !important;
-    display: table !important;
+    width: auto !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
 }
 
+/* Стили для заголовков ВСЕХ таблиц */
 thead th {
     background-color: #F7941e !important;
     color: white !important;
-    padding: 6px 6px !important;
+    padding: 8px 10px !important;
     text-align: center !important;
     border: none !important;
+    border-right: 1px solid #ffb04d !important;
+    border-bottom: 1px solid #ffb04d !important; /* Горизонтальные линии */
     font-weight: 600 !important;
-    font-size: 11px !important;
+    font-size: 15px !important;
+    position: relative !important;
 }
 
+/* Убираем разделители у последнего столбца */
+thead th:last-child {
+    border-right: none !important;
+}
+
+/* Для многоуровневых заголовков - убираем нижнюю границу у верхнего уровня */
+thead tr:first-child th {
+    border-bottom: 1px solid #ffb04d !important;
+}
+
+/* У нижнего уровня заголовков убираем нижнюю границу */
+thead tr:last-child th {
+    border-bottom: none !important;
+}
+
+/* Стили для ячеек ВСЕХ таблиц */
 tbody td {
-    padding: 5px 6px !important;
+    padding: 6px 10px !important;
     text-align: center !important;
     border-bottom: 1px solid #e0e0e0 !important;
-    font-size: 11px !important;
+    font-size: 15px !important;
 }
 
+/* Чередование строк для ВСЕХ таблиц */
 tbody tr:nth-child(even) {
     background-color: #f8f8f8 !important;
 }
 
+/* Ховер эффект для ВСЕХ таблиц */
 tbody tr:hover {
     background-color: #fff3e0 !important;
 }
 
-/* Принудительно убираем все ограничения */
-.md-main__inner,
-.md-content,
-.md-content__inner,
-.md-grid {
-    max-width: 100% !important;
-    width: 100% !important;
+/* КЛАСС для компактной таблицы по ЦЕНТРУ */
+table.compact-center {
+    max-width: 450px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+table.compact-center thead th {
+    padding: 8px 6px !important;
+}
+
+table.compact-center tbody td {
+    padding: 6px 6px !important;
+}
+
+/* КЛАСС для компактной таблицы по ЛЕВОМУ КРАЮ */
+table.compact-left {
+    max-width: 450px !important;
     margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    margin-right: auto !important;
+}
+
+table.compact-left thead th {
+    padding: 8px 6px !important;
+}
+
+table.compact-left tbody td {
+    padding: 6px 6px !important;
 }
