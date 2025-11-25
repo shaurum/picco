@@ -414,73 +414,74 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 ## Технические характеристики  
-
-<table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
-  <colgroup>
-    <col style="width: 600px;">   <!-- Фиксированная ширина -->
-    <col style="width: 400px;">   <!-- Фиксированная ширина -->
-  </colgroup>
-  </thead>
-    <tr>
-      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Характеристика</th>
-      <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Значение</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ядро</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4 x Cortex-A72</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Оперативная память, Гб</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4, DDR4</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Объем памяти, Гб</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">8</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; vertical-align: middle; word-wrap: break-word;">Поддерживаемые интерфейсы</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ethernet 1000 Мбит/с – 1, Ethernet 100 Мбит/с – 2</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Операционная система</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Linux с RT патчем</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Диапазон входного напряжения, В</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">от 19 до 29</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Номинальное напряжение питания, В</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">24</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации питания, канала информационного обмена</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации интерфейсов</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Максимальная потребляемая мощность, Вт</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">7,5</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Время выполнения цикла</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Менее 1 мс</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Масса, кг</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0,34</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Размеры (Ш х В х Г), мм</td>
-      <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">57,1х130,9x98,0</td>
-    </tr>
-  </tbody>
-</table>
+<div style="width: 100%; display: grid; grid-template-columns: 1fr;">
+  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
+    <colgroup>
+      <col style="width: 600px;">   <!-- Фиксированная ширина -->
+      <col style="width: 400px;">   <!-- Фиксированная ширина -->
+    </colgroup>
+    </thead>
+      <tr>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Характеристика</th>
+        <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Значение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ядро</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4 x Cortex-A72</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Оперативная память, Гб</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4, DDR4</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Объем памяти, Гб</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">8</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; vertical-align: middle; word-wrap: break-word;">Поддерживаемые интерфейсы</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ethernet 1000 Мбит/с – 1, Ethernet 100 Мбит/с – 2</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Операционная система</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Linux с RT патчем</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Диапазон входного напряжения, В</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">от 19 до 29</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Номинальное напряжение питания, В</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">24</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации питания, канала информационного обмена</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации интерфейсов</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Максимальная потребляемая мощность, Вт</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">7,5</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Время выполнения цикла</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Менее 1 мс</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Масса, кг</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0,34</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Размеры (Ш х В х Г), мм</td>
+        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">57,1х130,9x98,0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Эксплуатационные характеристики 
 
