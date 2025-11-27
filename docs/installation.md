@@ -23,14 +23,14 @@
     <div style="flex: 1; min-width: 200px; display: flex; justify-content: center;">
         <img src="img/inistallation/inistallation_1_2m.svg" 
              alt="Installation 2" 
-             width="220" 
+             width="215" 
              style="cursor: zoom-in; max-width: 100%; height: auto;"
              onclick="openGallery(1, 'gallery1')">
     </div>
     <div style="flex: 1; min-width: 200px; display: flex; justify-content: center;">
         <img src="img/inistallation/inistallation_1_3m.svg" 
              alt="Installation 3" 
-             width="220" 
+             width="215" 
              style="cursor: zoom-in; max-width: 100%; height: auto;"
              onclick="openGallery(2, 'gallery1')">
     </div>
