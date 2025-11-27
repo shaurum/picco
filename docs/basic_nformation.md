@@ -47,7 +47,7 @@ SDO предназначен для ацикличного обмена данн
 </thead>
 <tbody>
 <tr>
-<td rowspan="2" style="vertical-align: middle;" ><strong>1. Синусоидальная вибрация</strong></td>
+<td rowspan="2" style="vertical-align: middle;" >1. Синусоидальная вибрация</td>
 <td>Амплитуда перемещения, мм</td>
 <td colspan="2" style="text-align: center; vertical-align: middle; ">0,35</td>
 </tr>
@@ -56,22 +56,22 @@ SDO предназначен для ацикличного обмена данн
 <td colspan="2" style="text-align: center; vertical-align: middle;">от 10 до 55</td>
 </tr>
 <tr>
-<td><strong>2. Повышенная температура среды</strong></td>
+<td>2. Повышенная температура среды</td>
 <td style="vertical-align: middle;">Рабочая, °С</td>
 <td colspan="2" style="text-align: center; vertical-align: middle;">60</td>
 </tr>
 <tr>
-<td><strong>3. Пониженная температура среды</strong></td>
+<td>3. Пониженная температура среды</td>
 <td style="vertical-align: middle;">Рабочая, °С</td>
 <td colspan="2" style="text-align: center; vertical-align: middle;">минус 40</td>
 </tr>
 <tr>
-<td><strong>4. Атмосферное давление</strong></td>
+<td>4. Атмосферное давление</td>
 <td style="vertical-align: middle;">Рабочее, кПа (мм рт. ст.)</td>
 <td colspan="2" style="text-align: center; vertical-align: middle;">от 84,0 до 106,7<br>(от 630 до 800)</td>
 </tr>
 <tr>
-<td><strong>5. Повышенная влажность</strong></td>
+<td>5. Повышенная влажность</td>
 <td>Относительная влажность воздуха при температуре 35°С, %</td>
 <td style="text-align: center; vertical-align: middle;"> 70</td>
 <td style="text-align: center; vertical-align: middle;">95</td>
