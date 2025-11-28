@@ -20,30 +20,136 @@
     !!! note "Примечание"
         IP-адрес задается следующим образом: `192.168.1.Х`, где `Х` — любое число от 2 до 254, кроме 42.
 
-    ![Image title](setup_preparation/IP.webp){ .fullscreen-image width="280" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+    <div style="text-align: center;">
+        <img src="setup_preparation/IP.webp" 
+            alt="Image title" 
+            width="280" 
+            style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;"
+            class="zoom-trigger"
+            onclick="openZoomModal(this.src, this.alt)">
+    </div>
 
     <style>
-    .fullscreen-image {
-        cursor: zoom-in;
-        transition: transform 0.2s;
+    .zoom-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9998;
     }
 
-    .fullscreen-image:active {
+    .zoom-modal {
+        display: none;
         position: fixed;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        z-index: 9999 !important;
-        background: rgba(0, 0, 0, 0.95) !important;
-        object-fit: contain !important;
-        cursor: zoom-out !important;
-        padding: 20px !important;
-        box-sizing: border-box !important;
-        margin: 0 !important;
-        transform: none !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .zoom-modal img {
+        max-width: 100%;
+        max-height: 90vh;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .zoom-overlay.active,
+    .zoom-modal.active {
+        display: block;
     }
     </style>
+
+    <script>
+    function openZoomModal(src, alt) {
+        // Создаем элементы, если они еще не существуют
+        let overlay = document.querySelector('.zoom-overlay');
+        let modal = document.querySelector('.zoom-modal');
+        
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'zoom-overlay';
+            document.body.appendChild(overlay);
+        }
+        
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.className = 'zoom-modal';
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'close-btn';
+            closeBtn.innerHTML = '×';
+            closeBtn.onclick = closeZoomModal;
+            
+            const img = document.createElement('img');
+            img.id = 'zoomed-image';
+            // Закрытие по клику на саму картинку
+            img.onclick = closeZoomModal;
+            
+            modal.appendChild(closeBtn);
+            modal.appendChild(img);
+            document.body.appendChild(modal);
+            
+            // Закрытие по клику на overlay
+            overlay.onclick = closeZoomModal;
+            // Предотвращаем закрытие при клике на само изображение
+            modal.onclick = function(e) {
+                e.stopPropagation();
+            };
+        }
+        
+        // Устанавливаем изображение
+        const zoomedImg = document.getElementById('zoomed-image');
+        zoomedImg.src = src;
+        zoomedImg.alt = alt;
+        
+        // Показываем модальное окно и overlay
+        overlay.classList.add('active');
+        modal.classList.add('active');
+        
+        // Закрытие по ESC
+        document.addEventListener('keydown', handleEscKey);
+    }
+
+    function closeZoomModal() {
+        const overlay = document.querySelector('.zoom-overlay');
+        const modal = document.querySelector('.zoom-modal');
+        
+        if (overlay) overlay.classList.remove('active');
+        if (modal) modal.classList.remove('active');
+        
+        document.removeEventListener('keydown', handleEscKey);
+    }
+
+    function handleEscKey(e) {
+        if (e.key === 'Escape') {
+            closeZoomModal();
+        }
+    }
+    </script>
 
 
     **Способ 2: Подключение через сетевую инфраструктуру**
@@ -81,7 +187,7 @@
     width: 100vw !important;
     height: 100vh !important;
     z-index: 9999 !important;
-    background: rgba(0, 0, 0, 0.95) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
     object-fit: contain !important;
     cursor: zoom-out !important;
     padding: 20px !important;

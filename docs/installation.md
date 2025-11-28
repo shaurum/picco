@@ -37,7 +37,7 @@
 </div>
 
 <!-- Модальное окно галереи -->
-<div id="galleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: pointer;">
+<div id="galleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
     
     <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
@@ -192,7 +192,7 @@ document.getElementById('galleryModal').addEventListener('click', function(e) {
 </div>
 
 <!-- Модальное окно галереи для второй группы -->
-<div id="galleryModal2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: pointer;">
+<div id="galleryModal2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
         <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
@@ -420,7 +420,7 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
     </div>
 
     <!-- Модальное окно галереи для первой группы -->
-    <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
+    <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: zoom-out;">
             <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
             <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
@@ -471,7 +471,7 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 </div>
 
 <!-- Модальное окно галереи для второй группы -->
-<div id="galleryModal3B" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: pointer;">
+<div id="galleryModal3B" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
         <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
@@ -615,25 +615,25 @@ document.getElementById('galleryModal3B').addEventListener('click', function(e) 
 </div>
 
 <!-- Модальное окно галереи для четвертой группы -->
-<div id="galleryModal4" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: pointer;">
-        <!-- Кнопка закрытия -->
+<div id="galleryModal4" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;" onclick="handleBackgroundClick4(event)">
+    <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
-        <!-- Кнопка назад -->
+    <!-- Кнопка назад -->
     <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
-        <!-- Кнопка вперед -->
+    <!-- Кнопка вперед -->
     <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage4()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
-        <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
-        <img id="galleryImage4" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;">
+    <!-- Область изображения -->
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;" onclick="event.stopPropagation()">
+        <img id="galleryImage4" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery4()">
     </div>
-        <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+    <!-- Счетчик изображений -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;" onclick="event.stopPropagation()">
         <span id="imageCounter4">1 / 3</span>
     </div>
 </div>
@@ -680,6 +680,12 @@ function closeGallery4() {
     window.scrollTo(0, scrollPosition4);
 }
 
+function handleBackgroundClick4(event) {
+    if (event.target === document.getElementById('galleryModal4')) {
+        closeGallery4();
+    }
+}
+
 function prevImage4() {
     currentIndex4 = (currentIndex4 - 1 + images4.length) % images4.length;
     updateGallery4();
@@ -711,14 +717,8 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-// Закрытие по клику на фон или на изображение для четвертой галереи
-document.getElementById('galleryModal4').addEventListener('click', function(e) {
-    if (e.target === this || e.target.id === 'galleryImage4') {
-        closeGallery4();
-    }
-});
 </script>
+
 ## Демонтаж модулей
 Перед демонтажем модуля необходимо убедиться, что все подводящие к нему кабели отсоединены, затем с помощью плоской отвертки аккуратно перевести защелки, расположенные снизу и сверху, в положение «открыто». После чего потянуть модуль на себя вдоль "шип-пазов" до полного отсоединения.
  
@@ -728,7 +728,7 @@ document.getElementById('galleryModal4').addEventListener('click', function(e) {
          width="330" 
          style="cursor: zoom-in;"
          onclick="openGallery5(0)">
-        <img src="img/inistallation/inistallation_5_2m.svg" 
+    <img src="img/inistallation/inistallation_5_2m.svg" 
          alt="Installation 5-2" 
          width="300" 
          style="cursor: zoom-in;"
@@ -736,26 +736,26 @@ document.getElementById('galleryModal4').addEventListener('click', function(e) {
 </div>
 
 <!-- Модальное окно галереи для пятой группы -->
-<div id="galleryModal5" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; cursor: zoom-out;">
+<div id="galleryModal5" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
     
     <!-- Кнопка закрытия -->
- <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
+    <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery5()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
-        <!-- Кнопка назад -->
- <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+    <!-- Кнопка назад -->
+    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage5()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
-        <!-- Кнопка вперед -->
- <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+    <!-- Кнопка вперед -->
+    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage5()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
-        <!-- Область изображения -->
- <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
-        <img id="galleryImage5" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
+    <!-- Область изображения -->
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+        <img id="galleryImage5" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery5()">
     </div>
-        <!-- Счетчик изображений -->
- <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+    <!-- Счетчик изображений -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
         <span id="imageCounter5">1 / 2</span>
     </div>
 </div>
@@ -768,8 +768,12 @@ const images5 = [
 ];
 
 let currentIndex5 = 0;
+let scrollPosition5 = 0;
 
 function openGallery5(index) {
+    // Сохраняем позицию скролла
+    scrollPosition5 = window.pageYOffset || document.documentElement.scrollTop;
+    
     currentIndex5 = index;
     const modal = document.getElementById('galleryModal5');
     const galleryImage = document.getElementById('galleryImage5');
@@ -778,13 +782,23 @@ function openGallery5(index) {
     galleryImage.src = images5[currentIndex5];
     imageCounter.textContent = `${currentIndex5 + 1} / ${images5.length}`;
     modal.style.display = 'block';
+    // Блокируем скролл body
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition5}px`;
+    document.body.style.width = '100%';
 }
 
 function closeGallery5() {
     const modal = document.getElementById('galleryModal5');
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    
+    // Восстанавливаем скролл и позицию
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollPosition5);
 }
 
 function prevImage5() {
