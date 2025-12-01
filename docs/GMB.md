@@ -76,7 +76,6 @@
 
 <div style="clear: both;"></div>
 
-<!-- Попапы для видео -->
 <div id="video-battery" class="video-modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -258,7 +257,6 @@
 
 /* --- АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА (≤ 768px) --- */
 @media (max-width: 768px) {
-  /* Блок с изображением и текстом — в один столбец */
   .gmb-block {
     flex-direction: column;
     gap: 1rem;
@@ -275,7 +273,6 @@
     width: 100%;
   }
 
-  /* Блок с описанием и схемой — в один столбец */
   .description-scheme {
     flex-direction: column;
     gap: 1rem;
@@ -287,7 +284,6 @@
     margin: 0 auto;
   }
 
-  /* Увеличиваем точки для мобильных */
   .point {
     width: 30px;
     height: 30px;
@@ -303,7 +299,6 @@
     padding: 6px 10px;
   }
 
-  /* Увеличиваем окно видео на мобильных */
   .modal-content {
     max-width: 95vw;
     max-height: 95vh;
@@ -328,7 +323,6 @@
   }
 }
 
-/* --- Для очень маленьких экранов (≤ 480px) --- */
 @media (max-width: 480px) {
   .video-title {
     font-size: 14px;
@@ -339,7 +333,6 @@
     max-height: 80vh;
   }
 
-  /* Дополнительный текст — делаем более заметным на мелких экранах */
   p[style*="Также для обеспечения"] {
     margin: 1.2rem 0 0 0 !important;
     font-size: clamp(14px, 4vw, 16px) !important;
@@ -349,66 +342,93 @@
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const points = document.querySelectorAll('.point');
-  const closeButtons = document.querySelectorAll('.close');
-  
-  // Обработчик для точек
-  points.forEach(point => {
-    point.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      const videoId = this.getAttribute('data-video');
-      const modal = document.getElementById(videoId);
-      if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        
-        // Автозапуск видео с бесконечным повторением
-        const video = modal.querySelector('video');
-        if (video) {
-          video.currentTime = 0;
-          video.play().catch(error => {
-            console.error('Ошибка воспроизведения:', error);
-          });
-        }
+let scrollPosition = 0;
+
+// Единый обработчик кликов на весь документ (делегирование)
+document.addEventListener('click', function(e) {
+  // Клик по точке для открытия видео
+  if (e.target.closest('.point')) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const point = e.target.closest('.point');
+    const videoId = point.getAttribute('data-video');
+    const modal = document.getElementById(videoId);
+    
+    if (!modal) return;
+    
+    // Сохраняем позицию скролла
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Показываем модалку
+    modal.style.display = 'block';
+    
+    // Блокируем скролл
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
+    
+    // === КЛЮЧЕВОЕ: play() вызывается СРАЗУ в контексте клика ===
+    const video = modal.querySelector('video');
+    if (video) {
+      video.currentTime = 0;
+      // Пробуем воспроизвести СРАЗУ — в контексте прямого клика
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          // Если не сработало — не страшно, controls включены
+          console.warn('Авто-воспроизведение заблокировано:', err);
+        });
       }
-    });
-  });
-  
-  // Закрытие модальных окон
-  closeButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      const modal = this.closest('.video-modal');
-      if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-    });
-  });
-  
-  // Закрытие по клику вне окна
-  window.addEventListener('click', function(e) {
-    if (e.target.classList.contains('video-modal')) {
-      const modals = document.querySelectorAll('.video-modal');
-      modals.forEach(modal => {
-        modal.style.display = 'none';
-      });
-      document.body.style.overflow = 'auto';
     }
-  });
+  }
   
-  // Закрытие по ESC
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      const modals = document.querySelectorAll('.video-modal');
-      modals.forEach(modal => {
-        modal.style.display = 'none';
-      });
-      document.body.style.overflow = 'auto';
-    }
+  // Клик по кнопке закрытия
+  if (e.target.closest('.close')) {
+    const modal = e.target.closest('.video-modal');
+    if (modal) closeVideoModal(modal);
+  }
+  
+  // Клик по фону модалки
+  if (e.target.classList.contains('video-modal')) {
+    closeVideoModal(e.target);
+  }
+});
+
+// Обработчик клавиш
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const openModal = document.querySelector('.video-modal[style*="block"]');
+    if (openModal) closeVideoModal(openModal);
+  }
+});
+
+function closeVideoModal(modal) {
+  if (!modal) return;
+  
+  const video = modal.querySelector('video');
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+  
+  modal.style.display = 'none';
+  
+  // Восстанавливаем скролл
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  
+  window.scrollTo(0, scrollPosition);
+}
+
+// Остановка видео при уходе со страницы
+window.addEventListener('beforeunload', function() {
+  document.querySelectorAll('.video-modal video').forEach(v => {
+    v.pause();
+    v.currentTime = 0;
   });
 });
 </script>

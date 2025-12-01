@@ -1,3 +1,159 @@
+<style>
+.zoom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95vw;
+    max-height: 95vh;
+    width: fit-content;
+    height: fit-content;
+    z-index: 10000;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    cursor: zoom-out;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    border: 1px solid #e0e0e0;
+}
+
+.zoom-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-modal img {
+    max-width: calc(100vw - 60px);   /* с учётом padding и border */
+    max-height: calc(100vh - 60px);
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+}
+
+.zoom-overlay.active {
+    display: block;
+}
+
+.zoom-trigger {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.zoom-trigger:hover {
+    transform: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #666;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10001;
+}
+
+.close-btn:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+</style>
+
+<script>
+function openZoomModal(src, alt) {
+    // Создаем элементы, если они еще не существуют
+    let overlay = document.querySelector('.zoom-overlay');
+    let modal = document.querySelector('.zoom-modal');
+    
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'zoom-overlay';
+        document.body.appendChild(overlay);
+    }
+    
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.className = 'zoom-modal';
+        
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'close-btn';
+        closeBtn.innerHTML = '×';
+        closeBtn.onclick = closeZoomModal;
+        
+        const img = document.createElement('img');
+        img.id = 'zoomed-image';
+        // ДОБАВЛЕНО: Закрытие по клику на саму картинку
+        img.onclick = closeZoomModal;
+        
+        modal.appendChild(closeBtn);
+        modal.appendChild(img);
+        document.body.appendChild(modal);
+        
+        // Закрытие по клику на overlay
+        overlay.onclick = closeZoomModal;
+        // Предотвращаем закрытие при клике на само изображение
+        modal.onclick = function(e) {
+            e.stopPropagation();
+        };
+    }
+    
+    // Устанавливаем изображение
+    const zoomedImg = document.getElementById('zoomed-image');
+    zoomedImg.src = src;
+    zoomedImg.alt = alt;
+    
+    // Показываем модальное окно и overlay
+    overlay.classList.add('active');
+    modal.classList.add('active');
+    
+    // Закрытие по ESC
+    document.addEventListener('keydown', handleEscKey);
+}
+
+function closeZoomModal() {
+    const overlay = document.querySelector('.zoom-overlay');
+    const modal = document.querySelector('.zoom-modal');
+    
+    if (overlay) overlay.classList.remove('active');
+    if (modal) modal.classList.remove('active');
+    
+    document.removeEventListener('keydown', handleEscKey);
+}
+
+function handleEscKey(e) {
+    if (e.key === 'Escape') {
+        closeZoomModal();
+    }
+}
+</script>
+
+
 # Подготовка к настройке
 
 Для настройки прибора следуйте следующим пунктам:
@@ -20,136 +176,15 @@
     !!! note "Примечание"
         IP-адрес задается следующим образом: `192.168.1.Х`, где `Х` — любое число от 2 до 254, кроме 42.
 
+    
+
     <div style="text-align: center;">
-        <img src="setup_preparation/IP.webp" 
-            alt="Image title" 
-            width="280" 
-            style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;"
-            class="zoom-trigger"
-            onclick="openZoomModal(this.src, this.alt)">
+    <img src="setup_preparation\IP.webp" 
+         alt="Image title" 
+         width="300" 
+         class="zoom-trigger"
+         onclick="openZoomModal(this.src, this.alt)">
     </div>
-
-    <style>
-    .zoom-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 9998;
-    }
-
-    .zoom-modal {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-        max-width: 90%;
-        max-height: 90%;
-    }
-
-    .zoom-modal img {
-        max-width: 100%;
-        max-height: 90vh;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        object-fit: contain;
-        cursor: pointer;
-    }
-
-    .close-btn {
-        position: absolute;
-        top: -40px;
-        right: -40px;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: 2px solid white;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 10000;
-    }
-
-    .zoom-overlay.active,
-    .zoom-modal.active {
-        display: block;
-    }
-    </style>
-
-    <script>
-    function openZoomModal(src, alt) {
-        // Создаем элементы, если они еще не существуют
-        let overlay = document.querySelector('.zoom-overlay');
-        let modal = document.querySelector('.zoom-modal');
-        
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'zoom-overlay';
-            document.body.appendChild(overlay);
-        }
-        
-        if (!modal) {
-            modal = document.createElement('div');
-            modal.className = 'zoom-modal';
-            
-            const closeBtn = document.createElement('button');
-            closeBtn.className = 'close-btn';
-            closeBtn.innerHTML = '×';
-            closeBtn.onclick = closeZoomModal;
-            
-            const img = document.createElement('img');
-            img.id = 'zoomed-image';
-            // Закрытие по клику на саму картинку
-            img.onclick = closeZoomModal;
-            
-            modal.appendChild(closeBtn);
-            modal.appendChild(img);
-            document.body.appendChild(modal);
-            
-            // Закрытие по клику на overlay
-            overlay.onclick = closeZoomModal;
-            // Предотвращаем закрытие при клике на само изображение
-            modal.onclick = function(e) {
-                e.stopPropagation();
-            };
-        }
-        
-        // Устанавливаем изображение
-        const zoomedImg = document.getElementById('zoomed-image');
-        zoomedImg.src = src;
-        zoomedImg.alt = alt;
-        
-        // Показываем модальное окно и overlay
-        overlay.classList.add('active');
-        modal.classList.add('active');
-        
-        // Закрытие по ESC
-        document.addEventListener('keydown', handleEscKey);
-    }
-
-    function closeZoomModal() {
-        const overlay = document.querySelector('.zoom-overlay');
-        const modal = document.querySelector('.zoom-modal');
-        
-        if (overlay) overlay.classList.remove('active');
-        if (modal) modal.classList.remove('active');
-        
-        document.removeEventListener('keydown', handleEscKey);
-    }
-
-    function handleEscKey(e) {
-        if (e.key === 'Escape') {
-            closeZoomModal();
-        }
-    }
-    </script>
 
 
     **Способ 2: Подключение через сетевую инфраструктуру**
@@ -166,57 +201,24 @@
     - Нажмите на иконку профиля в правом верхнем углу.
     - В выпадающем меню выберите пункт «Профиль».
 
-![Image title](setup_preparation/web.webp){ .fullscreen-image width="700" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+    <div style="text-align: center;">
+    <img src="setup_preparation/web.webp" 
+         alt="Image title" 
+         width="400" 
+         class="zoom-trigger"
+         onclick="openZoomModal(this.src, this.alt)">
+    </div>
 
    <ul style="margin-left: 45px;">
 <li>В открывшемся окне введите текущий пароль, задайте и подтвердите новый пароль, затем нажмите кнопку «Сохранить изменения».</li>
 </ul>
 
-![Image title](setup_preparation/password.webp){ .fullscreen-image width="300" style="display: block; margin-left: auto; margin-right: auto; cursor: zoom-in;" }
+<div style="text-align: center;">
+    <img src="setup_preparation/password.webp" 
+         alt="Image title" 
+         width="300" 
+         class="zoom-trigger"
+         onclick="openZoomModal(this.src, this.alt)">
+    </div>
 
-<style>
-.fullscreen-image {
-    cursor: zoom-in;
-    margin: 20px auto;
-}
-
-.fullscreen-image.fullscreen-active {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    z-index: 9999 !important;
-    background: rgba(0, 0, 0, 0.7) !important;
-    object-fit: contain !important;
-    cursor: zoom-out !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-}
-</style>
-
-<script>
-document.querySelectorAll('.fullscreen-image').forEach(img => {
-    img.addEventListener('click', function() {
-        if (this.classList.contains('fullscreen-active')) {
-            this.classList.remove('fullscreen-active');
-            document.body.style.overflow = '';
-        } else {
-            this.classList.add('fullscreen-active');
-            document.body.style.overflow = 'hidden';
-        }
-    });
-});
-
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        const fullscreenImages = document.querySelectorAll('.fullscreen-active');
-        fullscreenImages.forEach(img => {
-            img.classList.remove('fullscreen-active');
-            document.body.style.overflow = '';
-        });
-    }
-});
-</script>
 

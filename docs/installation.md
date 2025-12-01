@@ -1,6 +1,6 @@
 # Монтаж и демонтаж
 
-## Монтаж модулей на DIN-рейку {#_1}
+## Монтаж модулей на DIN-рейку
 
 !!! Info "Подготовка к монтажу"
     Перед монтажом для контроллера предварительно организуется рабочее место, обеспечивающее защиту от попадания влаги, грязи и посторонних предметов. 
@@ -37,7 +37,7 @@
 </div>
 
 <!-- Модальное окно галереи -->
-<div id="galleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
+<div id="galleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;" onclick="handleBackgroundClick(event)">
     
     <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
@@ -55,12 +55,12 @@
     </div>
     
     <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
-        <img id="galleryImage" src="" alt="" style="max-width: 100%; max-height: 100%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;">
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;" onclick="event.stopPropagation()">
+        <img id="galleryImage" src="" alt="" style="max-width: 100%; max-height: 100%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery()">
     </div>
     
     <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;" onclick="event.stopPropagation()">
         <span id="imageCounter">1 / 3</span>
     </div>
 </div>
@@ -119,6 +119,12 @@ function closeGallery() {
     currentGallery = '';
 }
 
+function handleBackgroundClick(event) {
+    if (event.target === document.getElementById('galleryModal')) {
+        closeGallery();
+    }
+}
+
 function prevImage() {
     if (currentImages.length > 0) {
         currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
@@ -156,13 +162,6 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-// Закрытие по клику на фон или на изображение
-document.getElementById('galleryModal').addEventListener('click', function(e) {
-    if (e.target === this || e.target.id === 'galleryImage') {
-        closeGallery();
-    }
-});
 </script>
 
 Монтаж каждого последующего модуля осуществляется путем присоединения его к уже установленному модулю методом "шип-паз". Устанавливаемый модуль задвигается вдоль "шип-паза" до упора к DIN-рейке и фиксируется верхней и нижней защелками в положение «закрыто».
@@ -192,25 +191,25 @@ document.getElementById('galleryModal').addEventListener('click', function(e) {
 </div>
 
 <!-- Модальное окно галереи для второй группы -->
-<div id="galleryModal2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
-        <!-- Кнопка закрытия -->
+<div id="galleryModal2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;" onclick="handleBackgroundClick2(event)">
+    <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
-        <!-- Кнопка назад -->
+    <!-- Кнопка назад -->
     <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
-        <!-- Кнопка вперед -->
+    <!-- Кнопка вперед -->
     <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage2()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
-        <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 40px; box-sizing: border-box;">
-        <img id="galleryImage2" src="" alt="" style="width: auto; height: auto; max-width: 95vw; max-height: 95vh; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;">
+    <!-- Область изображения -->
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 40px; box-sizing: border-box;" onclick="event.stopPropagation()">
+        <img id="galleryImage2" src="" alt="" style="width: auto; height: auto; max-width: 95vw; max-height: 95vh; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery2()">
     </div>
-        <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+    <!-- Счетчик изображений -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;" onclick="event.stopPropagation()">
         <span id="imageCounter2">1 / 3</span>
     </div>
 </div>
@@ -262,6 +261,12 @@ function closeGallery2() {
     window.scrollTo(0, scrollPosition2);
 }
 
+function handleBackgroundClick2(event) {
+    if (event.target === document.getElementById('galleryModal2')) {
+        closeGallery2();
+    }
+}
+
 function prevImage2() {
     currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
     updateGallery2();
@@ -298,101 +303,12 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-// Закрытие по клику на фон или на изображение для второй галереи
-document.getElementById('galleryModal2').addEventListener('click', function(e) {
-    if (e.target === this || e.target.id === 'galleryImage2') {
-        closeGallery2();
-    }
-});
 </script>
 
 !!! warning "Обратите внимание"
     На первый и последний модули в группе в обязательном порядке ставится заглушка.
 
 ## Монтаж подводящих кабелей
-
-<script>
-    // Данные для галереи 3A
-    const images3A = [
-        'img/inistallation/inistallation_3_1.svg',
-        'img/inistallation/inistallation_3_2.svg', 
-        'img/inistallation/inistallation_3_3.svg'
-    ];
-
-    let currentIndex3A = 0;
-    let scrollPosition3A = 0;
-
-    function openGallery3A(index) {
-        // Сохраняем позицию скролла
-        scrollPosition3A = window.pageYOffset || document.documentElement.scrollTop;
-        
-        currentIndex3A = index;
-        const modal = document.getElementById('galleryModal3A');
-        const galleryImage = document.getElementById('galleryImage3A');
-        const imageCounter = document.getElementById('imageCounter3A');
-        
-        galleryImage.src = images3A[currentIndex3A];
-        imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
-        modal.style.display = 'block';
-        // Блокируем скролл body
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollPosition3A}px`;
-        document.body.style.width = '100%';
-    }
-
-    function closeGallery3A() {
-        const modal = document.getElementById('galleryModal3A');
-        modal.style.display = 'none';
-        
-        // Восстанавливаем скролл и позицию
-        document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        window.scrollTo(0, scrollPosition3A);
-    }
-
-    function prevImage3A() {
-        currentIndex3A = (currentIndex3A - 1 + images3A.length) % images3A.length;
-        updateGallery3A();
-    }
-
-    function nextImage3A() {
-        currentIndex3A = (currentIndex3A + 1) % images3A.length;
-        updateGallery3A();
-    }
-
-    function updateGallery3A() {
-        const galleryImage = document.getElementById('galleryImage3A');
-        const imageCounter = document.getElementById('imageCounter3A');
-        
-        galleryImage.src = images3A[currentIndex3A];
-        imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
-    }
-
-    // Управление клавиатурой для галереи 3A
-    document.addEventListener('keydown', function(e) {
-        const modal = document.getElementById('galleryModal3A');
-        if (modal.style.display === 'block') {
-            if (e.key === 'Escape') {
-                closeGallery3A();
-            } else if (e.key === 'ArrowLeft') {
-                prevImage3A();
-            } else if (e.key === 'ArrowRight') {
-                nextImage3A();
-            }
-        }
-    });
-
-    // Закрытие по клику на фон для галереи 3A
-    document.getElementById('galleryModal3A').addEventListener('click', function(e) {
-        if (e.target === this || e.target.id === 'galleryImage3A') {
-            closeGallery3A();
-        }
-    });
-</script>
 
 !!! Info "Подготовка к монтажу"
     Перед началом работ по подключению необходимо убедиться, что кабели обесточены. 
@@ -402,48 +318,127 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 3. Подключить все необходимые подводящие кабели на каждый модуль.
 
     <div style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; margin: 20px 0; flex-wrap: wrap;">
-        <img src="img/inistallation/inistallation_3_1m.svg" 
-            alt="Installation 3-1" 
-            width="220" 
-            style="cursor: zoom-in;"
-            onclick="openGallery3A(0)">
-        <img src="img/inistallation/inistallation_3_2m.svg" 
-            alt="Installation 3-2" 
-            width="260" 
-            style="cursor: zoom-in;"
-            onclick="openGallery3A(1)">
-        <img src="img/inistallation/inistallation_3_3m.svg" 
-            alt="Installation 3-3" 
-            width="126" 
-            style="cursor: zoom-in;"
-            onclick="openGallery3A(2)">
-    </div>
+    <img src="img/inistallation/inistallation_3_1m.svg" 
+        alt="Installation 3-1" 
+        width="220" 
+        style="cursor: zoom-in;"
+        onclick="openGallery3A(0)">
+    <img src="img/inistallation/inistallation_3_2m.svg" 
+        alt="Installation 3-2" 
+        width="260" 
+        style="cursor: zoom-in;"
+        onclick="openGallery3A(1)">
+    <img src="img/inistallation/inistallation_3_3m.svg" 
+        alt="Installation 3-3" 
+        width="126" 
+        style="cursor: zoom-in;"
+        onclick="openGallery3A(2)">
+</div>
 
-    <!-- Модальное окно галереи для первой группы -->
-    <div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: zoom-out;">
-            <!-- Кнопка закрытия -->
+<!-- Модальное окно галереи для первой группы -->
+<div id="galleryModal3A" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;" onclick="handleBackgroundClick3A(event)">
+    <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
-            <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
-        </div>
-            <!-- Кнопка назад -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
-            <button onclick="prevImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
-        </div>
-            <!-- Кнопка вперед -->
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
-            <button onclick="nextImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
-        </div>
-            <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
-            <img id="galleryImage3A" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain;">
-        </div>
-        
-        <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
-            <span id="imageCounter3A">1 / 3</span>
-        </div>
+        <button onclick="closeGallery3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
+    <!-- Кнопка назад -->
+    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
+        <button onclick="prevImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
+    </div>
+    <!-- Кнопка вперед -->
+    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
+        <button onclick="nextImage3A()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
+    </div>
+    <!-- Область изображения -->
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;" onclick="event.stopPropagation()">
+        <img id="galleryImage3A" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery3A()">
+    </div>
+    <!-- Счетчик изображений -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;" onclick="event.stopPropagation()">
+        <span id="imageCounter3A">1 / 3</span>
+    </div>
+</div>
 
+<script>
+// Данные для галереи 3A
+const images3A = [
+    'img/inistallation/inistallation_3_1.svg',
+    'img/inistallation/inistallation_3_2.svg', 
+    'img/inistallation/inistallation_3_3.svg'
+];
+
+let currentIndex3A = 0;
+let scrollPosition3A = 0;
+
+function openGallery3A(index) {
+    // Сохраняем позицию скролла
+    scrollPosition3A = window.pageYOffset || document.documentElement.scrollTop;
+    
+    currentIndex3A = index;
+    const modal = document.getElementById('galleryModal3A');
+    const galleryImage = document.getElementById('galleryImage3A');
+    const imageCounter = document.getElementById('imageCounter3A');
+    
+    galleryImage.src = images3A[currentIndex3A];
+    imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
+    modal.style.display = 'block';
+    // Блокируем скролл body
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition3A}px`;
+    document.body.style.width = '100%';
+}
+
+function closeGallery3A() {
+    const modal = document.getElementById('galleryModal3A');
+    modal.style.display = 'none';
+    
+    // Восстанавливаем скролл и позицию
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollPosition3A);
+}
+
+function handleBackgroundClick3A(event) {
+    if (event.target === document.getElementById('galleryModal3A')) {
+        closeGallery3A();
+    }
+}
+
+function prevImage3A() {
+    currentIndex3A = (currentIndex3A - 1 + images3A.length) % images3A.length;
+    updateGallery3A();
+}
+
+function nextImage3A() {
+    currentIndex3A = (currentIndex3A + 1) % images3A.length;
+    updateGallery3A();
+}
+
+function updateGallery3A() {
+    const galleryImage = document.getElementById('galleryImage3A');
+    const imageCounter = document.getElementById('imageCounter3A');
+    
+    galleryImage.src = images3A[currentIndex3A];
+    imageCounter.textContent = `${currentIndex3A + 1} / ${images3A.length}`;
+}
+
+// Управление клавиатурой для галереи 3A
+document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('galleryModal3A');
+    if (modal.style.display === 'block') {
+        if (e.key === 'Escape') {
+            closeGallery3A();
+        } else if (e.key === 'ArrowLeft') {
+            prevImage3A();
+        } else if (e.key === 'ArrowRight') {
+            nextImage3A();
+        }
+    }
+});
+</script>
 
 4. Вставить клеммную колодку в специальный разъем на модуле.
 5. Затянуть винты клеммной колодки (рекомендуемое  усилием 0,2 Н*м).
@@ -471,25 +466,25 @@ document.getElementById('galleryModal2').addEventListener('click', function(e) {
 </div>
 
 <!-- Модальное окно галереи для второй группы -->
-<div id="galleryModal3B" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;">
-        <!-- Кнопка закрытия -->
+<div id="galleryModal3B" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; cursor: pointer;" onclick="handleBackgroundClick3B(event)">
+    <!-- Кнопка закрытия -->
     <div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
         <button onclick="closeGallery3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">×</button>
     </div>
-        <!-- Кнопка назад -->
+    <!-- Кнопка назад -->
     <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="prevImage3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">‹</button>
     </div>
-        <!-- Кнопка вперед -->
+    <!-- Кнопка вперед -->
     <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); z-index: 10000;">
         <button onclick="nextImage3B()" style="background: rgba(0,0,0,0.5); color: white; border: 2px solid white; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">›</button>
     </div>
-        <!-- Область изображения -->
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
-        <img id="galleryImage3B" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;">
+    <!-- Область изображения -->
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px; box-sizing: border-box;" onclick="event.stopPropagation()">
+        <img id="galleryImage3B" src="" alt="" style="max-width: 90%; max-height: 90%; background: white; padding: 20px; border-radius: 8px; object-fit: contain; cursor: pointer;" onclick="closeGallery3B()">
     </div>
-        <!-- Счетчик изображений -->
-    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;">
+    <!-- Счетчик изображений -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px;" onclick="event.stopPropagation()">
         <span id="imageCounter3B">1 / 3</span>
     </div>
 </div>
@@ -536,6 +531,12 @@ function closeGallery3B() {
     window.scrollTo(0, scrollPosition3B);
 }
 
+function handleBackgroundClick3B(event) {
+    if (event.target === document.getElementById('galleryModal3B')) {
+        closeGallery3B();
+    }
+}
+
 function prevImage3B() {
     currentIndex3B = (currentIndex3B - 1 + images3B.length) % images3B.length;
     updateGallery3B();
@@ -567,14 +568,8 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-// Закрытие по клику на фон или на изображение для галереи 3B
-document.getElementById('galleryModal3B').addEventListener('click', function(e) {
-    if (e.target === this || e.target.id === 'galleryImage3B') {
-        closeGallery3B();
-    }
-});
 </script>
+
 <div style="margin-bottom: 80px;"></div>
 
  <span style="font-size:25px;"> Для монтажа кабелей должны выполняться следующие требования: </span>
@@ -719,7 +714,7 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 
-## Демонтаж модулей {#_2}
+## Демонтаж модулей
 Перед демонтажем модуля необходимо убедиться, что все подводящие к нему кабели отсоединены, затем с помощью плоской отвертки аккуратно перевести защелки, расположенные снизу и сверху, в положение «открыто». После чего потянуть модуль на себя вдоль "шип-пазов" до полного отсоединения.
  
 <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
