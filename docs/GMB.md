@@ -435,69 +435,69 @@ window.addEventListener('beforeunload', function() {
 
 ## Технические характеристики  
 <div style="width: 100%; display: grid; grid-template-columns: 1fr;">
-  <table style="border-collapse: collapse; width: 100%; min-width: 100%; table-layout: fixed;">
+  <table class="responsive-table">
     <colgroup>
-      <col style="width: 600px;">   <!-- Фиксированная ширина -->
-      <col style="width: 400px;">   <!-- Фиксированная ширина -->
+      <col class="col-parameter">
+      <col class="col-value">
     </colgroup>
-    </thead>
+    <thead>
       <tr>
-        <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Характеристика</th>
-        <th style="text-align: center; padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Значение</th>
+        <th class="header-cell">Характеристика</th>
+        <th class="header-cell">Значение</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ядро</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4 x Cortex-A72</td>
+        <td class="data-cell">Ядро</td>
+        <td class="data-cell">4 x Cortex-A72</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Оперативная память, Гб</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">4, DDR4</td>
+        <td class="data-cell">Оперативная память, Гб</td>
+        <td class="data-cell">4, DDR4</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Объем памяти, Гб</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">8</td>
+        <td class="data-cell">Объем памяти, Гб</td>
+        <td class="data-cell">8</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; vertical-align: middle; word-wrap: break-word;">Поддерживаемые интерфейсы</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Ethernet 1000 Мбит/с – 1, Ethernet 100 Мбит/с – 2</td>
+        <td class="data-cell vertical-middle">Поддерживаемые интерфейсы</td>
+        <td class="data-cell">Ethernet 1000 Мбит/с – 1,<br>Ethernet 100 Мбит/с – 2</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Операционная система</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Linux с RT патчем</td>
+        <td class="data-cell">Операционная система</td>
+        <td class="data-cell">Linux с RT патчем</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Диапазон входного напряжения, В</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">от 19 до 29</td>
+        <td class="data-cell">Диапазон входного напряжения, В</td>
+        <td class="data-cell">от 19 до 29</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Номинальное напряжение питания, В</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">24</td>
+        <td class="data-cell">Номинальное напряжение питания, В</td>
+        <td class="data-cell">24</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации питания, канала информационного обмена</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+        <td class="data-cell">Наличие индикации питания, канала информационного обмена</td>
+        <td class="data-cell">да</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Наличие индикации интерфейсов</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">да</td>
+        <td class="data-cell">Наличие индикации интерфейсов</td>
+        <td class="data-cell">да</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Максимальная потребляемая мощность, Вт</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">7,5</td>
+        <td class="data-cell">Максимальная потребляемая мощность, Вт</td>
+        <td class="data-cell">7,5</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Время выполнения цикла</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Менее 1 мс</td>
+        <td class="data-cell">Время выполнения цикла</td>
+        <td class="data-cell">Менее 1 мс</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Масса, кг</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">0,34</td>
+        <td class="data-cell">Масса, кг</td>
+        <td class="data-cell">0,34</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">Размеры (Ш х В х Г), мм</td>
-        <td style="padding: 8px; border: 1px solid #ccc; word-wrap: break-word;">57,1х130,9x98,0</td>
+        <td class="data-cell">Размеры (Ш х В х Г), мм</td>
+        <td class="data-cell">57,1х130,9x98,0</td>
       </tr>
     </tbody>
   </table>
@@ -524,20 +524,20 @@ window.addEventListener('beforeunload', function() {
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Температура среды, °С</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Температура среды, °С</td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от минус 40 до 60</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Относительная влажность воздуха, %</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Относительная влажность воздуха, %</td>
         <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 70</td>
         <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 95</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Атмосферное давление, кПа</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Атмосферное давление, кПа</td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 84,0 до 106,7</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Вибрация<br><em>амплитуда, не более</em></td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">0,35 мм с частотой 55 Гц</td>
       </tr>
     </tbody>
