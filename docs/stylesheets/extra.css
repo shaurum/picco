@@ -223,3 +223,7 @@ table.compact-left tbody td {
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+.vertical-middle {
+    vertical-align: middle;
+}

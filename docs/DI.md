@@ -114,20 +114,20 @@
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Температура среды, °С</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Температура среды, °С</td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от минус 40 до 60</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Относительная влажность воздуха, %</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Относительная влажность воздуха, %</td>
         <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 70</td>
         <td style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 5 до 95</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Атмосферное давление, кПа</strong></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Атмосферное давление, кПа</td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">от 84,0 до 106,7</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border: 1px solid #ccc;"><strong>Вибрация</strong><br><em>амплитуда, не более</em></td>
+        <td style="padding: 8px; border: 1px solid #ccc;">Вибрация<br><em>амплитуда, не более</em></td>
         <td colspan="2" style="text-align: center; vertical-align: middle; padding: 8px; border: 1px solid #ccc;">0,35 мм с частотой 55 Гц</td>
       </tr>
     </tbody>
