@@ -229,7 +229,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.1.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -239,7 +239,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.2.webp" 
          alt="Image title" 
-         width="500" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -251,7 +251,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.3.webp" 
          alt="Image title" 
-         width="500" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -263,7 +263,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.4.webp" 
          alt="Image title" 
-         width="500" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -273,7 +273,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.5.webp" 
          alt="Image title" 
-         width="500" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -283,7 +283,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.7.webp" 
          alt="Image title" 
-         width="500" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -298,7 +298,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_1.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -312,7 +312,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_2.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -322,7 +322,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_3.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -336,7 +336,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_4.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -347,7 +347,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_5.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -357,7 +357,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_7.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -367,7 +367,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_8.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -379,7 +379,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_9.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -391,7 +391,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_10.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -401,7 +401,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_11.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -411,7 +411,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_12.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -421,7 +421,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_13.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -437,7 +437,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_15.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -447,7 +447,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/C_16.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>

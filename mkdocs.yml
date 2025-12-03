@@ -52,8 +52,6 @@ nav:
   - Подготовка к работе:
     - Монтаж и демонтаж: installation.md
     - Правила сборки: assembly_rules.md
-    - Составление сборок: assembly.md
-    - Организация питания: power_organization.md
     - Настройка: 
       - Начальная настройка контроллера: setup_preparation.md
       - Навигация по web-интерфейсу: web_interface_navigation.md

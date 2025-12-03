@@ -159,7 +159,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/web_2.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -170,7 +170,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/settings.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -183,7 +183,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/time.webp" 
          alt="Image title" 
-         width="500" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>

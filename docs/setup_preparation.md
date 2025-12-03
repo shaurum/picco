@@ -153,7 +153,6 @@ function handleEscKey(e) {
 }
 </script>
 
-
 # Подготовка к настройке
 
 Для настройки прибора следуйте следующим пунктам:
@@ -204,7 +203,7 @@ function handleEscKey(e) {
     <div style="text-align: center;">
     <img src="setup_preparation/web.webp" 
          alt="Image title" 
-         width="400" 
+         width="600" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
@@ -216,7 +215,7 @@ function handleEscKey(e) {
 <div style="text-align: center;">
     <img src="setup_preparation/password.webp" 
          alt="Image title" 
-         width="300" 
+         width="400" 
          class="zoom-trigger"
          onclick="openZoomModal(this.src, this.alt)">
     </div>
