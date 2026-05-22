@@ -1,13 +1,11 @@
 :root {
-    --md-primary-fg-color:        #fc9515;
-    --md-primary-fg-color--light: #fc9515;
-    --md-primary-fg-color--dark:  #fc9515;
-    --md-accent-fg-color:         #F04E0E;
-    --md-accent-fg-color--light:  #F04E0E;
-    --md-accent-fg-color--dark:   #F04E0E;
-
-  
-  }
+    --md-primary-fg-color:        #EF4A44;
+    --md-primary-fg-color--light: #f26c67;
+    --md-primary-fg-color--dark:  #d83f3a;
+    --md-accent-fg-color:         #EF4A44;
+    --md-accent-fg-color--light:  #f26c67;
+    --md-accent-fg-color--dark:   #d83f3a;
+}
 
 /* Горизонтальные линии по бокам заголовка */
 h2[id="индикация"]::before,
@@ -17,7 +15,7 @@ h2[id="индикация"]::after {
     top: 50%;
     width: 100px;
     height: 1px;
-    background-color: #007acc;
+    background-color: #EF4A44;
 }
 
 h2[id="индикация"]::before {
@@ -43,13 +41,13 @@ table {
 
 /* Стили для заголовков ВСЕХ таблиц */
 thead th {
-    background-color: #F7941e !important;
+    background-color: #25408f !important;
     color: white !important;
     padding: 8px 10px !important;
     text-align: center !important;
     border: none !important;
-    border-right: 1px solid #ffb04d !important;
-    border-bottom: 1px solid #ffb04d !important; /* Горизонтальные линии */
+    border-right: 1px solid #f26c67 !important;
+    border-bottom: 1px solid #f26c67 !important;
     font-weight: 600 !important;
     font-size: 15px !important;
     position: relative !important;
@@ -62,7 +60,7 @@ thead th:last-child {
 
 /* Для многоуровневых заголовков - убираем нижнюю границу у верхнего уровня */
 thead tr:first-child th {
-    border-bottom: 1px solid #ffb04d !important;
+    border-bottom: 1px solid #f26c67 !important;
 }
 
 /* У нижнего уровня заголовков убираем нижнюю границу */
@@ -85,7 +83,7 @@ tbody tr:nth-child(even) {
 
 /* Ховер эффект для ВСЕХ таблиц */
 tbody tr:hover {
-    background-color: #fff3e0 !important;
+    background-color: #eef2fb !important;
 }
 
 /* КЛАСС для компактной таблицы по ЦЕНТРУ */

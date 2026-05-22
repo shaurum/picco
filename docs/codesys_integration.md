@@ -161,7 +161,7 @@ function handleEscKey(e) {
 
 Для начала работы с прибором в среде программирования CODESYS V3.5 необходимо:
 
-1. [Скачать архив](setup_preparation/CODESYS%2064%203.5.21.30.zip) для установки CODESYS.
+1. [Скачать архив](https://saplc.ru/upload/iblock/6ea/djj1xm4bqm88hlm5smkubjeb2255nezv/Codesys.zip) для установки CODESYS.
 2. Распакуйте архив в отдельную папку и запустите установщика с названием CODESYS Sandbox Prerequisites 3.5.21.30.
 
     В появившемся окне нажмите **Next**, чтобы начать установку.
@@ -182,7 +182,7 @@ function handleEscKey(e) {
 
     Нажмите **Finish** для закрытия этого окна.
 
-3. Для удаленного подключения к контроллеру установите [CODESYS Gateway](setup_preparation/CODESYS Gateway 3.5.21.30.exe).
+3. Для удаленного подключения к контроллеру установите CODESYS Gateway.
 
     После запуска появиться стартовое окно установщика. Нажмите **Next**.
 

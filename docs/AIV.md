@@ -190,11 +190,6 @@ Settings (Настройки):
 Получить значение напряжения с Channel 1 через PDO (например, 7.2 В).
 Проверить состояние Channel 1 через SDO (Status), чтобы убедиться в отсутствии перегрузки.
 
-## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>  
-<a href="/downloads/AIV.c" download>Cstruct конфигурационный файл для IgH EtherCAT Master</a>     
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 
 
 

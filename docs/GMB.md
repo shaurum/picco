@@ -665,5 +665,3 @@ window.addEventListener('beforeunload', function() {
     ![Image title](img/dimensions/installation_dimensions_GMB.svg){ width="580"}
 
 
-## Файлы для скачивания
-<a href="/downloads/proplc.package" download>Пакет таргет файлов для CODESYS v3</a>  

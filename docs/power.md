@@ -25,7 +25,6 @@
 | [IF232](IF232.md)   |                                        |
 | [IFHART](IFHART.md) |                                        |
 | [IFCAN](IFCAN.md)   |                                        |
-| [IFARINC](IFARINC.md)|                                       |
 | [SPPC](SPPC.md)	  | 7                                      |
 | [SPPM](SPPM.md)	  | 0,5                                    |
 | [SPSE](SPSE.md)     |                                        |

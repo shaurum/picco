@@ -18,4 +18,3 @@
 | SA-P5-SSMD     | 0x00000014   |
 | SA-P5-AISCT    | 0x00000015   |
 | SA-P5-AIVS     | 0x00000016   |
-| SA-P5-IFARINC  | 0x00000017   |

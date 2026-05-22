@@ -1,4 +1,4 @@
-site_name:  СА ПЛК
+site_name: PICCO Electric P5
 site_url: https://manual.saplc.ru/
 
 theme:
@@ -15,22 +15,17 @@ theme:
   extra_css:
   - stylesheets/extra.css
   
-  logo: img/logo_old.svg
-  favicon: img/favicon.svg
+  logo: img/branding/picco-logo-header.png
+  favicon: img/branding/picco-favicon.ico
   icon:
     annotation: material/chevron-right-circle
     warning: fontawesome/solid/triangle-exclamation
  
   language: ru
   palette:
-
-    # Light Mode
     - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: Red
-      accent: grey 
+      primary: red
+      accent: red
       
 extra_css:
   - stylesheets/extra.css
@@ -59,7 +54,6 @@ nav:
   - Продукты:
     - Основные модули:
       - Модуль основной SA-P5-GMB: GMB.md
-      - Модуль основной SA-P5-GMR: GMR.md
     - Дискретные модули:
       - Модуль дискретного ввода SA-P5-DI: DI.md
       - Модуль дискретного вывода SA-P5-DO: DO.md
@@ -78,12 +72,8 @@ nav:
       - Модуль интерфейсный IFHART SA-P5-IFHART: IFHART.md
       - Модуль интерфейсный IF232 SA-P5-IF232: IF232.md
       - Модуль интерфейсный IFCAN SA-P5-IFCAN: IFCAN.md
-      - Модуль интерфейсный IFARINC SA-P5-IFARINC: IFARINC.md
       - Модуль интерфейсный RS-485 SA-P5-IF485: IF485.md
       - Модуль интерфейсный RS-422 SA-P5-IF422: IF422.md
-      - Модуль интерфейсный PROFIBUS SA-P5-IFPB: IFPB.md
-    - Панель оператора:
-      - Панель оператора D13 SA-HMI-D13: D13.md
     - Специальные модули:
       - Модуль ввода питания SA-P5-SPPM: SPPM.md
       - Модуль оконечный SA-P5-SPTM: SPTM.md

@@ -627,11 +627,6 @@ style="width: 100%; height: 500px;">
 Получить значение тока с Channel 1 через PDO (например, 12.5 мА).
 Проверить состояние Channel 1 через SDO (Status), чтобы убедиться в отсутствии перегрузки или обрыва.
 
-## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>  
-<a href="/downloads/AIC.c" download>Cstruct конфигурационный файл для IgH EtherCAT Master</a>     
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 
 
 

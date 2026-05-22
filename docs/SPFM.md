@@ -136,10 +136,6 @@ style="width: 100%; height: 500px;">
 Прочитать значение через TxPDO (например, 100240 Гц).
 
 
-## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>      
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 
 
 
