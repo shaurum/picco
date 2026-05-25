@@ -47,9 +47,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/dimensions_module.svg){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions_module.svg) 
 
 <model-viewer src="https://manual.saplc.ru//img/3d/SPTM.glb"
 alt="3D Model"

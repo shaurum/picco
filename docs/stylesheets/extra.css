@@ -5,6 +5,11 @@
     --md-accent-fg-color:         #EF4A44;
     --md-accent-fg-color--light:  #f26c67;
     --md-accent-fg-color--dark:   #d83f3a;
+    --picco-table-header-bg:      #EF4A44;
+    --picco-table-header-border:  #f26c67;
+    --picco-table-row-alt:        #fff4f3;
+    --picco-table-row-hover:      #ffe3e0;
+    --picco-table-row-border:     #f3c5c1;
 }
 
 /* Горизонтальные линии по бокам заголовка */
@@ -41,13 +46,13 @@ table {
 
 /* Стили для заголовков ВСЕХ таблиц */
 thead th {
-    background-color: #25408f !important;
+    background-color: var(--picco-table-header-bg) !important;
     color: white !important;
     padding: 8px 10px !important;
     text-align: center !important;
     border: none !important;
-    border-right: 1px solid #f26c67 !important;
-    border-bottom: 1px solid #f26c67 !important;
+    border-right: 1px solid var(--picco-table-header-border) !important;
+    border-bottom: 1px solid var(--picco-table-header-border) !important;
     font-weight: 600 !important;
     font-size: 15px !important;
     position: relative !important;
@@ -60,7 +65,7 @@ thead th:last-child {
 
 /* Для многоуровневых заголовков - убираем нижнюю границу у верхнего уровня */
 thead tr:first-child th {
-    border-bottom: 1px solid #f26c67 !important;
+    border-bottom: 1px solid var(--picco-table-header-border) !important;
 }
 
 /* У нижнего уровня заголовков убираем нижнюю границу */
@@ -72,18 +77,18 @@ thead tr:last-child th {
 tbody td {
     padding: 6px 10px !important;
     text-align: center !important;
-    border-bottom: 1px solid #e0e0e0 !important;
+    border-bottom: 1px solid var(--picco-table-row-border) !important;
     font-size: 15px !important;
 }
 
 /* Чередование строк для ВСЕХ таблиц */
 tbody tr:nth-child(even) {
-    background-color: #f8f8f8 !important;
+    background-color: var(--picco-table-row-alt) !important;
 }
 
 /* Ховер эффект для ВСЕХ таблиц */
 tbody tr:hover {
-    background-color: #eef2fb !important;
+    background-color: var(--picco-table-row-hover) !important;
 }
 
 /* КЛАСС для компактной таблицы по ЦЕНТРУ */
