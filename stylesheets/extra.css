@@ -1,0 +1,232 @@
+:root {
+    --md-primary-fg-color:        #EF4A44;
+    --md-primary-fg-color--light: #f26c67;
+    --md-primary-fg-color--dark:  #d83f3a;
+    --md-accent-fg-color:         #EF4A44;
+    --md-accent-fg-color--light:  #f26c67;
+    --md-accent-fg-color--dark:   #d83f3a;
+    --picco-table-header-bg:      #EF4A44;
+    --picco-table-header-border:  #f26c67;
+    --picco-table-row-alt:        #fff4f3;
+    --picco-table-row-hover:      #ffe3e0;
+    --picco-table-row-border:     #f3c5c1;
+}
+
+/* Горизонтальные линии по бокам заголовка */
+h2[id="индикация"]::before,
+h2[id="индикация"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #EF4A44;
+}
+
+h2[id="индикация"]::before {
+    left: 0;
+}
+
+h2[id="индикация"]::after {
+    right: 0;
+}
+
+/* Базовые стили для ВСЕХ таблиц */
+table {
+    border-collapse: collapse !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    margin: 15px 0 !important;
+    border: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+}
+
+/* Стили для заголовков ВСЕХ таблиц */
+thead th {
+    background-color: var(--picco-table-header-bg) !important;
+    color: white !important;
+    padding: 8px 10px !important;
+    text-align: center !important;
+    border: none !important;
+    border-right: 1px solid var(--picco-table-header-border) !important;
+    border-bottom: 1px solid var(--picco-table-header-border) !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    position: relative !important;
+}
+
+/* Убираем разделители у последнего столбца */
+thead th:last-child {
+    border-right: none !important;
+}
+
+/* Для многоуровневых заголовков - убираем нижнюю границу у верхнего уровня */
+thead tr:first-child th {
+    border-bottom: 1px solid var(--picco-table-header-border) !important;
+}
+
+/* У нижнего уровня заголовков убираем нижнюю границу */
+thead tr:last-child th {
+    border-bottom: none !important;
+}
+
+/* Стили для ячеек ВСЕХ таблиц */
+tbody td {
+    padding: 6px 10px !important;
+    text-align: center !important;
+    border-bottom: 1px solid var(--picco-table-row-border) !important;
+    font-size: 15px !important;
+}
+
+/* Чередование строк для ВСЕХ таблиц */
+tbody tr:nth-child(even) {
+    background-color: var(--picco-table-row-alt) !important;
+}
+
+/* Ховер эффект для ВСЕХ таблиц */
+tbody tr:hover {
+    background-color: var(--picco-table-row-hover) !important;
+}
+
+/* КЛАСС для компактной таблицы по ЦЕНТРУ */
+table.compact-center {
+    max-width: 450px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+table.compact-center thead th {
+    padding: 8px 6px !important;
+}
+
+table.compact-center tbody td {
+    padding: 6px 6px !important;
+}
+
+/* КЛАСС для компактной таблицы по ЛЕВОМУ КРАЮ */
+table.compact-left {
+    max-width: 450px !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+table.compact-left thead th {
+    padding: 8px 6px !important;
+}
+
+table.compact-left tbody td {
+    padding: 6px 6px !important;
+}
+
+/* Gallery container */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+/* Gallery items */
+.gallery-item {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-thumbnail {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal styles */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+/* Modal buttons */
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+
+.modal-prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+
+.modal-next-btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+
+.modal-btn {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Image container */
+.modal-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Image counter */
+.image-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}

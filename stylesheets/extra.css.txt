@@ -1,0 +1,56 @@
+h2[id="индикация"]::before,
+h2[id="индикация"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 700px;           /* Длина линий */
+    height: 1px;
+    background-color: #ccc; /* Цвет линий */
+}
+
+h2[id="индикация"]::before {
+    left: 0;
+}
+
+h2[id="индикация"]::after {
+    right: 0;
+}
+
+/* Сбрасываем ограничения MkDocs */
+.md-main__inner, 
+.md-content {
+    max-width: none !important;
+}
+
+/* Принудительно растягиваем все таблицы */
+table {
+    width: 100% !important;
+    min-width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.md-typeset__table,
+.md-typeset table {
+    width: 100% !important;
+    display: table !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.section-header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 0;
+    position: relative;
+    color: #2c3e50;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #007acc, #00c9ff);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
