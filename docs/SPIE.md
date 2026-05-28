@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPIE.png){ width="150" align=left  }
+![Image title](img/modules/SPIE.webp){ width="150" align=left  }
 Модуль SPPE является 4-х канальным модулем расширения, предназначенным для подключения инкрементальных энкодеров с выходами типа A, B.
 </div>
 
@@ -36,7 +36,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/SPIE.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание                         |

@@ -9,7 +9,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/DISPLAY13/DISPLAY13_1.png){ width="150" align=left  }
+![Image title](img/DISPLAY13/DISPLAY13_1.webp){ width="150" align=left  }
 Дисплей 13 дюймов (арт. IPCSA-OG-DISPLAY13) является сенсорным 13 дюймовым дисплеем, предназначенном для ввода и вывода информации
 
 </div>

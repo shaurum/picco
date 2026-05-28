@@ -5,7 +5,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AIV.png){ width="250" align=left  }
+![Image title](img/modules/AIV.webp){ width="250" align=left  }
 Модуль аналогового ввода напряжения (AIV) (арт. PICCO-P5-AIV) является 8-ми канальным модулем расширения и предназначен для получения аналоговых сигналов по напряжению от внешних источников напряжения
 </div>
 
@@ -42,7 +42,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AIV.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание          |

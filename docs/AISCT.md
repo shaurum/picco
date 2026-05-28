@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AIC.png){ width="150" align=left  }
+![Image title](img/modules/AIC.webp){ width="150" align=left  }
 Модуль аналогового ввода синусно-косинусного трансформатора AISCT (арт. PICCO-P5-AISCT) является 2-х канальным модулем расширения и предназначен для получения аналоговых сигналов от синусно-косинусных трансформаторов
 </div>
 
@@ -37,7 +37,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AISCT.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание          |

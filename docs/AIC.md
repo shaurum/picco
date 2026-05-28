@@ -3,7 +3,7 @@
 ## Общие сведения
 
 <div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
-    <img src="img/modules/AIC.png" alt="Модуль аналогового ввода тока AIC" width="270" style="flex-shrink: 0;">
+    <img src="img/modules/AIC.webp" alt="Модуль аналогового ввода тока AIC" width="270" style="flex-shrink: 0;">
 
     <div style="flex: 1; text-align: justify;">
         <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Наименование:</strong> Модуль аналогового ввода тока AIC</p>
@@ -126,7 +126,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AIC.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 <div style="margin-bottom: -1rem;">

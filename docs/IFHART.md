@@ -5,7 +5,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/IFHART.png){ width="150" align=left  }
+![Image title](img/modules/IFHART.webp){ width="150" align=left  }
 Модуль интерфейсный HART (арт. PICCO-P5-IFHART) является 4-канальным модулем расширения и предназначен для приема сигналов по интерфейсу HART.
 </div>
  
@@ -39,7 +39,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/IFHART.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание      |

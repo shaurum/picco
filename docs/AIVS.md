@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AIVS.png){ width="150" align=left  }
+![Image title](img/modules/AIVS.webp){ width="150" align=left  }
 Модуль аналогового ввода виброскорости AIVS (арт. PICCO-P5-AIVS) является 4-х канальным модулем расширения и предназначен для получения аналоговых сигналов от датчиков виброскорости типа МВ38
 </div>
 
@@ -37,7 +37,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AIVS.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание          |

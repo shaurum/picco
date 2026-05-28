@@ -1,3 +1,6 @@
+# Requirements for image optimization
+Pillow>=10.0
+
 # Requirements for core
 jinja2~=3.0
 markdown~=3.2

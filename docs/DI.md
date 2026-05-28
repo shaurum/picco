@@ -3,7 +3,7 @@
 ## Общие сведения
 
 <div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
-    <img src="img/modules/DI.png" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
+    <img src="img/modules/DI.webp" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
 
     <div style="flex: 1; text-align: justify;">
         <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Наименование:</strong> Модуль дискретного ввода DI</p>
@@ -139,7 +139,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/DI.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 Контакты «GND_DRY» и «GND_WET» предназначены для подключения входов по принципу «сухого» или «мокрого» контакта соответственно.

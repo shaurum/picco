@@ -5,7 +5,7 @@
 <!-- Модуль GMB - адаптивный блок -->
 <div class="gmb-block" style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
     <!-- Изображение -->
-    <img src="img/modules/GMB.png" alt="Модуль основной GMB" 
+    <img src="img/modules/GMB.webp" alt="Модуль основной GMB" 
          width="150" 
          style="flex-shrink: 0; max-width: 30%; height: auto; width: auto;"
          loading="lazy">

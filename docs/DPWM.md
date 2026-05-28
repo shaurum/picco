@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/DPWM.png){ width="150" align=left  }
+![Image title](img/modules/DPWM.webp){ width="150" align=left  }
 Модуль дискретных выходов ШИМ (арт. PICCO-P5-DPWM) является 16-ти канальным модулем расширения и предназначен для вывода сигнала с широтно-импульсной модуляцией.
 Модуль должен быть оснащен клеммами подключения внешнего источника питания.
 </div>
@@ -38,7 +38,7 @@
 
 <div class="grid cards" markdown>
 ![Image title](img/connection/DPWM.svg){ width="370"; align=left  }
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Название канала | Описание                 |

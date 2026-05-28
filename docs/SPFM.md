@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPFM.png){ width="150" align=left  }
+![Image title](img/modules/SPFM.webp){ width="150" align=left  }
 Модуль измерения частоты (арт. PICCO-P5-SPFM) является 4-х канальным модулем расширения и предназначенный для точного измерения частоты/периода входных сигналов
 </div>
 
@@ -36,7 +36,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/SPFM.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание                                         |

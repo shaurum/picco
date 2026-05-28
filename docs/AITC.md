@@ -5,7 +5,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AITC.png){ width="250" align=left  }
+![Image title](img/modules/AITC.webp){ width="250" align=left  }
 Модуль аналогового ввода термопары (AITC) (арт. PICCO-P5-AITC) является 
 8-ми канальным модулем расширения  и предназначен для приема сигналов от элементов измерения температуры.  
 Модуль имеет 8 каналов измерения температуры от термопар.
@@ -45,7 +45,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AITC.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 ???+ note "Рекомендация"

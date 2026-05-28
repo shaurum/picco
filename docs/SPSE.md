@@ -5,7 +5,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPSE.png){ width="150" align=left  }
+![Image title](img/modules/SPSE.webp){ width="150" align=left  }
 Модуль расширения коммутации (арт. PICCO-P5-SPSE) является модулем расширения и предназначен для организации сложных топологий путем разветвления соединений в системе автоматизации.  
 
 </div>
@@ -33,7 +33,7 @@
 
 ## Схема подключения
 
-![Image title](img/connection/SPSE.png){ width="250"  }
+![Image title](img/connection/SPSE.webp){ width="250"  }
 
 
 ## Размеры

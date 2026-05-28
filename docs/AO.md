@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/AO.png){ width="250" align=left  }
+![Image title](img/modules/AO.webp){ width="250" align=left  }
 Модуль аналогового вывода (AO) (арт. PICCO-P5-AO) является 8-ми канальным модулем расширения и предназначен для выдачи аналоговых сигналов на внешние устройства.  
 Каждый канал модуля может выдавать постоянное напряжение или постоянный ток.
 </div>
@@ -48,7 +48,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/AO.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 
