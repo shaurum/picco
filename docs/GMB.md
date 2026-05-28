@@ -1,4 +1,4 @@
-# Модуль основной SA-P5-GMB 
+# Модуль основной PICCO-P5-GMB 
 
 ## Общие сведения
  
@@ -19,8 +19,8 @@
         
         <p style="text-align: left; margin: 0 0 1rem 0; line-height: 1.4;">
             <strong>Исполнения:</strong><br>
-            • SA-P5-GMB (без покрытия)<br>
-            • SA-P5-GMB-V (с лаковым покрытием)
+            • PICCO-P5-GMB (без покрытия)<br>
+            • PICCO-P5-GMB-V (с лаковым покрытием)
         </p>
         
         <p style="text-align: left; margin: 0 0 1rem 0; line-height: 1.4;">

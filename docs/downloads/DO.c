@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "SA-P5-DIGITAL-OUTPUT"
+/* Master 0, Slave 0, "PICCO-P5-DIGITAL-OUTPUT"
  * Vendor ID:       0xe00004d8
  * Product code:    0x00000021
  * Revision number: 0x00000001

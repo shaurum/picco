@@ -2,7 +2,7 @@
 
 <div style="text-align: center; font-size: 28px; margin-bottom: 20px;">
 
-Контроллер программируемый логический PICCO Electric серии P5
+PICCO-P5 Контроллер программируемый логический 
 
 </div>
 

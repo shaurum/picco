@@ -9,21 +9,21 @@
 	<Descriptions>
 		<Groups>
 			<Group SortOrder="0">
-				<Type>SA-P5</Type>
-				<Name LcId="1033">SA-P5</Name>
+				<Type>PICCO-P5</Type>
+				<Name LcId="1033">PICCO-P5</Name>
 				<ImageData16x14>424DE6000000000000007600000028000000100000000E000000010004000000000070000000120B0000120B000000000000000000000000000000008000008000000080800080000000800080008080000080808000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFF8998FFFFFF888FF99999FFFFFF998F9999888F888899FF998FFFFF999998F898FFFFFF89999FF99FFFF898FFFFFFF99FFFFF99FF88FFF99FFFFF898899FFF99FFFFF893998FFF898FFFFF3999FFFFF998FFFF8998FFFFF899999FF99FFFFFFF999998F98FFFFFFFF89999FFFFFFFF</ImageData16x14>
 			</Group>
 		</Groups>
 		<Devices>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000001" RevisionNo="#x00000001">SA-P5-DI</Type>
+				<Type ProductCode="#x00000001" RevisionNo="#x00000001">PICCO-P5-DI</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль дискретного ввода]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/DI/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<Dictionary>
 						<DataTypes>
@@ -160,14 +160,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000002" RevisionNo="#x00000001">SA-P5-DO</Type>
+				<Type ProductCode="#x00000002" RevisionNo="#x00000001">PICCO-P5-DO</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль дискретного вывода]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/DO/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<Dictionary>
 						<DataTypes>
@@ -311,14 +311,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000003" RevisionNo="#x1">SA-P5-AIC</Type>
+				<Type ProductCode="#x00000003" RevisionNo="#x1">PICCO-P5-AIC</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль аналогового ввода тока]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/AIC/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -2580,7 +2580,7 @@
 				</Eeprom>
 			</Device>
 		<Device Physics="YY">
-		<Type ProductCode="#x00000004" RevisionNo="#x1">SA-P5-AIV</Type>
+		<Type ProductCode="#x00000004" RevisionNo="#x1">PICCO-P5-AIV</Type>
 		<Name LcId="1033">
 			<![CDATA[Модуль аналогового ввода напряжения]]>
 		</Name>
@@ -2606,7 +2606,7 @@
 				</Timeout>
 			</Mailbox>
 		</Info>
-		<GroupType>SA-P5</GroupType>
+		<GroupType>PICCO-P5</GroupType>
         <Profile>
           <ChannelInfo>
             <ProfileNo>5001</ProfileNo>
@@ -4184,14 +4184,14 @@
         </Eeprom>
       </Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000005" RevisionNo="#x1">SA-P5-AITR</Type>
+				<Type ProductCode="#x00000005" RevisionNo="#x1">PICCO-P5-AITR</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль аналогового ввода термосопротивления]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/AITR/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -5367,14 +5367,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000006" RevisionNo="#x1">SA-P5-AO</Type>
+				<Type ProductCode="#x00000006" RevisionNo="#x1">PICCO-P5-AO</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль аналогового вывода]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/AO/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -6771,14 +6771,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000007" RevisionNo="#x1">SA-P5-SPIE</Type>
+				<Type ProductCode="#x00000007" RevisionNo="#x1">PICCO-P5-SPIE</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль подключения инкрементальных энкодеров]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/SPIE/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -7982,14 +7982,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000008" RevisionNo="#x1">SA-P5-SPPC</Type>
+				<Type ProductCode="#x00000008" RevisionNo="#x1">PICCO-P5-SPPC</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль счета импульсов]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/SPPC/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -9193,14 +9193,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x00000009" RevisionNo="#x1">SA-P5-FM</Type>
+				<Type ProductCode="#x00000009" RevisionNo="#x1">PICCO-P5-FM</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль измерения частоты]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/SPFM/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -10427,14 +10427,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x0000000a" RevisionNo="#x1">SA-P5-AITC</Type>
+				<Type ProductCode="#x0000000a" RevisionNo="#x1">PICCO-P5-AITC</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль аналогового ввода термопары]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/AITC/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -12352,14 +12352,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x0000000b" RevisionNo="#x1">SA-P5-IF485/422</Type>
+				<Type ProductCode="#x0000000b" RevisionNo="#x1">PICCO-P5-IF485/422</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль интерфейсный RS-485/422]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/IF485_422/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -14823,14 +14823,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YYY">
-				<Type ProductCode="#x0000000c" RevisionNo="#x00000001">SA-P5-SPSE</Type>
+				<Type ProductCode="#x0000000c" RevisionNo="#x00000001">PICCO-P5-SPSE</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль расширения коммутации]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/SPSE/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Fmmu>Inputs</Fmmu>
 				<Sm DefaultSize="2" StartAddress="#x1000" ControlByte="0" Enable="1">Inputs</Sm>
 				<Su FrameRepeatSupport="1"></Su>
@@ -14840,14 +14840,14 @@
 				</Eeprom>
 			</Device>
 			<Device Physics="YY">
-				<Type ProductCode="#x0000000d" RevisionNo="#x1">SA-P5-IF232</Type>
+				<Type ProductCode="#x0000000d" RevisionNo="#x1">PICCO-P5-IF232</Type>
 				<Name LcId="1033">
 					<![CDATA[Модуль интерфейсный RS-232]]>
 				</Name>
 				<URL LcId="1033">
 					<![CDATA[https://manual.saplc.ru/user_manual/IF232/]]>
 				</URL>
-				<GroupType>SA-P5</GroupType>
+				<GroupType>PICCO-P5</GroupType>
 				<Profile>
 					<ChannelInfo>
 						<ProfileNo>5001</ProfileNo>
@@ -17277,14 +17277,14 @@
 			</Device>
 			
 	   <Device Physics="YY">
-		<Type ProductCode="#x0000000e" RevisionNo="#x1">SA-P5-DPWM</Type>
+		<Type ProductCode="#x0000000e" RevisionNo="#x1">PICCO-P5-DPWM</Type>
 		<Name LcId="1033">
 			<![CDATA[Модуль дискретного вывода ШИМ]]>
 		</Name>
 		<URL LcId="1033">
 			<![CDATA[https://manual.saplc.ru/user_manual/DPWM/]]>
 		</URL>
-		<GroupType>SA-P5</GroupType>
+		<GroupType>PICCO-P5</GroupType>
 			<Profile>
 				<ChannelInfo>
 					<ProfileNo>5001</ProfileNo>

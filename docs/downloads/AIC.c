@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "SA-P5-AIC"
+/* Master 0, Slave 0, "PICCO-P5-AIC"
  * Vendor ID:       0x00000001
  * Product code:    0x00009252
  * Revision number: 0x00000001
